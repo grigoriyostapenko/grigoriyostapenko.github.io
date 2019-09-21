@@ -4,6 +4,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html, body{
+	height: 100%;
+}
+
 body{
 	font-size: 100%;
 	font-family: sans-serif;
@@ -12,7 +16,37 @@ body{
 ul{
 	display: inline-block;
 }
-li{
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.reg-form{
+	margin: 0 auto;
+	min-width: 290px;
+	max-width: 500px;
+	border: 2px solid #000;
+	border-radius: 7px;
+	padding: 20px 15px;
+}
+.reg-form__label,
+.reg-form__input{
+	display: block;
+}
+
+.passspan{
+	display: block;
+}
+.reg-form__label, 
+.reg-form__input[type="text"],
+.passspan {
+	margin-bottom: 10px;
+}
+
+
+
+/*li{
 	display: inline-block;
 }
 
@@ -44,4 +78,4 @@ a:hover{
 nav{
 	text-align: center;
 	padding-top: 1rem;
-}
+}*/
