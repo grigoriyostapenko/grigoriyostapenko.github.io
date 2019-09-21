@@ -14,3 +14,9 @@ h3{
 	background-color: black;
 	color: white;
 }
+.banner{
+	width: 100%;
+}
+.car{
+	border: 3px dotted black;	
+}
