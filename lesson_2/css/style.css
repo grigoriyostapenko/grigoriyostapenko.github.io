@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:  border-box;
+}
+
+body, html {
+	height:  100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	background-color: #990909;
+	color:  white;
+}
+.main-header {
+	text-align: center;
+	padding:  15px 0 5px;
+}
+.main-header__link {
+	display: inline-block;
+	font-size: 0;
+}
+.navigation{
+	background-color: #000;
+	padding:  20px 0 0;
+	text-align: center;
+}
+.navigation__list-item{
+	max-width: 190px;
+}
+.navigation__list-img{
+	width: 100%;
+}
+
+.navigation__list-item:not(:last-child){
+	display: inline-block;
+	margin-right: 80px;
+}
+.navigation__list-item:last-child{
+	display: inline-block;
+}
+
+.navigation__list-link {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 0;
+}
+.navigation__list-caption {
+	font-size: 1.2rem;
+	color: white;
+	text-transform: capitalize;
+}
+.main__article > * {
+	font-size: 1rem;
+}
+.main__nav{
+	background-color: #7d0909;
+	width: 100%;
+	max-width: 20%;
+}
+.main__content{
+	width: 100%;
+	max-width: 65%;
+}
+.main__aside {
+	width: 100%;
+	max-width: 15%
+}
+.main__article {
+	font-size: 0;
+	display: flex;
+}
+.main__nav-link {
+	color: #e95b11;
+}
+.main__nav-item, .main__content-text{
+	margin-bottom:  20px;
+}
+.main__nav-item:last-child, .main__content-text:last-child{
+	margin-bottom: 0;
+}
+.main__aside{
+	background-color: #e3dddd;
+}
+.main__aside-list{
+	list-style: none;
+}
+.main__aside-link{
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 20px 0;
+}
+.main__aside-title{
+	background-color: #bdbdbd;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+.main_aside-item {
+	position: relative;
+}
+.main_aside-item::before{
+	content: "";
+	display: block;
+	width: 70px;
+	border-top: 5px solid #bdbdbd;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+/* #990909 - page bgred
+#7d0909 - aside bgred
+#bdbdbd - dark grey
+#e3dddd - light grey
+#000000 - black
+#ffffff - white
+#e95b11 - orange*/
