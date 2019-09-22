@@ -61,7 +61,7 @@ ul{
 .passspan{
 	display: block;
 }
-.reg-form__label, 
+.reg-form__label,
 .reg-form__input[type="text"],
 .passspan {
 	margin-bottom: 10px;
