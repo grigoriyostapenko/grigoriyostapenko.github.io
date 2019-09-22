@@ -25,7 +25,7 @@ header{
 .helper{
 	max-width: 300px;
 	padding: 15px;
-	margin: 0 15px;
+	margin: 0 50px;
 }
 .textblock{
 	display: flex;
@@ -72,16 +72,16 @@ li{
 	padding: 30px 0;
 	position: relative;
 	font-size: 20px;
-	z-index: 1;
 }
 li::before {
-	content: "";
+    content: "";
+	display: block;
+	width: 70px;
+	border-top: 1px solid #bdbdbd;
 	position: absolute;
-	left    : 25%;
-	bottom  : -5px;
-	height  : 1px;
-	width   : 50%;
-	border-bottom: 2px solid #fff;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .firstli{
