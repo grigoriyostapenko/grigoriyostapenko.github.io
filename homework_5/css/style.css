@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic,cyrillic-ext');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #fff;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+a {
+	font-size: 0;
+	text-decoration: none;
+}
+
+.a_logo {
+	display: block;
+	text-align: center;
+}
+
+footer {
+	min-height: 45%;
+	max-height: 50%;
+	width: 100%;
+	background-color: #121116;
+	display: flex;
+	justify-content: center;
+}
+
+.main-part, .logo, .maintext {
+	display: inline-block;
+}
+
+.a_logo {
+	padding-top: 90px;
+	padding-bottom: 45px;
+}
+
+.maintext {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.maintext:after {
+	content: "";
+	width: 200px;
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.line {
+	width: 300px;
+}
+
+.soc-icons, .maintext, .line{
+	display: flex;
+	justify-content: center;
+}
+
+.soc-icons {
+	padding-top: 10px;
+	margin-bottom: 90px;
+	list-style: none;
+}
+
+.img_with_margin {
+	margin-right: 10px;
+}
+
+.footer {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+
+.blue {
+	color: #18c8fa;
+}
+
