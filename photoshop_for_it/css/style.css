@@ -27,23 +27,22 @@ a {
 	text-align: center;
 }
 
-main {
+footer {
 	min-height: 45%;
 	max-height: 50%;
 	width: 100%;
 	background-color: #121116;
-	background-image: url('../img/bgpattern.png');
 	display: flex;
 	justify-content: center;
 }
 
-.main-part, .logo, .maintext, .footer{
+.main-part, .logo, .maintext {
 	display: inline-block;
 }
 
-.logo {
+.a_logo {
 	padding-top: 90px;
-	margin-bottom: 45px;
+	padding-bottom: 45px;
 }
 
 .maintext {
@@ -74,6 +73,7 @@ main {
 .soc-icons {
 	padding-top: 10px;
 	margin-bottom: 90px;
+	list-style: none;
 }
 
 .img_with_margin {
