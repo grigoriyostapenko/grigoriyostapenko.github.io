@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&display=swap');
+* {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height:  100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	color:  white;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin:  0 auto;
+	height: 100%;
+}
+
+.cahee__section {
+	padding: 100px 0;
+}
+
+.t-lower {
+	text-transform: lowercase;
+}
+
+.blog {
+	background-color: #b07cf7;
+}
+
+.cahee__title {
+	font-size: 90px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 48px;
+}
+
+.cahee__subtitle {
+	font-size: 17px;
+	font-weight: 300;
+	width: 100%;
+	max-width: 570px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.4;
+	margin-bottom: 50px;
+}
+
+.blog__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.cahee-shadow {
+	box-shadow: 1px 1px 13px 5px rgba(0, 0, 0, .5);
+}
+
+
+.blog__link {
+	display: block;
+	position: relative;
+	max-width: 368px;
+	width: 100%;
+	height: 310px;
+	padding: 30px;
+	text-decoration: none;
+	color: #fff;
+	min-width: 368px;
+	transition: all .3s ease;
+}
+
+a:hover{
+	opacity: .8;
+}
+
+.blog__link:hover {
+	transform: translate3d(0, -10px, 10px);
+}
+
+.blog__date {
+	display: block;
+	width: 60px;
+	height: 60px;
+	font-size: 32px;
+	font-weight: 900;
+	text-align: center;
+	padding: 10px;
+	line-height: .5;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+.blog__month {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	transform: translateY(10px);
+}
+
+.blog__link[data-img="lemon"] {
+	background: url("../img/1.png") no-repeat;
+}
+
+.blog__link[data-img="soup"] {
+	background: url("../img/2.png") no-repeat 0 100%;
+}
+
+.blog__link[data-img="rassberry"] {
+	background: url("../img/3.png") no-repeat;
+}
+
+.blog__title {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 1.1;
+	margin-bottom: 20px;
+}
+
+.blog__author {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.blog__footer {
+	position: absolute;
+	bottom: 0;
+	padding: 30px;
+	left: 0;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+-1,0+0,0+1,0+1,0+19,0.65+73,0.65+73 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) -1%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0) 19%, rgba(0,0,0,0.65) 73%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) -1%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0) 19%,rgba(0,0,0,0.65) 73%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) -1%,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0) 19%,rgba(0,0,0,0.65) 73%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.cahee-btn {
+	display: block;
+	background-color: #f72b3b;
+	color:  #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	font-size:  20px;
+	text-decoration: none;
+	padding: 15px 0;
+	max-width: 200px;
+	margin:  auto;
+	transition: all .5s ease;
+}
+
+.cahee-btn:hover {
+	background-color: #fff;
+	color:  #f72b3b;
+}
+/*
+#b07cf7 - violet
+#f72b3b - pink
+#fff
+#000
+***
+*/
