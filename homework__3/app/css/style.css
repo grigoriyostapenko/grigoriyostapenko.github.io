@@ -1,0 +1,29 @@
+h1 {
+	text-align: center;
+	background-color: #a52a2a;
+	color: white;
+}
+
+main {
+	font-size: 16px;
+}
+
+div {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+.banner {
+	width: 100%;
+}
+
+.car {
+	border: 3px dotted black;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxrQkFBa0I7RUFDbEIseUJBQXlCO0VBQ3pCLFlBQVksRUFBQTs7QUFFYjtFQUNDLGVBQWUsRUFBQTs7QUFFaEI7RUFDQyxrQkFBa0IsRUFBQTs7QUFFbkI7RUFDQyxrQkFBa0I7RUFDbEIsdUJBQXVCO0VBQ3ZCLFlBQVksRUFBQTs7QUFFYjtFQUNDLFdBQVcsRUFBQTs7QUFFWjtFQUNDLHdCQUF3QixFQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImgxe1xyXG5cdHRleHQtYWxpZ246IGNlbnRlcjtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiAjYTUyYTJhO1xyXG5cdGNvbG9yOiB3aGl0ZTtcclxufVxyXG5tYWlue1xyXG5cdGZvbnQtc2l6ZTogMTZweDtcclxufVxyXG5kaXZ7XHJcblx0dGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcbmgze1xyXG5cdHRleHQtYWxpZ246IGNlbnRlcjtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuXHRjb2xvcjogd2hpdGU7XHJcbn1cclxuLmJhbm5lcntcclxuXHR3aWR0aDogMTAwJTtcclxufVxyXG4uY2Fye1xyXG5cdGJvcmRlcjogM3B4IGRvdHRlZCBibGFjaztcclxufSJdfQ== */

@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+body {
+	background-image: url("https://previews.123rf.com/images/bettystrange/bettystrange1611/bettystrange161100289/66439208-producto-l%C3%A1cteo-patr%C3%B3n-transparente-estilo-plano-los-productos-l%C3%A1cteos-fondo-la-leche-y-el-queso-de-textura.jpg");
+	font-size: 24px;
+	font-family: "Comfortaa", cursive;
+}
+
+header {
+	background: url("../img/123.png") no-repeat center;
+	max-width: 600px;
+	margin: 8px auto;
+	padding: 3px;
+	text-align: center;
+	max-height: 130px;
+	color: white;
+	font-style: italic;
+	color: black;
+	background-size: contain;
+}
+
+img {
+	display: inline-block;
+	height: 50px;
+	margin-top: 2px;
+	padding: 20px 6px 2px 6px;
+}
+
+h2 {
+	display: block;
+	font-family: "Comfortaa", sans-serif;
+	position: relative;
+	top: -20px;
+	font-size: 20px;
+}
+
+.checklist {
+	margin: 0 auto;
+	display: block;
+	background-color: #96d7e9;
+	border: 3px solid #000;
+	border-radius: 5px;
+	max-width: 600px;
+	padding: 10px 0;
+}
+
+form {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 200px;
+	padding: 10px 0;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEdBQVk7QUFDWjtFQUNDLHNQQUFzUDtFQUN0UCxlQUFlO0VBQ2YsaUNBQWlDLEVBQUE7O0FBRWxDO0VBQ0Msa0RBQWtEO0VBQ2xELGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osd0JBQXdCLEVBQUE7O0FBRXpCO0VBQ0MscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixlQUFlO0VBQ2YseUJBQXlCLEVBQUE7O0FBRTFCO0VBQ0MsY0FBYztFQUNkLG9DQUFvQztFQUNwQyxrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLGVBQWUsRUFBQTs7QUFFaEI7RUFDQyxjQUFjO0VBQ2QsY0FBYztFQUNkLHlCQUF5QjtFQUN6QixzQkFBc0I7RUFDdEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixlQUFlLEVBQUE7O0FBRWhCO0VBQ0MsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsZUFBZSxFQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKGh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1EaWRhY3QrR290aGljfENvbWZvcnRhYTo0MDAsNzAwJnN1YnNldD1sYXRpbixjeXJpbGxpYyk7XHJcbmJvZHl7XHJcblx0YmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL3ByZXZpZXdzLjEyM3JmLmNvbS9pbWFnZXMvYmV0dHlzdHJhbmdlL2JldHR5c3RyYW5nZTE2MTEvYmV0dHlzdHJhbmdlMTYxMTAwMjg5LzY2NDM5MjA4LXByb2R1Y3RvLWwlQzMlQTFjdGVvLXBhdHIlQzMlQjNuLXRyYW5zcGFyZW50ZS1lc3RpbG8tcGxhbm8tbG9zLXByb2R1Y3Rvcy1sJUMzJUExY3Rlb3MtZm9uZG8tbGEtbGVjaGUteS1lbC1xdWVzby1kZS10ZXh0dXJhLmpwZycpO1xyXG5cdGZvbnQtc2l6ZTogMjRweDtcclxuXHRmb250LWZhbWlseTogJ0NvbWZvcnRhYScsIGN1cnNpdmU7XHJcbn1cclxuaGVhZGVye1xyXG5cdGJhY2tncm91bmQ6IHVybCgnLi4vaW1nLzEyMy5wbmcnKSBuby1yZXBlYXQgY2VudGVyO1xyXG5cdG1heC13aWR0aDogNjAwcHg7XHJcblx0bWFyZ2luOiA4cHggYXV0bztcclxuXHRwYWRkaW5nOiAzcHg7XHJcblx0dGV4dC1hbGlnbjogY2VudGVyO1xyXG5cdG1heC1oZWlnaHQ6IDEzMHB4O1xyXG5cdGNvbG9yOiB3aGl0ZTtcclxuXHRmb250LXN0eWxlOiBpdGFsaWM7XHJcblx0Y29sb3I6IGJsYWNrO1xyXG5cdGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxufVxyXG5pbWd7XHJcblx0ZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG5cdGhlaWdodDogNTBweDtcclxuXHRtYXJnaW4tdG9wOiAycHg7XHJcblx0cGFkZGluZzogMjBweCA2cHggMnB4IDZweDtcclxufVxyXG5oMntcclxuXHRkaXNwbGF5OiBibG9jaztcclxuXHRmb250LWZhbWlseTogJ0NvbWZvcnRhYScsIHNhbnMtc2VyaWY7XHJcblx0cG9zaXRpb246IHJlbGF0aXZlO1xyXG5cdHRvcDogLTIwcHg7XHJcblx0Zm9udC1zaXplOiAyMHB4O1xyXG59XHJcbi5jaGVja2xpc3R7XHJcblx0bWFyZ2luOiAwIGF1dG87XHJcblx0ZGlzcGxheTogYmxvY2s7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogIzk2ZDdlOTtcclxuXHRib3JkZXI6IDNweCBzb2xpZCAjMDAwO1xyXG5cdGJvcmRlci1yYWRpdXM6IDVweDtcclxuXHRtYXgtd2lkdGg6IDYwMHB4O1xyXG5cdHBhZGRpbmc6IDEwcHggMDtcclxufVxyXG5mb3Jte1xyXG5cdG1hcmdpbjogMCBhdXRvO1xyXG5cdHRleHQtYWxpZ246IGNlbnRlcjtcclxuXHRtYXgtd2lkdGg6IDIwMHB4O1xyXG5cdHBhZGRpbmc6IDEwcHggMDtcclxufVxyXG4iXX0= */
