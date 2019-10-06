@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	color: $dark;
+	background-color: $dark-blue;
+}
+
+.container {
+	width: 100%;
+	max-width: 680px;
+	margin: auto;
+	padding: 0 15px;
+}
