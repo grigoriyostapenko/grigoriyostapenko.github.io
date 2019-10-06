@@ -47,8 +47,9 @@
 		z-index: -1;
 
 		&:checked + .card__label {
-			box-shadow: 0 0 0 1px red,
-			0 0 0 2px grey;
+            $color: currentColor;
+            box-shadow: 0 0 0 1px $color,
+            0 0 0 2px $grey;
 		}
 	}
 
@@ -58,6 +59,22 @@
 		border-radius: 50%;
 		border: 2px solid transparent;
 		background-color: red;
+	}
+
+	[data-color="dark"] {
+		background-color: $light-blue;
+	}
+
+	[data-color="white"] {
+		background-color: $white;
+	}
+
+	[data-color="red"] {
+		background-color: $red
+	}
+
+	[data-color="blue"] {
+		background-color: $aqua;
 	}
 }
 
