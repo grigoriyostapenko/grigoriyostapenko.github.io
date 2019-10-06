@@ -4,4 +4,60 @@
 	background: url('../img/bg.jpg') no-repeat;
 	background-size: cover;
 	min-height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__card {
+		background-color: $dark-blue;
+		padding: 20px 50px 20px 20px;
+	}
+
+	&__card-link {
+		display: inline-flex;
+
+	}
+
+	&__form {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 70px;
+	}
 }
+
+.card {
+	display: flex;
+
+	&__left {
+		padding-top: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__image {
+		margin-bottom: 60px;
+	}
+
+	[type="radio"] {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+
+		&:checked + .card__label {
+			box-shadow: 0 0 0 1px red,
+			0 0 0 2px grey;
+		}
+	}
+
+	&__label {
+		display: inline-block;
+		@include square(10px);
+		border-radius: 50%;
+		border: 2px solid transparent;
+		background-color: red;
+	}
+}
+
