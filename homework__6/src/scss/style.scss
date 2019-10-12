@@ -1,0 +1,151 @@
+/*8b55c9 violet
+23ae92 green
+e66a64 red
+a087c8 ramka tvoya mamka*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	color: white;
+	font-weight: 500;
+	background-color: #e2eced;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+a:visited {
+	text-decoration: none;
+	color: currentColor;
+}
+
+.main {
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reg-form {
+	width: 100%;
+	max-width: 400px;
+	min-height: 500px;
+	background: url('../img/bgg.png') no-repeat;
+	background-size: cover;
+	background-color: rgb(139, 85, 201);
+	padding: 70px;
+	box-shadow: 0 0 14px 0 black;
+}
+
+.reg-form__header {
+	display: inline-block;
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 50px;
+}
+
+.sign {
+	margin-right: 20px;
+	color: white;
+	transition: all .2s ease-out;
+	cursor: pointer;
+}
+
+.join {
+	color: white;
+	transition: all .2s ease-out;
+	cursor: pointer;
+}
+
+
+.sign:hover, .join:hover{
+	border-bottom: 3px solid #e66a64;
+}
+
+
+
+.capitalize, .capitalize-last {
+	text-transform: capitalize;
+	display: block;
+	margin-bottom: 10px;
+}
+
+[type="text"], [type="password"] {
+	border: 2px solid #a087c8;
+	width: 100%;
+	height: 35px;
+	background-color: rgba(0, 0, 0, 0)
+}
+
+.capitalize-last {
+	padding-top: 15px;
+}
+
+[type="checkbox"] {
+	z-index: 1;
+	opacity: 0;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+}
+
+.checked {
+	width: 16px;
+	height: 16px;
+	background-color: white;
+	transition: all .1s ease;
+	display: inline-block;
+}
+
+[type="checkbox"]:checked + .checked {
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/checked.jpg");
+}
+
+.padding-top {
+	padding-top: 15px;
+	margin-bottom: 35px;
+}
+
+[type="submit"] {
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	background-color: #23ae92;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.3rem;
+	border: 0;
+	text-transform: capitalize;
+}
+
+.reg-form__form {
+	margin-bottom: 30px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+}
+
+.footer__text {
+	text-transform: capitalize;
+}
+
