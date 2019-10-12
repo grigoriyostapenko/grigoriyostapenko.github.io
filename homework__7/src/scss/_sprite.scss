@@ -1,0 +1,100 @@
+.blog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__text {
+		font-size: 12px;
+		text-transform: uppercase;
+		color: $span-color;
+		font-family: $main-font;
+		font-weight: bold;
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		font-family: $main-font;
+		color: $cyan;
+		font-size: 48px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+	}	
+
+	&__description {
+		text-align: center;
+		width: 100%;
+		max-width: 510px;
+		font-size: 18px;
+		font-family: $span-font;
+		margin-bottom: 100px;
+	}
+
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.list {
+	display: flex;
+	justify-content: center;
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $pink;
+		width: 220px;
+		height: 420px;
+		padding: 55px 25px;
+		transition: all .4s ease;
+	}
+
+	&__link:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__photo {
+		width: 65px;
+		margin-bottom: 50px;
+	}
+
+	&__description {
+		font-size: 14px;
+		color: black;
+		text-transform: uppercase;
+		font-family: $main-font;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		text-align: center;
+		color: $span-color;
+		font-family: $span-font;
+		font-size: 13px;
+	}
+
+	&__text:first-letter {
+		text-transform: uppercase;
+	}
+
+	&__item:hover {
+		transform: translateY(-10px);
+		background-color: $cyan;
+	}
+
+	&__item:hover > .list__description, &__item:hover > .list__text {
+		color: white;
+	}
+
+}
+
+.block {
+	display: block;
+	text-align: center;
+}

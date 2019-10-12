@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $span-color;
+	font-family: $span-color;
+}
+
+.container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 140px 15px 0 15px;
+}
