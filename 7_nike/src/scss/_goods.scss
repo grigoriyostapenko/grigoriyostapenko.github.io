@@ -29,12 +29,21 @@
 
 .card {
 	display: flex;
+	text-transform: capitalize;
 
 	&__left {
 		padding-top: 60px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	&__right {
+		padding: 15px 0 0 60px;
+
+		& > *:not(:last-child) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__image {
@@ -47,9 +56,9 @@
 		z-index: -1;
 
 		&:checked + .card__label {
-            $color: currentColor;
-            box-shadow: 0 0 0 1px $color,
-            0 0 0 2px $grey;
+			$color: currentColor;
+			box-shadow: 0 0 0 1px $color,
+			0 0 0 2px $grey;
 		}
 	}
 
@@ -76,5 +85,118 @@
 	[data-color="blue"] {
 		background-color: $aqua;
 	}
+
+	&__title {
+		text-transform: capitalize;
+		font-size: 24px;
+		color: $light;
+		font-weight: 300;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		max-height: 20px;
+		overflow: hidden;
+
+	}
 }
 
+.t-upper {
+	text-transform: uppercase;
+}
+
+.rating {
+	display: flex;
+	list-style: none;
+
+	&__item {
+		svg {
+			@include square(12px);
+			fill: $s-grey;
+
+			&.active {
+				fill: $s-yellow;
+			}
+		}
+	}
+}
+
+.form {
+
+	& > *:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	&__selects {
+		display: flex;
+	}
+
+	&__label {
+		position: relative;
+		display: flex;
+		width: 70px;
+		margin-right: 2px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			@include square(8px);
+			border: 1px solid transparent;
+			border-bottom-color: currentColor;
+			border-right-color: currentColor;
+			top: 20%;
+			pointer-events: none;
+			right: 15px;
+			transform-origin: center;
+			transform: rotate(45deg);
+		}
+	}
+
+
+
+
+&__fiel {
+	width: 100%;
+	background-color: transparent;
+	appearance: none;
+	text-transform: capitalize;
+	color: $dark;
+	padding: 5px;
+	display: inline-flex;
+	border: 1px solid currentcolor;
+	color: inherit;
+
+	option {
+		background-color: $dark-blue;
+	}
+
+}
+
+&__submit {
+		width: 100%;
+		padding: 5px 0;
+		text-align: center;
+		border: 1px solid currentColor;
+		background-color: transparent;
+		color: $dark;
+	}
+}
+
+
+
+[type="number"] {
+	width: 100%;
+	background-color: transparent;
+	appearance: none;
+	text-transform: capitalize;
+	color: $dark;
+	padding: 5px;
+	display: inline-flex;
+	border: 1px solid currentcolor;
+	color: inherit;
+}
