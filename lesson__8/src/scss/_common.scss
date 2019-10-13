@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	color:s $grey-text;
+	font-size: 100%;
+	background-color: $white;
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+.sh-section {
+	padding: px_to_rem(100px) 0;
+
+	&__title {
+		font-family: $title-font;
+		font-weight: 700;
+		font-size: px_to_rem(38px);
+		text-align: center;
+		text-transform: uppercase;
+		color: $black;
+	}
+	&__subtitle {
+		font-family: $subtitle-font;
+		font-size: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $grey-text;
+		letter-spacing: 1px;
+		margin-bottom: px_to_rem(100px);
+	}
+
+	&__text-title {
+		color: $grey-text;
+		text-transform: uppercase;
+		font-size: px_to_rem(20px);
+		font-weight: 700;
+		font-family: $subtitle-font;
+		margin-bottom: 15px;
+	}
+
+	&__text-subtitle {
+		color: $grey-text;
+		font-size: px_to_rem(18px);
+		margin-bottom: 15px;
+	}
+
+	&__text:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+}
