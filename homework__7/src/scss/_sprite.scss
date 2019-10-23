@@ -107,6 +107,12 @@
 	.blog__title {
 		font-size: 20px;
 	}
+
+	.list__item {
+		width: calc(100% - 20px);
+	}
+
+
 }
 
 @media screen and (min-width:513px) and (max-width: 920px) {
