@@ -45,6 +45,7 @@
 	}
 
 	&__item {
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -94,7 +95,41 @@
 
 }
 
-.block {
-	display: block;
-	text-align: center;
+@media screen and (max-width: 512px) {
+	.list {
+		flex-direction: column;
+	}
+
+	.first-couple {
+		margin-bottom: 15px;
+	}
+
+	.blog__title {
+		font-size: 20px;
+	}
 }
+
+@media screen and (min-width:513px) and (max-width: 920px) {
+
+	.first-couple {
+		margin-right: 15px;
+	}
+
+	.list-link {
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (min-width: 921px) {
+	.first-couple, .second-couple {
+		display: flex;
+		justify-content: center;
+		margin-right: 10px;
+	}
+
+	.list-link {
+		margin-right: 0;
+	}
+}
+
