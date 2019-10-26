@@ -15,6 +15,10 @@ body {
 	background-color: $white;
 }
 
+ul {
+	list-style: none;
+}
+
 .container {
 	width: 100%;
 	max-width: 1140px;
@@ -24,6 +28,14 @@ body {
 
 .sh-section {
 	padding: px_to_rem(100px) 0;
+
+	&:nth-child(odd) {
+		background-color: $light-grey-bg;
+	}
+
+	&:nth-child(even) {
+		background-color: $white;
+	}
 
 	&__title {
 		font-family: $title-font;
@@ -53,13 +65,52 @@ body {
 	}
 
 	&__text-subtitle {
+		font-family: $subtitle-font;
 		color: $grey-text;
 		font-size: px_to_rem(18px);
 		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		line-height: 1.8;
+	}
+
+	&__know-more {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $white;
+		font-size: 16px;
+		transition: all .3s ease;
+
+		&:after {
+			content: "";
+		}
 	}
 
 	&__text:not(:last-child) {
 		margin-bottom: 10px;
 	}
 
+
 }
+
+ul {
+	list-style: none;
+	li {
+		a {
+			display: flex;
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+a:hover {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+

@@ -1,0 +1,61 @@
+.sh-services {
+	color: $white;
+
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		justify-content: space-between;
+		height: 1187px;
+	}
+
+	&__item {
+		height: fit-content;
+
+		&.wide {
+			flex-basis: 63%;
+		}
+
+		&.thin {
+			flex-basis: 35.2%;
+		}
+	}
+
+	&__link {
+		@include padding-hack(380px);
+
+		@include layout {
+			background-color: rgba(0, 0, 0, .7);
+			z-index: 1;
+		}
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		padding: 0 65px 50px;
+	}
+
+	.sh-section__text {
+		margin-bottom: 35px;
+	}
+}
+
+.white {
+	font-family: $subtitle-font;
+	color: $white;
+	font-size: px_to_rem(18px);
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.sh-section__know-more:hover {
+	transform: translateX(20px);
+}
