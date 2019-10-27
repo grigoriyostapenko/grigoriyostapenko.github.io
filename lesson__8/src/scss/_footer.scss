@@ -1,0 +1,55 @@
+footer.sh-footer.sh-section {
+	background-color: $footer-bg;
+}
+
+.sh-footer {
+	text-align: center;
+
+	&__title {
+		@extend .t-upper;
+		font-size: px_to_rem(20px);
+		margin-bottom: 1rem;
+		font-family: $title-font;
+		font-weight: 400;
+	}
+
+	&__social {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 15px;
+
+		&-item {
+
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+	&-link {
+		@include square(45px);
+		justify-content: center;
+		align-items: center;
+		background-color: $grey-text;
+		font-size: 1.4rem;
+		color: $white;
+		transition: all .3s ease;
+
+		&:hover {
+			background-color: $cyan-light;
+			color: $black;
+			transform: translateY(-5px);
+		}
+	}
+	}
+}
+
+.copyright {
+	text-transform: capitalize;
+	color: $grey-text;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: $white;
+}

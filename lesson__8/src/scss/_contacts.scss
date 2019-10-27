@@ -1,0 +1,102 @@
+.sh-contacts {
+	position: relative;
+	@include layout {
+		background-image: url("../img/bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 100%;
+		opacity: .2;
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 4;
+		display: flex;
+		justify-content: space-between;
+
+		& > * {
+			background-color: rgba($black, .7);
+		}
+	}
+
+	&__form {
+		display: flex;
+		padding: 40px 30px;
+		flex-direction: column;
+		width: 100%;
+		max-width: 55%;
+	}
+
+	&__field {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid rgba($white, .6);
+		padding: 10px 2px;
+		margin-bottom: 15px;
+		color: $white;
+		font-size: 18px;
+
+		&:nth-last-child(2) {
+			margin-bottom: 40px;
+			resize: none;
+		}
+
+	}
+
+	&__submit {
+		width: 100%;
+		max-width: 240px;
+		padding: 15px 40px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		background-color: $cyan-light;
+		color: $black;
+		font-family: $title-font;
+		font-size: px_to_rem(18px);
+		border: none;
+		border-radius: 1px;
+		font-weight: 700;
+	}
+
+	&__address {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+
+		&-item {
+			display: flex;
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__map {
+		&-img {
+			width: 100%;
+		}
+		//align-self: flex-end;
+	}
+}
+
+::placeholder {
+	text-transform: capitalize;
+}
+
+[rows="3"] {
+	font-family: $title-font;
+}
+
+.t-caps {
+	text-transform: capitalize;
+	margin-right: 10px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: currentColor;
+}

@@ -1,7 +1,6 @@
 .sh-services {
 	color: $white;
 
-
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -22,11 +21,10 @@
 		}
 	}
 
-	&__link {
+	&__info {
 		@include padding-hack(380px);
-
 		@include layout {
-			background-color: rgba(0, 0, 0, .7);
+			background-color: rgba($black, .7);
 			z-index: 1;
 		}
 	}
@@ -38,7 +36,6 @@
 	&__caption {
 		position: absolute;
 		bottom: 0;
-		left: 0;
 		z-index: 2;
 		padding: 0 65px 50px;
 	}
@@ -48,14 +45,26 @@
 	}
 }
 
-.white {
-	font-family: $subtitle-font;
-	color: $white;
-	font-size: px_to_rem(18px);
-	margin-bottom: 15px;
-	text-transform: uppercase;
-}
+.info-block {
 
-.sh-section__know-more:hover {
-	transform: translateX(20px);
+	&__active {
+		opacity: 0;
+		color: $text-dark;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $cyan-light;
+		padding: 65px;
+		z-index: 3;
+		transition: all .3s ease;
+	}
+
+	&:hover {
+		.info-block__active {
+			opacity: 1;
+		}
+	}
+
 }
