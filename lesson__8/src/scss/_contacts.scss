@@ -70,6 +70,13 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+
+			a:link,
+			a:visited,
+			a:hover,
+			a:active {
+				color: currentColor;
+			}
 		}
 	}
 
@@ -94,9 +101,3 @@
 	margin-right: 10px;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-    color: currentColor;
-}

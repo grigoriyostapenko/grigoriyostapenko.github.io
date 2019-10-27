@@ -126,6 +126,19 @@ a:active {
     text-transform: uppercase;
 }
 
+.t-caps {
+    text-transform: capitalize;
+}
+
+ .f-normal {
+    font-style: normal;
+ }
+
+ .hidden {
+    position: absolute;
+    opacity: 0;
+ }
+
 .sh-rating {
     color: $yellow;
     display: inline-flex;
@@ -180,8 +193,8 @@ a:active {
 
     &__controls {
         display: inline-flex;
-        width: 130px;
         justify-content: space-between;
+        width: 130px;
     }
 
     &__controls-link {
@@ -192,12 +205,10 @@ a:active {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all .3s ease;
 
         &:hover {
-        	background-color: $cyan-light;
+            background-color: $cyan-light;
         }
     }
 
 }
-
