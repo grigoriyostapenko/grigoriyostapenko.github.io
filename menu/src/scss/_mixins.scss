@@ -1,0 +1,19 @@
+@mixin button ($color) {
+		&__link {
+		padding: 15px;
+		font-size: 20px;
+		background-color: $color;
+		border-radius: 5px;
+		color: white;
+		text-decoration: none;
+
+		&:hover, &:active, &:visited {
+			color: white;
+		}
+	}
+}
+
+@mixin square ($size) {
+	width: $size;
+	height: $size;
+}

@@ -1,0 +1,326 @@
+.first-block {
+	padding: 70px 60px;
+	background: url("../img/bg1.jpg") no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	&__title {
+		font-size: 64px;
+		width: 100%;
+		max-width: 520px;
+		text-align: right;
+		margin-bottom: 40px;
+	}
+
+	&__info {
+		font-size: 30px;
+		font-family: $old;
+		width: 100%;
+		max-width: 405px;
+		text-align: right;
+		margin-bottom: 35px;
+	}
+
+	@include button ($y-read-more);
+}
+
+.header {
+	font-size: 15px;
+	color: $header-text;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px 15px;
+	text-transform: uppercase;
+}
+
+.fa-utensils {
+	font-size: 35px;
+}
+
+.fa-bars {
+	font-size: 22px; 
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.main-block {
+	display: flex;
+	justify-content: center;
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-basis: 40%;
+		background: url("../img/bg2.jpg") no-repeat;
+		background-size: cover;
+		padding: 450px 50px 80px 50px;
+		height: 800px;
+
+		&-title {
+			font-size: 44px;
+			width: 100%;
+			max-width: 200px;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+
+		&-subtitle {
+			font-size: 30px;
+			font-family: $old;
+			font-weight: 100;
+			margin-bottom: 40px;
+		}
+
+		@include button ($brown-read-more);
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 60%;
+
+		&-top {
+			padding: 50px 40px;
+			background: url("../img/bg3.jpg") no-repeat;
+			background-size: cover;
+			height: 400px;
+
+			&-title {
+				font-size: 44px;
+				margin-bottom: 15px;
+			}
+
+			&-subtitle {
+				font-size: 30px;
+				font-family: $old;
+				margin-bottom: 40px;
+
+				.lol {
+					display: block;
+					max-width: 115px;
+					line-height: 2;
+					margin-bottom: 10px;
+				}
+			}
+
+			@include button ($blue-read-more);
+		}
+
+		&-bottom {
+			display: flex;
+			justify-content: center;
+			height: 400px;
+			
+			&-left {
+				padding: 70px 30px 90px 30px;
+				display: flex;
+				flex-basis: 50%;
+				flex-direction: column;
+				align-items: center;
+				background-color: $recipe;
+
+				&-subtitle {
+					font-family: $old;
+					font-size: 30px;
+					margin-bottom: 45px;
+					text-align: center;
+				}
+
+				&-form {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					&-text {
+						border: 0;
+						border-radius: 5px;
+						text-align: center;
+						color: $ing;
+						padding: 10px 35px;
+						font-size: 14px;
+						margin-bottom: 20px;
+					}
+
+					&-checkbox {
+						display: none;
+						z-index: -3;
+					}
+
+					.checked {
+						background-color: white;
+						@include square (18px);
+						font-size: 10px;
+						z-index: 1;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-right: 5px;
+					}
+
+					&-checkbox:checked + .checked {
+						background-color: $search;
+					}
+				}
+			}
+
+			&-right {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background: url("../img/bg4.jpg") no-repeat;
+				background-size: cover;
+				padding: 75px 25px;
+
+				&-title {
+					font-size: 24px;
+					text-align: center;
+					margin-bottom: 25px;
+				}
+
+				.arrow {
+					font-size: 35px;
+					background-color: $cursor;
+					@include square (50px);
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					transition: all .3s ease;
+
+					&:hover {
+						@include square (70px);
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.aside-block {
+	display: flex;
+	justify-content: center;
+
+
+	&-jamie {
+		padding: 80px 50px;
+		display: flex;
+		flex-direction: column;
+		flex-basis: 69.5%;
+		align-items: flex-start;
+		color: $jm-text;
+		background: url("../img/bg5.jpg") no-repeat;
+		background-size: contain;
+		background-position-x: right;
+		background-color: $jamie;
+		height: 430px;
+
+		&-title {
+			font-size: 44px;
+			margin-bottom: 40px;
+		}
+
+		&-subtitle {
+			font-family: $old;
+			font-size: 36px;
+			margin-bottom: 40px;
+			width: 100%;
+			max-width: 300px;
+		}
+
+		
+		@include button ($cursor);
+		
+
+
+		
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 30.5%;
+
+		.twitter {
+			height: 215px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: $tw-block;
+			font-size: 36px;
+
+
+			.fa-twitter {
+				font-size: 36px;
+				margin-bottom: 25px;
+			}
+
+		}
+
+		@include button ($follow);
+
+		&__link {
+			font-size: 16px;
+			padding: 15px 45px;
+
+		}
+
+		.facebook {
+			height: 215px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: $fb;
+			font-size: 36px;
+
+
+			.fa-facebook-f {
+				font-size: 36px;
+				margin-bottom: 25px;
+				transition: all .3s ease;
+
+				&:hover {
+					transform: translateY(-10px);
+				}
+			}
+
+		}
+		
+		@include button ($like);
+
+		&__link {
+			font-size: 16px;
+			padding: 15px 50px;
+		}
+	}
+
+}
+
+[for="1"] {
+	font-size: 14px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-block__right-bottom-left-form-submit {
+	background-color: none;
+	border: 0;
+	background-color: $search;
+	border-radius: 5px;
+	padding: 10px 40px;
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+}
