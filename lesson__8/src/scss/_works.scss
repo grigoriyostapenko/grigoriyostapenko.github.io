@@ -6,6 +6,11 @@
 		justify-content: space-between;
 		margin: 0 -15px;
 		height: 745px;
+		justify-content: center;
+
+		@include lg-screen {
+			justify-content: space-between;
+		}
 	}
 
 	&__item {
@@ -19,7 +24,11 @@
 		@include padding-hack(360px) {
 			width: 100%;
 			overflow: hidden;
+			border: 5px solid white;
 
+			@include lg-screen {
+				border: 0;
+			}
 			&:before {
 				content: "";
 				position: absolute;
@@ -34,13 +43,13 @@
 		&:hover {
 			.sh-works__img {
 				transform: scale(1.1);
-            }
-				&:before {
-					width: 100%;
-					transition: all .6s cubic-bezier(.21,.33,.88,.45);
-				}
+			}
+			&:before {
+				width: 100%;
+				transition: all .6s cubic-bezier(.21,.33,.88,.45);
 			}
 		}
+	}
 
 	&__img {
 		transition: all .3s ease;

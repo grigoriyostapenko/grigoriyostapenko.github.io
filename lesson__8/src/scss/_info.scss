@@ -4,12 +4,20 @@
         position: relative;
     }
 
+    .img-wrapper > img {
+        object-fit: contain;
+    }
+
+
     .mate-wrapper {
         position: relative;
-        transform: translateY(-47%);
-        top: 50%;
         display: flex;
         flex-direction: column;
+
+        @include lg-screen {
+            transform: translateY(-47%);
+            top: 50%;
+        }
     }
 
     .sh-team__mate {
@@ -38,10 +46,21 @@
 
     .sh-carousel__controls {
         align-self: flex-end;
+        display: none;
+        @include lg-screen {
+            display: flex;
+        }
     }
 }
 
 .partners {
-	display: flex;
-	justify-content: center;
+    text-align: center;
+
+    &-img {
+        width: 100%;
+    }
+}
+
+.hidden {
+    display: none;
 }

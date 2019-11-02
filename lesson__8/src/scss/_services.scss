@@ -11,21 +11,58 @@
 
 	&__item {
 		height: fit-content;
+		@include lg-screen-max {
+
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    order: $i;
+                }
+            }
+
+            &:nth-child(3) {
+                order: 4;
+            }
+
+            &:nth-child(4) {
+                order: 3;
+            }
+
+            &:nth-child(5) {
+                order: 6;
+            }
+
+            &:nth-child(6) {
+                order: 5;
+            }
+        }
 
 		&.wide {
-			flex-basis: 63%;
+			flex-basis: 100%;
+
+			@include lg-screen {
+				flex-basis: 63%;
+			}
 		}
 
 		&.thin {
-			flex-basis: 35.2%;
+			flex-basis: 100%;
+
+			@include lg-screen {
+				flex-basis: 63%;
+			}
 		}
 	}
 
 	&__info {
-		@include padding-hack(380px);
+		@include padding-hack(280px);
+		border: 5px solid transparent;
 		@include layout {
 			background-color: rgba($black, .7);
 			z-index: 1;
+		}
+
+		@include lg-screen {
+			@include padding-hack(380px);
 		}
 	}
 
@@ -37,7 +74,11 @@
 		position: absolute;
 		bottom: 0;
 		z-index: 2;
-		padding: 0 65px 50px;
+		padding: 0 15px 50px;
+
+		@include lg-screen {
+			padding: 0 65px 50px;
+		}
 	}
 
 	.sh-section__text {
@@ -59,6 +100,10 @@
 		padding: 65px;
 		z-index: 3;
 		transition: all .3s ease;
+
+		@include lg-screen {
+			padding: 65px;
+		}
 	}
 
 	&:hover {

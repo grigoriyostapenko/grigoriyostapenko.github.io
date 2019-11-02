@@ -38,13 +38,17 @@ body {
     color: $text-dark;
     font-size: px_to_em(20px);
 
-    @media all and (min-width: 1200px) {
+    @include sm-screen {
         font-size: px_to_em(45px);
     }
 }
 
 .sh-section {
-    padding: px_to_em(100px) 0;
+    padding: px_to_em(50px) 0;
+
+    @include md-screen {
+        padding: px-to-em(100px);
+    }
 
     &:nth-child(odd) {
         background-color: $light-grey-bg;
@@ -57,10 +61,14 @@ body {
     &__title {
         font-family: $title-font;
         font-weight: 700;
-        font-size: px_to_em(38px);
+        font-size: px_to_em(20px);
         text-align: center;
         text-transform: uppercase;
         color: $black;
+
+        @include md-screen {
+            font-size: px_to_em(38px);
+        }
     }
 
     &__subtitle {
@@ -68,7 +76,11 @@ body {
         font-size: px_to_em(18px);
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: px_to_em(100px);
+        margin-bottom: px_to_em(50px);
+
+        @include md-screen {
+            margin-bottom: px_to_em(100px);
+        }
     }
 
     &__text-title {
@@ -77,6 +89,12 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 15px;
+        text-align: center;
+        max-width: 100%;
+
+        @include md-screen {
+            text-align: left;
+        }
     }
 
     &__text-subtitle {
@@ -86,12 +104,22 @@ body {
 
     &__text {
         line-height: 1.8;
+        text-align: center;
+
+        @include xs-screen {
+            font-size: px-to-em(10px);
+        }
+
+        @include md-screen {
+            text-align: left;
+        }
     }
 
     &__know-more {
         text-transform: uppercase;
         color: $white;
         font-size: 16px;
+        display: inline-flex;
 
         .fas {
             margin-left: 5px;
@@ -130,14 +158,14 @@ a:active {
     text-transform: capitalize;
 }
 
- .f-normal {
+.f-normal {
     font-style: normal;
- }
+}
 
- .hidden {
+.hidden {
     position: absolute;
     opacity: 0;
- }
+}
 
 .sh-rating {
     color: $yellow;
@@ -152,6 +180,12 @@ a:active {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 30px;
+
+        @include md-screen {
+            margin-bottom: 0;
+        }
+
     }
 
     &__img {

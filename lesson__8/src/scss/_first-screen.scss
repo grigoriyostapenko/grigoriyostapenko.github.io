@@ -30,6 +30,13 @@ $pt: 60px;
 	min-height: 100vh;
 	padding-top: $pt;
 	background: $grey-bg url("../img/glass.png") no-repeat 78% 85%;
+    background-image: none;
+
+    @include xl-screen {
+        background-image: url("../img/glass.png");
+        background-repeat: no-repeat;
+        background-position: 78% 85%;
+    }
 
 	&__header {
 		display: flex;

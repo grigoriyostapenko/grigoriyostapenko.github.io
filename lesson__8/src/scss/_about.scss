@@ -2,8 +2,20 @@
 
 	&__carousel {
 		display: flex;
+		flex-direction: column;
+
+		@include lg-screen {
+			flex-direction: row;
+		}
 	}
 
+}
+
+.side {
+	flex-basis: 100%;
+	@include lg-screen {
+		flex-basis: 50;
+	}
 }
 
 .sh-carousel {
@@ -69,18 +81,26 @@
 	max-width: 390px;
 	margin-bottom: 30px;
 
-	@include padding-hack(485px);
+	@include padding-hack(330px);
+
+	@include lg-screen {
+		@include padding-hack(485px);
+	}
 
 	&::before {
 		content: "";
 		width: 100%;
-		width: 470px;
-		height: 410px;
+		max-width: 470px;
+		height: 330px;
 		position: absolute;
 		background-color: $grey-bg;
 		z-index: 0;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
+		@include md-screen {
+			height: 485px;
+		}
 	}
 }

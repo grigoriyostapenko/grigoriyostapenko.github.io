@@ -10,3 +10,24 @@
 @import "info";
 @import "contacts";
 @import "footer";
+
+html {
+    @include media-hidden;
+}
+
+.sh-first-screen,
+.sh-about,
+.sh-works,
+.sh-services,
+.sh-team,
+.sh-testimonials,
+.sh-partners,
+// .sh-contacts,
+.sh-footer,
+ .partners {
+    display: none;
+}
+
+.sh-testimonials {
+	// display: block;
+}
