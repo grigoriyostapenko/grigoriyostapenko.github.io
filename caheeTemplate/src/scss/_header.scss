@@ -21,11 +21,24 @@
 		&-link {
 			text-transform: uppercase;
 			transition: all .3s ease;
-			border-top: 3px solid transparent;
+			position: relative;
 			
-			&:hover {
-				border-top: 3px solid $button-hover;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			display: block;
+			border-bottom: 2px solid $button-hover;
+			transition: width .3s ease;
+			width: 0;
+		}
+
+		&:hover {
+
+			&::after {
+				width: 100%;
 			}
+		}
 		}
 	}
 

@@ -15,7 +15,7 @@ body {
 	font-weight: bold;
 }
 
-.container {
+.container, .wrapper {
 	@include container (0);
 }
 
@@ -23,3 +23,26 @@ ul {
 	list-style: none;
 }
 
+ul {
+	li {
+		a {
+			display: flex;
+		}
+	}
+}
+
+a:link,     /* unvisited link */
+a:visited,  /* visited link */
+a:hover,  /* mouse over link */
+a:active {
+	text-decoration: none;
+}
+/* selected link */
+
+.hidden {
+	display: none;
+}
+
+.t-upper {
+	text-transform: capitalize;
+}

@@ -1,0 +1,28 @@
+.cahee-about {
+	padding: 65px 0;
+	background-color: $about-bg;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $white;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 90px;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+	}
+
+	&__info {
+		font-size: px_to_rem(17px);
+		font-weight: 300;
+		margin-bottom: 30px;
+
+		&::last-child {
+			margin-bottom: 0;
+		}
+	}
+}
