@@ -1,0 +1,95 @@
+.header {
+	@include container (45px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__ico {
+		width: 165px;
+	}
+
+	&__list {
+		width: 100%;
+		max-width: 767px;
+		display: flex;
+		font-size: 16px;
+
+		&-item:not(:last-child) {
+			margin-right: 40px;
+		}
+
+		&-link {
+			text-transform: uppercase;
+			transition: all .3s ease;
+			border-top: 3px solid transparent;
+			
+			&:hover {
+				border-top: 3px solid $button-hover;
+			}
+		}
+	}
+
+	&__wrapper {
+		height: calc(100vh - 160px);
+		background: url("../img/bg-header.jpg") right 0 no-repeat;
+		background-size: contain;
+		background-color: $bg-header;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: left;
+		@include container (0);
+
+		&-title {
+			text-transform: capitalize;
+			font-weight: black;
+			font-size: 60px;
+			margin-bottom: 30px;
+		}
+
+		&-text {
+			font-size: 17px;
+			font-weight: 300;
+			width: 100%;
+			max-width: 365px;
+			margin-bottom: 30px;
+		}
+
+		&-button {
+			height: 55px;
+			max-width: 200px;
+			border: 2px solid currentColor;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-transform: uppercase;
+			transition: all .3s ease;
+
+			&:hover {
+				background-color: $button-hover;
+				color: white;
+				border: 2px solid $button-hover;
+				box-shadow: 0 3 8px 0 black;
+				border-radius: 2px;
+
+			}
+		}
+
+	}
+
+}
+
+
+a:link,
+a:visited,
+a:active {
+	color: $header-text;
+	text-decoration: none;
+}
+
+[class="fas fa-mouse"] {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	font-size: 36px;
+}

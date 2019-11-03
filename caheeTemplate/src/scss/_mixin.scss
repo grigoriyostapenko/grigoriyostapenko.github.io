@@ -1,0 +1,6 @@
+@mixin container ($pad) {
+	width: 100%;
+	max-width: 1200px;
+	padding: $pad 15px;
+	margin: 0 auto;
+}
