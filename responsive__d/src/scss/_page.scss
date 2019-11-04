@@ -1,0 +1,208 @@
+.header {
+
+	background: url("../img/bg-title.jpg") no-repeat;
+	
+	.area {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+		background-size: cover;
+	}
+
+	.block {
+		display: block;
+	}
+
+	&__img {
+		margin-bottom: 30px;
+
+		@include lg-screen {
+			margin-bottom: 90px;
+		}
+	}
+
+	&__title {
+		font-size: 54px;
+		text-transform: capitalize;
+		text-align: center;
+		margin-bottom: 50px;
+		font-weight: 700;
+
+		@include xs-screen {
+			font-size: 10vw;
+		}
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 580px;
+		text-align: center;
+		font-size: px_to_rem(15px);
+		font-weight: light;
+	}
+
+	&__scroll {
+		position: absolute;
+		bottom: 10px;
+		text-align: center;
+		display: none;
+
+		@include md-screen {
+			display: inline-block;
+		}
+	}
+}
+
+
+
+.services {
+	background: url("../img/services.jpg") no-repeat;
+	background-size: cover;
+}
+
+.pushares {
+
+	.section__desc {
+		padding-bottom: 20px;
+
+		@include md-screen {
+			padding-bottom: 60px;
+		}
+	}
+
+
+	&__img {
+		margin-bottom: 40px;
+
+		@include xs-screen {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-size: 20px;
+		text-transform: uppercase;
+
+		@include xs-screen {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__desc {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include xs-screen {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.works {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+
+		&-item {
+			position: relative;
+		}
+		
+		&-caption {
+			text-transform: uppercase;
+			color: white;
+			position: absolute;
+			left: 20px;
+			bottom: 20px;
+			font-size: px_to_rem(10px);
+
+			@include md-screen {
+				font-size: px_to_rem(25px);
+			}
+		}
+	}
+
+	&__img {
+		margin-right: 3px;
+		margin-bottom: 3px;
+		width: 99%;
+
+		&:last-child {
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+
+		transition: all .3s ease;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+
+	a:link,     /* unvisited link */
+	a:visited,  /* visited link */
+	a:hover,  /* mouse over link */
+	a:active {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.contacts {
+
+	&__desc {
+		margin-bottom: 45px;
+	}
+
+	&__button {
+		display: inline-block;
+		padding: 10px 30px;
+		background-color: $brown-text;
+		text-transform: uppercase;
+		color: white;
+		text-decoration: none;
+		transition: all .3s ease;
+
+		@include md-screen {
+			padding: 20px 140px;
+		}
+
+
+		&:hover {
+			background-color: rgba($brown-text, .8);
+		}
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 65px;
+	color: $brown-text;
+
+	&__img {
+		width: 40px;
+		margin-right: 70px;
+		filter: invert(100%);
+	}
+
+	&__span {
+		font-size: px_to_rem(14px);
+	}
+}

@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	font-size: $base-size;
+	color: $white;
+	font-family: $font;
+}
+
+.area {
+	width: 100%;
+	max-width: 900px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+ul {list-style: none;
+	li {
+		a {
+			display: flex;
+		}
+	}
+}
+
+.section {
+
+	.area {
+		padding: 20px 15px;
+
+		@include md-screen {
+			padding: 145px 15px;
+		}
+	}
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&:nth-child(odd) {
+		--color: #{$brown-text};
+		color: var(--color);
+	}
+
+	&:nth-child(even) {
+		--color: #{$white};
+		color: var(--color);
+	}
+
+	&__title {
+		text-transform: capitalize;
+		font-weight: bold;
+		font-size: 34px;
+	}
+	&__desc {
+		font-size: $base-size;
+		font-weight: 300;
+		width: 100%;
+
+		text-align: center;
+		padding: 30px 20px 30px 20px;
+		border-left: 3px solid var(--color);
+		border-bottom: 3px solid var(--color);
+		border-right: 3px solid var(--color);
+		position: relative;
+
+		@include md-screen {
+			padding: 70px 180px 30px 180px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			border-top: 3px solid var(--color);
+			width: 25%;
+			left: 0;
+			top: 0;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			border-top: 3px solid var(--color);
+			width: 25%;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&__title {
+		position: relative;
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 20px;
+	}
+
+}
+
+a:link,     /* unvisited link */
+a:visited,  /* visited link */
+a:hover,  /* mouse over link */
+a:active {
+	text-decoration: none;
+}
+/* selected link */
+
+.t-upper {
+	text-transform: capitalize;
+}
