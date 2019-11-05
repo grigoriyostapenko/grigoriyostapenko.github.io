@@ -60,7 +60,11 @@ ul {list-style: none;
 	&__title {
 		text-transform: capitalize;
 		font-weight: bold;
-		font-size: 34px;
+		font-size: 20px;
+
+		@include sm-screen {
+			font-size: 34px;
+		}
 	}
 	&__desc {
 		font-size: $base-size;
