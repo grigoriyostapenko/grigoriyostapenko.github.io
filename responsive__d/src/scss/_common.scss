@@ -33,19 +33,20 @@ ul {list-style: none;
 }
 
 .section {
+	padding: 20px 0;
 
-	.area {
-		padding: 20px 15px;
-
-		@include md-screen {
-			padding: 145px 15px;
-		}
+	@include md-screen {
+		padding: 145px 0;
 	}
+	
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+
+
 
 	&:nth-child(odd) {
 		--color: #{$brown-text};
@@ -57,21 +58,7 @@ ul {list-style: none;
 		color: var(--color);
 	}
 
-	&__title {
-		text-transform: capitalize;
-		font-weight: bold;
-		font-size: 20px;
-
-		@include sm-screen {
-			font-size: 34px;
-		}
-	}
-	&__desc {
-		font-size: $base-size;
-		font-weight: 300;
-		width: 100%;
-
-		text-align: center;
+	.area {
 		padding: 30px 20px 30px 20px;
 		border-left: 3px solid var(--color);
 		border-bottom: 3px solid var(--color);
@@ -102,11 +89,36 @@ ul {list-style: none;
 	}
 
 	&__title {
-		position: relative;
+		text-transform: capitalize;
+		font-weight: bold;
+		font-size: 20px;
+
+		a:link,     /* unvisited link */
+		a:visited,  /* visited link */
+		a:hover,  /* mouse over link */
+		a:active {
+			color: currentColor;
+		}
+
+		@include sm-screen {
+			font-size: 34px;
+		}
+	}
+	&__desc {
+		font-size: $base-size;
+		font-weight: 300;
+		width: 100%;
+
+		text-align: center;
+
+	}
+
+	&__title {
+		position: absolute;
 		display: inline-block;
 		left: 50%;
 		transform: translateX(-50%);
-		top: 20px;
+		top: -10px;
 	}
 
 }
