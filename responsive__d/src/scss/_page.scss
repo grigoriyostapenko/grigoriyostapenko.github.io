@@ -49,6 +49,8 @@
 		bottom: 10px;
 		text-align: center;
 		display: none;
+		width: 20px;
+		color: white;
 
 		@include md-screen {
 			display: inline-block;
@@ -67,15 +69,34 @@
 
 	.section__desc {
 		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		@include md-screen {
 			padding-bottom: 60px;
+		}
+
+		&-item {
+			margin-bottom: 40px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@include xs-screen {
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 
 
 	&__img {
 		margin-bottom: 40px;
+		width: 115px;
 
 		@include xs-screen {
 			margin-bottom: 1vh;
@@ -85,29 +106,13 @@
 	}
 
 	&__title {
-		margin-bottom: 40px;
+		margin-bottom: 10px;
 		font-size: 20px;
 		text-transform: uppercase;
-
-		@include xs-screen {
-			margin-bottom: 10px;
-		}
 	}
 
 	&__desc {
-		margin-bottom: 40px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-
-		@include xs-screen {
-			margin-bottom: 10px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
+		line-height: 1.3;
 	}
 }
 
@@ -115,20 +120,21 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+
 	padding: 0;
+	
 	@include md-screen {
 		padding: 0;
 	}
 
 	&__list {
 		display: flex;
-		justify-content: center;
 
 		&-item {
 			position: relative;
-
-			margin-right: 3px;
-			margin-bottom: 3px;
+				margin-right: 3px;
+				margin-bottom: 3px;
 
 
 			&:last-child {
@@ -157,11 +163,11 @@
 		}
 	}
 
+
 	&__img {
 		width: 100%;
-
+		object-fit: cover;
 		transition: all .3s ease;
-
 		&:hover {
 			opacity: .8;
 		}
