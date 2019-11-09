@@ -26,6 +26,18 @@ body {
 		text-transform: capitalize;
 		margin-bottom: 30px;
 		color: $main-color;
+		position: relative;
+
+		&::before {
+            font-family: $main-font;
+            font-weight: 700;
+            font-size: 274px;
+            position: absolute;
+            opacity: .1;
+            top: 0;
+            left: 0;
+            transform: translate(-30%, -40%);
+        }
 
 	}
 
