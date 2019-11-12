@@ -165,8 +165,12 @@
 		&-link {
 			font-size: 0;
 
+			&:hover > .works__list-caption {
+				left: 30px;
+			}
+
 			.img-wrapper {
-				@include padding-hack(calc(100vw / 10));
+				@include padding-hack(calc(100vw / 9));
 				width: 100%;
 			}
 
@@ -179,6 +183,9 @@
 			left: 5px;
 			bottom: 5px;
 			font-size: px_to_rem(10px);
+			transition: all .3s ease;
+
+
 
 			@include md-screen {
 				left: 20px;
