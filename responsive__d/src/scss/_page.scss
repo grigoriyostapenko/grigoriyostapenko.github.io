@@ -18,6 +18,7 @@
 
 	&__img {
 		margin-bottom: 30px;
+		color: white;
 
 		@include lg-screen {
 			margin-bottom: 90px;
@@ -68,14 +69,12 @@
 .pushares {
 
 	.section__desc {
-		padding-bottom: 20px;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		@include md-screen {
-			padding-bottom: 60px;
-		}
+
 
 		&-item {
 			margin-bottom: 40px;
@@ -134,12 +133,24 @@
 		justify-content: center;
 		width: 100%;	
 
+		@include xs-screen {
+			flex-direction: column;
+		}
+
 		.small {
 			width: 30%;
+
+			@include xs-screen {
+				width: 100%;
+			}
 		}
 
 		.large {
 			width: 40%; 
+
+			@include xs-screen {
+				width: 100%;
+			}
 		}
 
 		&-img {
@@ -151,19 +162,16 @@
 			display: inline-block;
 			position: relative;
 			width: 100%;
+		}
+
+		&-link {
+			font-size: 0;			
 			transition: all .3s ease;
 			border: 1px solid $white;
-
-
-
 
 			&:hover {
 				opacity: .8;
 			}
-		}
-
-		&-link {
-			font-size: 0;
 
 			&:hover > .works__list-caption {
 				left: 30px;
@@ -182,15 +190,15 @@
 			position: absolute;
 			left: 5px;
 			bottom: 5px;
-			font-size: px_to_rem(10px);
+			font-size: px_to_rem(25px);
 			transition: all .3s ease;
-
+			text-align: center;
 
 
 			@include md-screen {
 				left: 20px;
 				bottom: 20px;
-				font-size: px_to_rem(25px);
+
 			}
 		}
 	}
@@ -242,7 +250,7 @@
 	&__img {
 		width: 40px;
 		margin-right: 20px;
-		filter: invert(100%);
+		color: black;
 	}
 
 	&__span {
