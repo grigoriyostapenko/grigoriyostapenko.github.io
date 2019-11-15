@@ -1,8 +1,15 @@
 .cahee-gallery {
 	background: $gallery-bg;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding: 100px 0;
+	color: $main-color;
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
 
 	.title {
 		margin-bottom: 30px;
@@ -21,8 +28,30 @@
 
 	&__list {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		width: 100%;
 		flex-wrap: wrap;
+
+
+	}
+
+	&__link {
+		font-size: 0; 	
+	}
+
+	&__img {
+		width: 100%; 
+	}
+
+	.large {
+		width: 65%;
+	}
+
+	.small {
+		width: 30%;
+	}
+
+	.ihtfl {
+		width: 47.5%;
 	}
 }

@@ -1,0 +1,65 @@
+.cahee-subscribe {
+	height: 500px;
+	background: url("../img/bg-sub.jpg") no-repeat;
+	background-size: 40%;
+	background-position: right center;
+	display: flex;
+	align-items: center;
+
+	.sub {
+		&__form {
+			margin-bottom: 30px;
+		}
+
+		&__formtitle {
+			font-size: 40px;
+			text-transform: capitalize;
+			color: $black;
+		}
+
+		&__info {
+			font-size: px_to_rem(17px);
+			line-height: 1.5;
+			color: $black;
+			width: 100%;
+			max-width: 565px;
+			font-weight: 300;
+			margin-bottom: 30px;
+		}
+
+		&__text {
+			height: 50px;
+			width: 100%;
+			max-width: 570px;
+			background-color: transparent;
+			border: none;
+			border: 1px solid $black;
+			padding-left: 15px;
+			margin-right: 30px;
+
+			&::placeholder {
+				color: $placeholder;
+				font-size: px_to_rem(17px);
+			} 
+		}
+
+		&__button {
+			width: 100%;
+			max-width: 170px;
+			background-color: $olive;
+			color: $white;
+			font-size: px_to_rem(20px);
+			border: none;
+			height: 50px;
+			text-transform: uppercase;
+			transition: all .3s ease;
+
+			&:hover {
+				color: $olive;
+				background-color: $white;
+				border: 1px solid $olive;
+			}
+		}
+	}
+}
+
