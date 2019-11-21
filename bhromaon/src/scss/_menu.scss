@@ -1,0 +1,89 @@
+.bh-menu {
+	display: flex;
+	height: 80px;
+	background-color: $blue;
+
+	&__block {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-size: 24px;
+		font-family: $main-font;
+		font-weight: bold;
+	}
+
+	&__list {
+		display: inline-flex;
+		width: 100%;
+		max-width: 520px;
+		justify-content: space-between;
+		height: 100%;
+
+
+		&-item {
+			height: 100%;
+			padding: 0 10px;
+			transition: all .3s ease;
+			&:hover {
+				background-color: darken($blue, 5%);
+			}	
+
+		
+
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&-link {
+			text-transform: uppercase;
+			font-size: 14px;
+			font-family: $secondary-font;
+
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				left: 0;
+				bottom: 0;
+				border-bottom: 2px solid $white;
+				transition: all .3s ease;
+				width: 0;
+			}			
+
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+
+		a:link {color:#fff}      /* unvisited link */
+		a:visited {color:#fff}  /* visited link */
+		a:hover {color:#FFF}  /* mouse over link */
+		a:active {color:#fff}  /* selected link */
+	}
+
+
+
+	&__item {
+		height: 100%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		font-family: $secondary-font;
+
+		&:hover {
+			background-color: darken($blue, 10%);
+		}
+	}
+}
