@@ -16,6 +16,11 @@
 		font-size: 24px;
 		font-family: $main-font;
 		font-weight: bold;
+
+		a:link {color:$white}      /* unvisited link */
+a:visited {color:$white}  /* visited link */
+a:hover {color:$white}  /* mouse over link */
+a:active {color:$white}  /* selected link */
 	}
 
 	&__list {
@@ -32,9 +37,8 @@
 			transition: all .3s ease;
 			&:hover {
 				background-color: darken($blue, 5%);
-			}	
+			}
 
-		
 
 			display: inline-flex;
 			align-items: center;
@@ -57,7 +61,7 @@
 				border-bottom: 2px solid $white;
 				transition: all .3s ease;
 				width: 0;
-			}			
+			}
 
 			&:hover {
 				&::after {
