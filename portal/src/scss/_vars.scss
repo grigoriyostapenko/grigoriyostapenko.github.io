@@ -1,0 +1,22 @@
+//colors
+
+$grey: #eceef4;
+$top-nav-bg: $grey;
+$grey-border: #dee0e6;
+$fb-color: #2b75b2;
+$google-color: #dd4070;
+$insta-color: #26658e;
+$twitter-color: #1faae2;
+$black: black;
+$white: white;
+$light-blue: #82bbd6;
+$middle-grey: #808080;
+
+$social-map: (
+'fa-facebook-square': $fb-color,
+'fa-twitter': $twitter-color,
+'fa-instagram': $insta-color,
+'fa-google-plus-g': $google-color
+	);
+
+$link-hover: rgba($black, .3);

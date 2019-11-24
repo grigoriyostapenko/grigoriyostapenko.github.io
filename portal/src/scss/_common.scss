@@ -1,0 +1,14 @@
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+
+a:link,     /* unvisited link */
+a:visited,  /* visited link */
+a:hover,  /* mouse over link */
+a:active {
+text-decoration: none;
+}
+/* selected link */
