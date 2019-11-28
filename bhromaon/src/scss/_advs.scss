@@ -1,0 +1,33 @@
+.bh-advs {
+	background-color: $bg-color-second-section;
+	padding: 50px 0;
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__fig {
+		display: flex;
+		flex-direction: column;
+
+		& > img {
+			height: 60px;
+			margin-bottom: 20px;
+		}
+	}
+
+
+	&__figc {
+		width: 100%;
+		font-family: $secondary-font;
+		font-size: 36px;
+		text-transform: capitalize;
+	}
+
+	&__wawe {
+		align-self: flex-start;
+		width: 20%;
+	}
+}

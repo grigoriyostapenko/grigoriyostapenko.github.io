@@ -1,0 +1,65 @@
+.bh-spain {
+	background: url("../img/bg-spain1.jpg") no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+	height: 100vh;
+
+	&__block {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+		height: 100%;
+	}
+
+	&__info {
+		width: 50%;
+		background-color: rgba($grey-but-more-grey, .9);
+		padding: 50px 30px;
+
+		&-subt {
+			display: block;
+			text-transform: capitalize;
+			font-size: 20px;
+			font-family: $main-font;
+			font-weight: 300;
+			margin-bottom: 30px;
+		}	
+
+		&-title {
+			display: block;
+			text-transform: uppercase;
+			font-size: 22px;
+			font-family: $main-font;
+			margin-bottom: 30px;			
+		}
+
+		&-article {
+			font-size: 16px;
+			width: 100%;
+			font-family: $main-font;
+			font-weight: 300;
+			margin-bottom: 45px;
+			line-height: 1.7;
+		}
+
+		.gradient-btn {
+			&::after {
+				content: "book now";
+			}
+		}
+	}
+}
+
+.bh-spain-second {
+	background: url("../img/bg-spain2.jpg") no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+	height: 100vh;
+
+	&__block {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		height: 100%;
+	}
+}
