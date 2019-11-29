@@ -6,17 +6,36 @@
 
 	&__block {
 		display: flex;
-		align-items: flex-end;
-		justify-content: flex-start;
+		justify-content: center;
+		align-items: center;
 		height: 100%;
+
+		@include lg-screen {
+			align-items: flex-end;
+			justify-content: flex-start;
+		}
 	}
 
 	&__info {
-		width: 50%;
+		width: 80%;
 		background-color: rgba($grey-but-more-grey, .9);
 		padding: 50px 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include lg-screen {
+			display: block;
+			width: 50%;
+		}
 
 		&-subt {
+			a:link,     /* unvisited link */
+			a:visited,  /* visited link */
+			a:hover,  /* mouse over link */
+			a:active {
+				color: $white;
+			}
 			display: block;
 			text-transform: capitalize;
 			font-size: 20px;
@@ -30,7 +49,11 @@
 			text-transform: uppercase;
 			font-size: 22px;
 			font-family: $main-font;
-			margin-bottom: 30px;			
+			margin-bottom: 10px;
+
+			@include lg-screen {
+				margin-bottom: 30px;
+			}		
 		}
 
 		&-article {
@@ -40,6 +63,10 @@
 			font-weight: 300;
 			margin-bottom: 45px;
 			line-height: 1.7;
+			text-align: center;
+			@include lg-screen {
+				text-align: left;
+			}
 		}
 
 		.gradient-btn {
@@ -58,8 +85,13 @@
 
 	&__block {
 		display: flex;
-		align-items: flex-end;
-		justify-content: flex-end;
+		justify-content: center;
+		align-items: center;
 		height: 100%;
+
+		@include lg-screen {
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
 	}
 }

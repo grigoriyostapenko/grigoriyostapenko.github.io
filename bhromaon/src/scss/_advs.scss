@@ -6,6 +6,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: 70%; 
+		margin: 0 auto;
+
+		@include lg-screen {
+			width: 100%;
+			margin: 0;
+		}
 	}
 
 	&__fig {
@@ -22,8 +29,18 @@
 	&__figc {
 		width: 100%;
 		font-family: $secondary-font;
-		font-size: 36px;
+		font-size: 15px;
 		text-transform: capitalize;
+		a:link,     /* unvisited link */
+		a:visited,  /* visited link */
+		a:hover,  /* mouse over link */
+		a:active {
+			color: $white;
+		}
+
+		@include lg-screen {
+			font-size: 36px;
+		}
 	}
 
 	&__wawe {

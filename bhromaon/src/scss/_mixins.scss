@@ -58,7 +58,7 @@ $base-size: 16px;
 }
 
 @mixin lg-screen {
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 1100px) {
         @content;
     }
 }

@@ -1,0 +1,51 @@
+.bh-footer {
+	background-color: $grey-but-more-grey;
+	padding: 50px 0 50px 0;
+
+	@include lg-screen {
+		padding: 100px 0 50px 0; 
+	}
+
+	&__title {
+		display: block;
+		text-align: center;
+		font-size: 24px;
+		margin-bottom: 15px;
+		font-family: $main-font;
+		font-weight: 700;
+		text-transform: uppercase;
+		a:link,     /* unvisited link */
+		a:visited,  /* visited link */
+		a:hover,  /* mouse over link */
+		a:active {
+			color: $white;
+		}
+	}
+
+	&__subtitle {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		margin-bottom: 30px;
+		font-family: $main-font;
+		text-transform: capitalize;
+	}
+
+	&__social {
+		display: flex;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 170px;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.fab {
+	font-size: 16px;
+	color: $white;
+	transition: all .3s ease;
+	&:hover {
+		color: $blue;
+	}
+}
