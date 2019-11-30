@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $base-size;
+	color: $text-color;
+}
+
+
+ul {
+	display: flex;
+	list-style: none;
+	li {
+		a {
+			display: flex;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+
