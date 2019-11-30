@@ -6,14 +6,47 @@
 	}
 
 	.nav-item {
+
+		.nav-link {
+			&::before {
+				$size: 15px;
+				content: none;
+				display: block;
+				position: absolute;
+				bottom: 0;
+				border: 10px solid transparent;
+				border-bottom-color: $black;
+				border-right-width: $size;
+				border-left-width: $size;
+			}
+
+			&:hover {
+				&::before {
+					content: "";
+				}
+			}
+		}
+
 		&.active {
 
 			.nav-link{
 				color: $light-blue;
 				text-transform: uppercase;
+					&::before {
+						content: "";
+						$size: 15px;
+
+						display: block;
+						position: absolute;
+						bottom: 0;
+						border: 10px solid transparent;
+						border-bottom-color: $light-blue;
+						border-right-width: $size;
+						border-left-width: $size;
+					}
+				}
 			}
 		}
-	}
 
 
 	.nav-link {
