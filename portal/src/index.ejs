@@ -1,7 +1,12 @@
+<%-partial('./view/partials/common/vars') %>
+
 <% layout('./view/layout/page') -%>
-<% block('title', 'Page title'); -%>
+<% block('title', blocks.homepagetitle); -%>
+
 
 <%-partial('./view/partials/sections/top-nav') %>
 <%-partial('./view/partials/sections/top-header') %>
 <%-partial('./view/partials/sections/main-nav') %>
 <%-partial('./view/partials/sections/banner') %>
+<%-partial('./view/partials/sections/about/about') %>
+<%-partial('./view/partials/sections/portfolio') %>

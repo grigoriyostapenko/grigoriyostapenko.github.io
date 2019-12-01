@@ -202,6 +202,7 @@
 	&__label {
 		display: none;
 		font-size: 10px;
+		transition: all .3s ease;
 	}
 
 	&__title-second {
@@ -218,11 +219,11 @@
 }
 
 
-
 .first-slide {
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
+	align-items: center;
 }
 
 .second-slide {
@@ -274,4 +275,30 @@
 		align-items: center;
 		font-size: 32px;
 	}
-}	
+}
+
+.carousel-control-prev, .carousel-control-next {
+	width: 50px;
+	height: 50%;
+	top: 25%;
+}
+
+.carousel-control-prev {
+	left: 40px;
+}
+
+.carousel-control-next {
+	right: 40px;
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: 0;
+	transform: translateY(150%);
+	& > li {
+		@include square(15px);
+		background-color: $white;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+}

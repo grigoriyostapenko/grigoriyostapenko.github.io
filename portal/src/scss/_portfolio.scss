@@ -1,0 +1,46 @@
+.portfolio {
+	padding-top: 100px;
+	&__title-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__title-img {
+		overflow: hidden;
+		border-radius: 50%;
+		margin-right: 25px;
+		flex-shrink: 0;
+	}
+	&__titles {
+		color: darken($middle-grey, 10%);
+	}
+	&__title {
+		font-size: 44px;
+		color: inherit;
+		font-weight: bold;
+	}
+	&__subtitle {
+		font-size: 17px;
+		color: inherit;
+		font-weight: 300;
+	}
+	&__item {
+		margin-bottom: 90px;
+		&:last-child,
+		&:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+	}
+	&__card {
+		@include card;
+		&-img {
+			max-height: 75px;
+		}
+		&-title {
+			margin-bottom: 10px;
+		}
+		&-texts {
+			padding: 0 0 0 20px;
+		}
+	}
+}

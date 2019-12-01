@@ -9,6 +9,7 @@
 		size: cover;
 		repeat: no-repeat;
 	}
+
 	&::before {
 		content: "";
 		display: block;
@@ -17,9 +18,11 @@
 		width: 110%;
 		position: absolute;
 		left: -1%;
-		bottom: -40%;
+		bottom: -37%;
 		transform: rotate(-8deg);
+
 	}
+
 	&__title {
 		text-transform: uppercase;
 		font-weight: bold;
@@ -27,12 +30,14 @@
 		position: relative;
 		z-index: 1;
 	}
+
 	&__subtitle {
 		font-size: 45px;
 		font-weight: 300;
 		position: absolute;
 		transform: translateY(-54%);
 		z-index: 0;
+
 		&-element {
 			font-weight: bold;
 			font-size: 8rem;
@@ -40,13 +45,16 @@
 			margin-right: 10px;
 		}
 	}
+
 	.carousel-control-next {
 		background-color: lighten($middle-grey, 10%);
 	}
+
 	.carousel-control-prev {
 		opacity: 0;
 		display: none;
 	}
+
 	.carousel-item__review {
 		position: absolute;
 		left: 0;
@@ -55,6 +63,7 @@
 		width: 100%;
 		text-align: center;
 		background-color: rgba($black, .5);
+
 		&-img {
 			border-radius: 50%;
 			border: 2px solid white;
