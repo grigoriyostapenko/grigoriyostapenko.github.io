@@ -1,0 +1,92 @@
+.th-footer {
+	padding: 100px 0;
+	background-color: $black;
+	color: $white;
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__title {
+		color: $yellow;
+		font-weight: bold;
+		font-size: 32px;
+		display: inline-block;
+		margin-bottom: 25px;
+	}
+
+	&__subtitle {
+		font-size: 20px;
+		width: 100%;
+		max-width: 760px;
+		color: rgba($white, .6);
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	.form {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 760px;
+		background-color: transparent;
+		margin-bottom: 70px;
+	}
+
+	&__text {
+		width: 80%;
+		padding: 20px;
+		background-color: $white;
+		border: none;
+		border-radius: 5px;
+
+		&::placeholder {
+			font-size: 16px;
+			color: rgba($black, .6);
+		}
+	}
+
+	&__submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: 5px;
+		background-color: $yellow;
+		color: $black;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: bold;
+		width: 17%;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 240px;
+
+		&-item {
+			@include square(35px);
+			background-color: $yellow;
+			border-radius: 5px;
+		}
+
+		&-link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+
+			& > i {
+				display: inline-block;
+				font-size: 20px;
+				color: $black;
+			}
+		}
+	}
+}

@@ -19,12 +19,35 @@
 		<label for="age">Ваш возраст:
 			<input type="number" placeholder="type your age" name="age">
 		</label>
-			<div>
-				<span class="answer">
-				</span>
-			</div>
+		<div>
+			<span class="answer">
+			</span>
+		</div>
 		<input type="submit" value="Jmi" name="submit">
 	</form>
+	<script>
+		const form = document.querySelector('.th-footer__form');
+		const logmail = document.querySelector('.th-footer__title');
+
+		function handleSubmit(event) {
+
+			event.preventDefault();
+
+			const data = {};
+			const mail = form.elements.mail;
+
+			console.log(mail);
+
+			for(let i = 0; i < form.elements.length; i++) {
+				if(form.elements[i].name === 'submit') {
+					continue;
+				}
+				data[form.elements[i].name] = form.elements[i].value;
+			}
+
+			logmail.innerText = `${data.mail}`;
+		}
+	</script>
 	<script src="js/bundle.js"></script>
 </body>
 </html>
