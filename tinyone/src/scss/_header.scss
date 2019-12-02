@@ -212,6 +212,11 @@
 	}
 }
 
+.carousel {
+		display: flex;
+		justify-content: center;
+}
+
 .carousel-inner {
 	height: calc(100vh - 200px);
 	display: flex;
@@ -278,17 +283,15 @@
 }
 
 .carousel-control-prev, .carousel-control-next {
-	width: 50px;
-	height: 50%;
-	top: 25%;
+padding: 15px;
 }
 
 .carousel-control-prev {
-	left: 40px;
+justify-content: flex-end;
 }
 
 .carousel-control-next {
-	right: 40px;
+justify-content: flex-start;
 }
 
 .carousel-indicators {

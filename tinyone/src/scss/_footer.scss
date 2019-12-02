@@ -69,6 +69,7 @@
 		justify-content: space-between;
 		width: 100%;
 		max-width: 240px;
+		margin-bottom: 100px;
 
 		&-item {
 			@include square(35px);
@@ -82,11 +83,69 @@
 			align-items: center;
 			height: 100%;
 
+			&:hover > i {
+				font-size: 20px;
+				color: lighten($black, 20%);
+			}
+
 			& > i {
 				display: inline-block;
-				font-size: 20px;
+				font-size: 18px;
 				color: $black;
+				transition: all .2s ease;
 			}
 		}
 	}
+
+	&__social {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		&-item {
+			display: inline-flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 100%;
+			max-width: 100px;
+
+			[href="#"] {
+				text-transform: capitalize;
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					left: 0;
+					bottom: 0;
+					width: 0;
+					border-bottom: 1px solid $white;
+					transition: all .2s ease;
+				}
+
+				&:hover {
+					&::after {
+						width: 100%;
+					}
+				}
+			}
+
+			& > a {
+				color: white;
+			}
+		}
+
+		&-adress {
+			margin: 0;
+			& > span {
+				display: block;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+
+}
+
+.mw-200 {
+	max-width: 200px;
 }

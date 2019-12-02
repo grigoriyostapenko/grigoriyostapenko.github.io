@@ -7,15 +7,22 @@ Array.from(words).forEach((desc) => {
 
 const form = document.querySelector('.form');
 const answer = document.querySelector('.th-footer__title');
+form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
 
 	event.preventDefault();
-
-
+	const data = {};
 	const mail = form.elements.mail;
 
-	answer.innerText = mail;
+	for(let i = 0; i < form.elements.length; i++) {
+		if(form.elements[i].name === 'submit') {
+			continue;
+		}
+		data[form.elements[i].name] = form.elements[i].value;
+	}
+
+	answer.innerText = `${data.mail}`;
 }
 
 
