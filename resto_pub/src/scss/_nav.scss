@@ -1,0 +1,62 @@
+.rs-header {
+	padding: 25px;
+
+	& > div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		font-size: 40px;
+		font-family: $logo-font;
+		color: $grey-logo;
+		position: relative;
+		text-transform: capitalize;
+
+		&::after {
+			position: absolute;
+			bottom: 0;
+			content: "..";
+			font-family: $logo-font;
+			color: $red;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 500px;
+
+		&-link {
+			font-size: px_to_em(14px);
+			color: $grey-title;
+			text-transform: capitalize;
+			position: relative;
+			&::after {
+				position: absolute;
+				content: "";
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0;
+				border-bottom: 1px solid $red;
+				transition: all .3s ease;
+			}
+
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
+			a:link,     /* unvisited link */
+			a:visited,  /* visited link */
+			a:hover,  /* mouse over link */
+			a:active {
+				color: $grey-title;
+			}
+		}
+	}
+}
