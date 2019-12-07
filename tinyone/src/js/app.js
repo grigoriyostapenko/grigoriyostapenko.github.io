@@ -1,3 +1,5 @@
+import { multiply } from './functions.js';
+
 const words = document.querySelectorAll('.th-main__list-desc');
 console.log(words);
 Array.from(words).forEach((desc) => {
@@ -22,7 +24,16 @@ function handleSubmit(event) {
 		data[form.elements[i].name] = form.elements[i].value;
 	}
 
-	answer.innerText = `${data.mail}`;
+	if(data.mail === '') {
+		answer.innerText = `Enter somewhere pls`;
+	} else {
+		if(data.mail === 'Сам вводи') {
+			answer.innerText = `Ты на кого быканул, чОрт`;
+		} else {
+			answer.innerText = `${data.mail}`;
+		}
+	}
+
 }
 
 

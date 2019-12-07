@@ -1,8 +1,14 @@
 .th-main {
-	height: 100vh;
+	height: auto;
 	background-color: $white;
 	color: $black;
 	padding: 100px 0;
+
+	& > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
 
 	&__title {
@@ -27,9 +33,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		position: relative;
-		top: 100%;
-		transform: translateY(15%);
 
 		&-item {
 			width: 100%;

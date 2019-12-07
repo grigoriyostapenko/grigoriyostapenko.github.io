@@ -17,6 +17,10 @@
 		font-size: 32px;
 		display: inline-block;
 		margin-bottom: 25px;
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
 	}
 
 	&__subtitle {
