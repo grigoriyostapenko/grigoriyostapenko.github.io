@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400i,700i&display=swap');
+@import url('https://db.onlinewebfonts.com/c/0ddd355012a1ac3b118d3a1cf6813eab?family=Aller');
+@font-face {
+	font-family: 'Carosello Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Carosello Regular'), url('../assets/fonts/Carosello-Regular.woff') format('woff');
+}
+
+$menu-font: 'Bebas Neue', cursive;
+$subt-font: 'PT Serif', serif;
+$title-font: 'Aller';
+$italic-font: 'Carosello Regular';
+
+.italic {
+	font-family: $italic-font;
+	font-size: 50px;
+	color: black;
+}
