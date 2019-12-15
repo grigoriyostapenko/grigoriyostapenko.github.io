@@ -1,0 +1,15 @@
+.f-header {
+	padding: 15px 0;
+	&__block {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__nav {
+		width: 100%;
+		max-width: 500px;
+	}
+	&__form {
+		width: 100%;
+		max-width: 250px;
+	}
+}
