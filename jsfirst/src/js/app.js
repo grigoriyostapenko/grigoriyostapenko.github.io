@@ -68,3 +68,7 @@ if (pallindromInput.value.length !== 5) {
 pallindromAnswer.innerText = isPallindrom ? 'Pallindrom' : 'Not Pallindrom';
 
 })
+
+const number = document.querySelector(".number-form");
+console.log(number);
+
