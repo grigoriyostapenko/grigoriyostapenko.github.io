@@ -1,0 +1,259 @@
+.main {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+.left-side {
+	width: 20%;
+	background-color: $grey;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 30px;
+	color: $white;
+
+	&__title {
+		font-size: 30px;
+		font-weight: 900;
+		width: 100%;
+		max-width: 190px;
+		text-align: center;
+		line-height: 1.5;
+		margin-bottom: 35px;
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		font-weight: 300;
+		width: 100%;
+		padding: 5px;
+		border: 1px solid $green;
+		text-align: center;
+		transition: all .3s ease;
+		box-shadow: none;
+		margin-bottom: 30px;
+
+		&:hover {
+			transform: translateY(-10px);
+			box-shadow: 2px 12px 5px 0px rgba($black, .4);
+			background-color: $green;
+		}
+	}
+
+	&__block {
+		width: 100%;
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&-title {
+			text-align: center;
+			display: block;
+			font-size: 19px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			position: relative;			
+
+			&::before {
+				content: "";
+				transform: translate(-50%, 10px);
+				position: absolute;
+				display: block;
+				left: 50%;
+				bottom: 0;
+				width: 140px;
+				border-bottom: 1px solid $green;
+			}
+
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+
+		&-text {
+			display: block;
+			font-size: 16px;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+	&__skills, &__hobbies {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__skills-item {
+		&:first-child {
+			text-transform: uppercase;
+		}
+		text-transform: auto;
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__hobbies-item {
+		text-transform: capitalize;
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__skills-item, &__hobbies-item {
+		display: inline-block;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			border-bottom: 1px solid $white;	
+			transition: all .3s ease;
+		}
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.right-side {
+	width: 80%;
+	height: 100%;
+	background-color: $white;
+	color: $black;
+	font-size: 16px;
+	padding: 50px 30px;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&__block {
+		width: 100%;
+		display: block;
+		margin-bottom: 60px;
+		&:last-child {
+			margin-bottom: 0;
+		}			
+
+		&-name {
+			font-weight: 900;
+			margin-bottom: 7px;
+			font-size: 16px;
+
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+
+		&-title {
+			font-size: 20px;
+			font-weight: 500;
+			display: block;
+			text-align: center;
+			position: relative;	
+			margin-bottom: 40px;		
+
+			&::before {
+				content: "";
+				transform: translate(-50%, 15px);
+				position: absolute;
+				display: block;
+				left: 50%;
+				bottom: 0;
+				width: 80%;
+				border-bottom: 3px solid $black;
+			}
+		}	
+
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 1100px;
+			margin: 0 auto;
+			&-title {
+				font-weight: 500;
+				color: $green;
+				margin-bottom: 3px;
+				display: block;
+			}
+			&-champ {
+				display: block;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+		}
+
+		&-ex {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			max-width: 1100px;
+			margin: 0 auto;
+
+			&-item {
+				transition: all .3s ease;
+				box-shadow: none;
+			}
+
+			&-item:hover {
+				transform: translateY(-10px);
+				box-shadow: 1px 6px 9px 2px rgba($black, .4);
+
+				& > .right-side__block-ex-link {
+					& > .right-side__block-ex-caption {
+							&::after {
+								width: 100%;
+							}
+
+					}
+				}
+			}
+
+			&-link {
+				font-size: 16px;
+				color: black;
+				flex-direction: column;
+				align-items: center;
+				text-transform: capitalize;
+
+				.img-wrapper {
+					@include padding-hack(210px);
+					width: 280px;
+				}
+			}
+
+			&-caption {
+				display: inline-block;
+				position: relative;
+				padding: 10px;
+				&::after {
+					content: "";
+					position: absolute;
+					left: 50%;
+					bottom: 8px;
+					width: 0;
+					transform: translateX(-50%); 
+					border-bottom: 1px solid $black;	
+					transition: all .3s ease;
+				}
+			}
+		}
+	}
+}
+

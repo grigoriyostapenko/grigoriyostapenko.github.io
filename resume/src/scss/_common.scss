@@ -1,0 +1,30 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	max-height: 100vh;
+	font-family: $main-font;
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+	li {
+		a {
+			display: flex;
+		}
+	}
+}
+
+
+a:link {text-decoration: none}      /* unvisited link */
+a:visited {text-decoration: none}  /* visited link */
+a:hover {text-decoration: none}  /* mouse over link */
+a:active {text-decoration: none}  /* selected link */
