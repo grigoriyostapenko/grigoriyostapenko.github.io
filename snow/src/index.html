@@ -3,12 +3,273 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
-	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<title>Snowboard</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/icon.ico">
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./assets/libs/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./assets/libs/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/libs/slick-theme.css"/>
+	<script src="https://kit.fontawesome.com/c55362b8b5.js" crossorigin="anonymous"></script>
+	<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header class="sn-header">
+		<div class="sn-header__menu">	
+			<div class="container">
+				<div class="sn-header__menu-left">
+					<a href="#" class="fs-0"><img src="./img/logo.png" alt="logo" class="sn-header__logo"></a>
+					<a href="#" class="sn-header__menu-links">shop</a>
+					<a href="#" class="sn-header__menu-links">team</a>
+					<a href="#" class="sn-header__menu-links">events</a>
+					<a href="#" class="sn-header__menu-links">experience</a>
+					<a href="#" class="sn-header__menu-links">company</a>
+					<a href="#" class="sn-header__menu-links">contacts</a>
+				</div>
+				<div class="sn-header__menu-right">
+					<i class="fas fa-search"></i>
+					<p class="sn-header__cart">
+						<i class="fas fa-shopping-bag"></i>
+						<span class="sn-header__cart-cost">
+							<i class="fas fa-euro-sign"></i>
+							<span class="cost">0</span>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="sn-header__banner">
+			<div class="container">
+				<div class="sn-header__block">
+					<div class="sn-header__block-title">
+						<h1 class="sn-header__title">
+							run over everything
+						</h1>
+						<a href="#snowb" class="sn-header__button">
+							see details
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="sn-boards">
+			<div class="container">
+				<h2 class="sn-boards__title" id="snowb">
+					snowboards
+				</h2>
+				<h6 class="sn-boards__subtitle">
+					Illum quia labore unde temporibus, eius quas distinctio ex voluptatibus.
+				</h6>
+				<p class="close">
+					<i class="fas fa-times"></i>
+				</p>
+				<div class="sn-boards__carousel">
+
+					<div>
+						<div class="img-wrapper">
+							<img src="./img/s1.png" alt="Snowboard">
+						</div>
+						<span class="sn-boards__desc">snowboard extreme series</span>
+					</div>
+
+					<div>
+						<div class="img-wrapper">
+							<img src="./img/s2.png" alt="Snowboard">
+						</div>
+						<span class="sn-boards__desc">design by M. rejins</span>
+					</div>
+
+					<div>
+						<div class="img-wrapper">
+							<img src="./img/s3.png" alt="Snowboard">
+						</div>
+						<span class="sn-boards__desc">snowboard urban series</span>
+					</div>
+
+					<div>
+						<div class="img-wrapper">
+							<img src="./img/s4.png" alt="Snowboard">
+						</div>
+						<span class="sn-boards__desc">your custom design</span>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="sn-test">
+			<div class="container">
+				<h2 class="sn-test__title">
+					the mountains snowboarding
+				</h2>
+				<p class="sn-test__desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aliquam dicta reprehenderit architecto sed, ut repellat possimus sint perspiciatis, ad. Amet, consequuntur. Dignissimos cumque laborum, in veniam! Assumenda quas commodi rem quo repudiandae velit, inventore consequatur pariatur natus iste optio cum. Et dicta, praesentium molestiae voluptates possimus saepe qui ducimus error voluptate illum adipisci tempore. Quisquam impedit maxime mollitia vero?
+				</p>
+				<p class="sn-test__desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eum illum, ipsa minima. Dicta at laboriosam reprehenderit deleniti tempora ex, iste autem aspernatur assumenda, voluptas quas magnam, vero, facilis deserunt molestiae officiis. Natus, sequi autem minima eos consectetur. A vero repudiandae inventore fuga molestias ut assumenda maxime at maiores dolorem!
+				</p>
+			</div>
+		</section>
+		<section class="sn-feat">
+			<div class="container">
+				<h2 class="sn-feat__title">
+					features
+				</h2>
+				<p class="sn-feat__close">
+					<i class="fas fa-times"></i>
+				</p>
+				<ul class="sn-feat__list">
+					<li class="sn-feat__item">
+						<a href="#" class="sn-feat__link">
+							<div class="img_wrapper">
+								<img src="./img/f1.jpg" alt="blog">
+							</div>
+							<h5 class="sn-feat__list-title">
+								Born Identity: Bringing Burton Hardgoods to Life
+							</h5>
+						</a>
+					</li>
+					<li class="sn-feat__item">
+						<a href="#" class="sn-feat__link">
+							<div class="img_wrapper">
+								<img src="./img/f2.jpg" alt="blog">
+							</div>
+							<h5 class="sn-feat__list-title">
+								Jeremy Jones: On That Street Grind
+							</h5>
+						</a>
+					</li>
+					<li class="sn-feat__item">
+						<a href="#" class="sn-feat__link">
+							<div class="img_wrapper">
+								<img src="./img/f3.jpg" alt="blog">
+							</div>
+							<h5 class="sn-feat__list-title">
+								Burton’s Tokyo Rail Days Recap
+							</h5>
+						</a>
+					</li>
+					<li class="sn-feat__item">
+						<a href="#" class="sn-feat__link">
+							<div class="img_wrapper">
+								<img src="./img/f4.jpg" alt="blog">
+							</div>
+							<h5 class="sn-feat__list-title">
+								Burton’s Tokyo Rail Days Preview
+							</h5>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="sn-footer">
+		<div class="container">
+			<ul class="sn-footer__list">
+				<li class="sn-footer__item">
+					<h6 class="sn-footer__title">products</h6>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">mens</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">womens</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">youth</span></a>
+				</li>
+				<li class="sn-footer__item">
+					<h6 class="sn-footer__title">
+						<span class="hover">about</span></h6>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">careers & inteships</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">sponsorships</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">team</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">catalog request/download</span></a>
+				</li>
+				<li class="sn-footer__item">
+					<h6 class="sn-footer__title">
+						<span class="hover">customer support</span></h6>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">contact us</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">shipping and order tracking</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">easy returns</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">warranty</span></a>
+					<a href="#" class="sn-footer__link">
+						<span class="hover">replacement bilding parts</span></a>
+				</li>
+				<li class="sn-footer__item">
+					<h6 class="sn-footer__title">newsletter</h6>
+					<form class="sn-footer__form">
+						<input type="text" class="sn-footer__email" placeholder="Enter your email"><input type="submit" value="go" class="sn-footer__submit">
+					</form>
+
+					<ul class="sn-footer__social">
+						<li class="sn-footer__social-item">
+							<a href="#" class="sn-footer__social-link">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="sn-footer__social-item">
+							<a href="#" class="sn-footer__social-link">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="sn-footer__social-item">
+							<a href="#" class="sn-footer__social-link">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="sn-footer__social-item">
+							<a href="#" class="sn-footer__social-link">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+						</li>
+						<li class="sn-footer__social-item">
+							<a href="#" class="sn-footer__social-link">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</footer>
 
 	<script src="js/bundle.js"></script>
+
+	<script>
+		$('.sn-boards__carousel').slick({
+			centerMode: true,
+			centerPadding: '60px',
+			slidesToShow: 3,
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: true,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					arrows: true,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1
+				}
+			}
+			]
+		});
+	</script>
 </body>
 </html>

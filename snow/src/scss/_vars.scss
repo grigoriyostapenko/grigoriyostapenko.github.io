@@ -1,0 +1,24 @@
+//fonts +++++++++++++++++++++++++++++++++++++++++++++++
+@font-face {
+	font-family: "Proxima-Regular";
+	src: url("../assets/fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Proxima-Bold";
+	src: url("../assets/fonts/ProximaNova-Semibold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Proxima-Black";
+	src: url("../assets/fonts/ProximaNova-Extrabld.woff") format("woff");
+}
+
+$main-font: "Proxima-Regular", sans-serif;
+$bold-font: "Proxima-Bold", sans-serif;
+$black-font: "Proxima-Black", sans-serif;
+
+//colors _____________________________________
+$black: #000;
+$white: #fff;
+$grey: #c9c9c9;

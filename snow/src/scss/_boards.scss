@@ -1,0 +1,87 @@
+.sn-boards {
+	padding: 150px 0;
+	background-color: $white;
+	color: $black;
+
+	&__title {
+		text-transform: uppercase;
+		font-family: $black-font;
+		font-size: 48px;
+		display: block;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		display: block;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	
+	.close {
+		font-size: 30px;
+		display: block;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+	.img-wrapper {
+		@include padding-hack(400px);
+		width: 350px;
+		margin-bottom: 30px;
+	}
+
+	&__carousel > div:active {
+		border: none;
+	}
+
+	&__desc {
+		display: none;
+		font-size: 0;
+		font-family: $bold-font;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+
+	}
+
+
+}
+
+.slick-prev, .slick-next {
+	height: 200px;
+	width: 100px;
+	color: #bfbfbf;
+	z-index: 52;
+}
+
+.slick-prev::before {
+	font-family: FontAwesome;
+	z-index: 50;
+	content: "\f053";
+	font-size: 50px;
+	color: #bfbfbf;
+}
+
+.slick-next::before {
+	font-family: FontAwesome;
+	z-index: 2;
+	content: "\f054";
+	font-size: 50px;
+	color: #bfbfbf;
+}
+
+.slick-slide {
+	opacity: .5;
+	transform: scale(0.9);
+}
+
+.slick-center {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.slick-current > .sn-boards__desc {
+	font-size: 20px;
+}

@@ -1,0 +1,66 @@
+.sn-feat {
+	background-color: $white;
+	padding: 100px 0;
+	color: $black;
+
+	&__title {
+		display: block;
+		text-align: center;
+		font-size: 48px;
+		font-family: $black-font;
+		text-transform: uppercase;
+		margin-bottom: 35px;
+	}
+
+	&__close {
+		display: block;
+		text-align: center;
+		font-size: 0;
+		margin-bottom: 80px;
+
+		& > .fas {
+			font-size: 35px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		flex-wrap: wrap;
+
+		&-title {
+			font-family: $bold-font;
+			font-size: 16px;
+		}
+	}
+
+	.img_wrapper {
+		@include padding-hack(160px);
+		width: 220px;
+		margin-bottom: 20px;
+		transition: all .3s ease;
+		& > img {
+			object-fit: cover;
+		}
+	}
+
+	&__item {
+		width: 100%;
+		max-width: 220px;
+		overflow: hidden;
+		&:hover {
+			& > .sn-feat__link {
+				& > .img_wrapper {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	&__link {
+		color: $black;
+		font-style: 0;
+		flex-direction: column;
+	}
+}
