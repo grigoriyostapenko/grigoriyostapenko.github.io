@@ -59,16 +59,23 @@ pallindromForm.appendChild(pallindromAnswer);
 pallindromForm.addEventListener('submit', function(event) {
 	event.preventDefault();
 
-if (pallindromInput.value.length !== 5) {
-	 pallindromAnswer.innerText = `Введите пятизначное число`;
-	 return;
-}
+	if (pallindromInput.value.length !== 5) {
+		pallindromAnswer.innerText = `Введите пятизначное число`;
+		return;
+	}
 
 	const isPallindrom = pallindromInput.value.split(``).reverse().join('') === pallindromInput.value;
-pallindromAnswer.innerText = isPallindrom ? 'Pallindrom' : 'Not Pallindrom';
+	pallindromAnswer.innerText = isPallindrom ? 'Pallindrom' : 'Not Pallindrom';
 
 })
 
 const number = document.querySelector(".number-form");
 console.log(number);
 
+const spanFromSpan = document.querySelectorAll('.spaniel');
+const ubaton = document.querySelector('.innerBaton');
+ubaton.addEventListener('submit', batonNeVkysniy);
+function batonNeVkysniy(event) {
+	event.preventDefault();
+	spanFromSpan.innerText = 'okmoinokms';
+}
