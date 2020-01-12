@@ -1,0 +1,28 @@
+//fonts 1111111111111111111111111111111111111111111111
+
+@font-face {
+ font-family: "appetite";
+ src: url("../assets/fonts/appetite.woff") format("woff");
+}
+
+@font-face {
+ font-family: "museo900";
+ src: url("../assets/fonts/museo900.woff") format("woff");
+}
+
+@font-face {
+ font-family: "museo300";
+ src: url("../assets/fonts/MuseoSansCyrl-300.woff") format("woff");
+}
+
+$light-museo: "museo300";
+$black-museo: "museo900";
+$appetite: "appetite";
+
+//colors 999999999999999999999999999999999999999999999999999999999
+
+$white: #fff;
+$black: #000;
+$yellow: #ffe135;
+$red: #be1818;
+$white-opacity: rgba($white, 0.17);
