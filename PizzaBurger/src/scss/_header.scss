@@ -1,0 +1,75 @@
+.pb-choose {
+  width: 100%;
+  height: 760px;
+  display: flex;
+  justify-content: center;   
+  border: 10px solid $red;
+  border-radius: 10px;
+}
+
+.pb-header {
+  padding: 70px 0;
+
+  .container { 
+
+  }
+  &__left-slider {
+    background: url("../img/bgyellow.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $red;
+
+    & > .pb-header__link {
+     color: $red;
+   }
+ }
+ &__right-slider {
+  background: url("../img/bgred.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  color: $yellow;
+}
+&__title {
+  font-family: $appetite;
+  font-size: 70px;
+  margin-bottom: 25px;
+  display: block;
+  text-align: center;
+}
+&__img-wrapper {
+  @include padding-hack(255px);
+  width: 450px;
+  margin-bottom: 25px;
+
+  & > img {
+    filter: drop-shadow(0px 0px 15px rgba($black, .3));
+  }
+}
+&__link {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-family: $black-museo;
+  text-transform: uppercase;
+  color: $yellow;
+}
+
+}
+
+.slider-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 0px 15px rgba($black, .3));
+}
