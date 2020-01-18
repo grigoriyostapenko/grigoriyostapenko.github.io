@@ -1,0 +1,143 @@
+.dk-header {
+	height: 100vh;
+	background: url("../img/duck1.png");
+	background-repeat-y: no-repeat;
+	background-size: contain;
+	background-color: $header-color;
+
+	.blur {
+		height: 100%;
+		width: 100%;
+		padding: 50px 0;
+		backdrop-filter: blur(15px);
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		filter: blur(0px);
+		margin-bottom: 85px;
+	}
+
+
+	&__logo {
+		color: $blue;
+		font-size: 22px;
+		font-family: $work-font;
+		font-weight: 700;
+	}
+
+	&__list {
+		width: 100%;
+		max-width: 660px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+
+		&-link {
+			color: $hover-color;
+			font-size: 18px;
+			font-family: $work-font;
+			text-transform: capitalize;
+		}
+	}
+
+	&__title { 
+		font-family: $droid-font;
+		font-size: 60px;
+		color: $blue;
+
+	}
+}
+
+.active {
+	color: $blue;
+	font-weight: 500;
+}
+
+
+#nav-icon3 {
+	width: 28px;
+	height: 21px;
+	position: absolute;
+	right: 0;
+	transform: translateX(45px);
+	margin: 0px auto;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .2s ease-in-out;
+	-moz-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+	cursor: pointer;
+	transform: translate(60px, 5px);
+}
+
+#nav-icon3 span {
+	display: block;
+	position: absolute;
+	height: 2.5px;
+	width: 100%;
+	background: $hover-color;
+	border-radius: 2.5px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .4s ease-in-out;
+	-moz-transition: .4s ease-in-out;
+	-o-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+	top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+	top: 5px;
+}
+
+#nav-icon3 span:nth-child(4) {
+	top: 10px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+.hidden {
+	display: none;
+}
+
+.blur {
+
+}
