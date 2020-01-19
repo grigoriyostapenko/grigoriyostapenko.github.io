@@ -1,0 +1,138 @@
+.dk-list {
+	background-color: $section-list;
+	padding: 80px 0;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		&-item {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin-bottom: 80px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:nth-child(1) {
+				&::before {
+					position: absolute;
+					content: "";
+					width: 300px;
+					height: 500px;
+					background: url("../img/duck1.png") no-repeat;
+					background-size: contain;
+					filter: blur(15px);
+					left: 0;
+					transform: translateX(-100%);
+				}
+			}
+			&:nth-child(2) {
+				&::before {
+					position: absolute;
+					content: "";
+					width: 300px;
+					height: 500px;
+					background: url("../img/duck2.png") no-repeat;
+					background-size: contain;
+					filter: blur(15px);
+					left: 0;
+					transform: translateX(-100%);
+				}
+			}
+			&:nth-child(3) {
+				&::before {
+					position: absolute;
+					content: "";
+					width: 300px;
+					height: 500px;
+					background: url("../img/duck3.png") no-repeat;
+					background-size: contain;
+					filter: blur(15px);
+					left: 0;
+					transform: translateX(-100%);
+				}
+			}
+		}
+	}
+
+	&__left {
+		@include padding-hack(390px, contain) {
+			width: 100%;
+			max-width: 250px;
+		}
+
+		margin-right: 60px;
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__title {
+		font-size: 60px;
+		font-weight: 700;
+		font-family: $work-font;
+		color: $blue;
+		text-transform: capitalize;
+		margin-bottom: 35px;
+	}
+	&__price {
+		& > span {
+			font-weight: 700;
+		}
+font-family: $work-font;
+		font-size: 30px;
+		font-weight: 300;
+		color: $orange;
+		padding: 0 25px;
+		height: 56px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 56px;
+		border: 1px solid $thin-border;
+		transition: all .3s ease;
+		margin-bottom: 35px;
+	}
+
+	&__desc {
+		font-size: 16px;
+		font-family: $open-font;
+		line-height: 1.6;
+		color: $desc-color;
+		margin-bottom: 35px;
+	}
+
+	&__button {
+		height: 55px;
+		border-radius: 50px;
+		background-color: $orange;
+		color: white;
+		width: 200px;
+		font-family: $work-font;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: capitalize;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		box-shadow: 4px 4px 4px 2px rgba($black, .4);
+		cursor: pointer;
+		transition: all .3s ease;
+
+		&:hover {
+			box-shadow: 7px 7px 4px 2px rgba($black, .4);
+		}
+	}
+}
+
+

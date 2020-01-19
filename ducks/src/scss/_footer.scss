@@ -1,0 +1,98 @@
+.dk-footer {
+	padding: 20px 0;
+	background-color: $blue;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__cr {
+		color: $copyright;
+		font-weight: 300;
+		font-size: 16px;
+		font-family: $open-font;
+		text-transform: capitalize;
+	}
+
+	&__list {
+		width: 100%;
+		max-width: 660px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-link {
+			font-size: 18px;
+			color: white;
+			font-size: 18px;
+			font-family: $work-font;
+			position: relative;
+			text-transform: capitalize;
+
+			&::after {
+				position: absolute;
+				border-bottom: 1px solid white;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				content: "";
+				transition: all .2s ease;
+			}
+
+			&:hover {
+				&::after {
+					width: 100%;				}
+			}
+		}
+	}
+}
+
+.mouseover {
+	&::after {
+		position: absolute;
+		border-bottom: 1px solid white;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		content: "";
+		transition: all .2s ease;
+
+		animation-name: mouseOver;
+		animation-duration: .3s;
+	}
+}
+
+@keyframes mouseOver {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+.mouseout {
+	&::after {
+		position: absolute;
+		border-bottom: 1px solid white;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		content: "";
+		transition: all .2s ease;
+
+		animation-name: mouseOver;
+		animation-duration: .3s;
+	}
+}
+
+@keyframes mouseOut {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
+	}
+}
