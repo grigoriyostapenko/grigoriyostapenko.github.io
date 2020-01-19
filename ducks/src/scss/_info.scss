@@ -1,0 +1,103 @@
+.dk-info {
+	padding: 60px 0;
+
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&-item {
+			width: 100%;
+			max-width: 470px;
+			position: relative;
+			&:nth-child(odd) {
+				margin-bottom: 80px;
+			}
+
+			&:nth-child(1) {
+				&::after {
+					content: "01";
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: translateY(-30px);
+					font-size: 160px;
+					color: rgba($blue, .1);
+					font-family: $work-font;
+					font-weight: 700;
+				}
+			}
+			&:nth-child(2) {
+				&::after {
+					content: "02";
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: translateY(-30px);
+					font-size: 160px;
+					color: rgba($blue, .1);
+					font-family: $work-font;
+					font-weight: 700;
+				}
+			}
+			&:nth-child(3) {
+				&::after {
+					content: "03";
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: translateY(-30px);
+					font-size: 160px;
+					color: rgba($blue, .1);
+					font-family: $work-font;
+					font-weight: 700;
+				}
+			}
+			&:nth-child(4) {
+				&::after {
+					content: "04";
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: translateY(-30px);
+					font-size: 160px;
+					color: rgba($blue, .1);
+					font-family: $work-font;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	&__title {
+		font-size: 60px;
+		text-align: left;
+		margin-bottom: 40px;
+		font-weight: 700;
+		font-family: $work-font;
+		color: $blue;
+		width: 100%;
+		text-transform: capitalize;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			height: 20px;
+			width: 45%;
+			background: url("../img/border.png") no-repeat;
+			background-size: cover;
+			bottom: 0;
+			left: 0;
+			transform: translateY(7px);
+		}
+	}
+
+	&__desc {
+		font-family: $open-font;
+		font-size: 16px;
+		color: $desc-color;
+		width: 100%;
+	}
+}

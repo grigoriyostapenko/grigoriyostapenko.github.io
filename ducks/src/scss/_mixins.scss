@@ -1,4 +1,4 @@
-@mixin padding-hack($padding, $object-fit: contain) {
+@mixin padding-hack($padding, $object-fit) {
     position: relative;
     padding-top: $padding;
     @content;
@@ -12,5 +12,17 @@
         width: 100%;
         height: 100%;
         object-fit: $object-fit;
+    }
+}
+
+@mixin number($num) {
+    &:nth-child($num) {
+        &::after {
+            content: "$num";
+            font-size: 160px;
+            color: rgba($blue, .1);
+            font-family: $work-font;
+            font-weight: 700;
+        }
     }
 }

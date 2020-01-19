@@ -1,0 +1,66 @@
+.dk-sub {
+	background-color: $header-color;
+	background: url("../img/duck4.png");
+	background-size: contain;
+
+	.blur {
+		height: 100%;
+		width: 100%;
+		padding: 40px 0;
+		backdrop-filter: blur(15px);
+	}
+
+	&__block {
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 55px;
+		font-weight: 700;
+		font-family: $work-font;
+		margin-bottom: 40px;
+	}
+
+	&__desc {
+		font-size: 18px;
+		color: $desc-color;
+		font-family: $open-font;
+		margin-bottom: 40px;
+	}
+
+	&__form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 400px;
+	}
+
+	&__text {
+		border: none;
+		background: none;
+		width: 350px;
+		height: 50px;
+		border-bottom: 3px solid $orange;
+	}
+
+	&__submit {
+		height: 50px;
+		width: 50px;
+		color: white;
+		background-color: $orange;
+		border: none;
+	}
+}

@@ -1,15 +1,17 @@
 .dk-header {
-	height: 100vh;
+	height: auto;
 	background: url("../img/duck1.png");
 	background-repeat-y: no-repeat;
 	background-size: contain;
 	background-color: $header-color;
+	overflow: hidden;
 
 	.blur {
 		height: 100%;
 		width: 100%;
 		padding: 50px 0;
 		backdrop-filter: blur(15px);
+		z-index: 1;
 	}
 
 	&__menu {
@@ -41,14 +43,147 @@
 			font-size: 18px;
 			font-family: $work-font;
 			text-transform: capitalize;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				@keyframes hoverMenu {
+					0% {
+						bottom: 0;
+						left: 0;
+						border-bottom: 2px solid $hover-color;
+						width: 0;
+					}
+
+					50% {
+					// bottom: 0;
+					// left: 0;
+					border-bottom: 2px solid $hover-color;
+					width: 100%;
+				}
+
+				100% {
+					bottom: 0;
+					right: 0;
+					border-bottom: 2px solid $hover-color;
+					width: 0;
+				}
+			}
+		}
+		&:hover {
+			&::after {
+				animation: hoverMenu 1.3s cubic-bezier(.5,.5,.5,.5);
+				animation-iteration-count: infinite;
+			}
 		}
 	}
+}
 
-	&__title { 
-		font-family: $droid-font;
-		font-size: 60px;
-		color: $blue;
+&__content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 
+	&-right {
+		@include padding-hack(520px, cover) {
+			width: 320px;
+			transform: translateY(-20 px);
+		}
+	}
+}
+
+&__content-left {
+	width: 100%;
+	max-width: 510px;
+	flex-shrink: 1;
+}
+
+&__title {
+	font-family: $droid-font;
+	font-size: 60px;
+	color: $blue;
+	line-height: 1.2;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+}
+
+&__desc {
+	font-size: 16px;
+	color: $desc-color;
+	font-family: $open-font;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+&__button {
+	height: 55px;
+	border-radius: 50px;
+	background-color: $orange;
+	color: white;
+	width: 200px;
+	font-family: $work-font;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	box-shadow: 4px 4px 4px 2px rgba($black, .4);
+	cursor: pointer;
+	transition: all .3s ease;
+
+	&:hover {
+		animation-name: borderInHover;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		transform: translatey(-10px);
+		box-shadow: 7px 7px 4px 2px rgba($black, .4);
+	}
+}
+}
+
+
+
+@keyframes borderInHover {
+	0% {
+		border: none;
+	}
+	5% {
+		border-left: 2px solid $black;
+	}
+	25% {
+		border-left: 2px solid $black;
+		border-top: 2px solid $black;
+	}
+	30% {
+		border-left: 2px solid $black;
+		border-top: 2px solid $black;
+		border-right: 2px solid $black;
+	}
+	50% {
+		border-left: 2px solid $black;
+		border-top: 2px solid $black;
+		border-right: 2px solid $black;
+		border-bottom: 2px solid $black;
+	}
+	55% {
+		border-left: none;
+	}
+	75% {
+		border-left: none;
+		border-top: none;
+	}
+	80% {
+		border-left: none;
+		border-top: none;
+		border-right: none;
+	}
+	100% {
+		border: none;
 	}
 }
 
@@ -138,6 +273,3 @@
 	display: none;
 }
 
-.blur {
-
-}
