@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+@font-face {
+ font-family: "Droid";
+ src: url("../assets/fonts/DroidSerif-Bold.woff") format("woff");
+}
+
+$droid-font: "Droid";
+$open-font: 'Open Sans', sans-serif;
+$work-font: 'Work Sans', sans-serif;	
+
+//colors
+
+$header-color: #e4ddcf;
+$hover-color: #898f9a;
+$blue: #2e4265;
+$orange: #d68c6f;
+$desc-color: #636363;
+$thin-border: #f0e8e6;
+$copyright: #6d7b94;
