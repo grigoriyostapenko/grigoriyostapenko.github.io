@@ -1,0 +1,20 @@
+@mixin gradient {
+	background: rgb(1,243,164);
+	background: -moz-linear-gradient(90deg, rgba(1,243,164,1) 0%, rgba(6,246,235,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(1,243,164,1) 0%, rgba(6,246,235,1) 100%);
+	background: linear-gradient(90deg, rgba(1,243,164,1) 0%, rgba(6,246,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01f3a4",endColorstr="#06f6eb",GradientType=1);
+}
+
+
+
+
+@mixin gradient-text {
+	background: rgb(1,243,164);
+	background: -moz-linear-gradient(90deg, rgba(1,243,164,1) 0%, rgba(6,246,235,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(1,243,164,1) 0%, rgba(6,246,235,1) 100%);
+	background: linear-gradient(90deg, rgba(1,243,164,1) 0%, rgba(6,246,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01f3a4",endColorstr="#06f6eb",GradientType=1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
