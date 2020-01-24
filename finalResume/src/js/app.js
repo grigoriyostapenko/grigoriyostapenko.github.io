@@ -15,3 +15,16 @@ function closeNav(event) {
 	document.getElementById("mySidenav").style.width = "0";
 }
 
+
+const computedStyle = getComputedStyle(document.querySelector(".rs-header"), null);
+const height = parseInt(computedStyle.getPropertyValue('height'));
+
+const headerHeight = height - 40*2;
+
+const menuComputed = getComputedStyle(document.querySelector(".rs-menu"), null);
+const menuHeight = parseInt(menuComputed.getPropertyValue('height'));
+console.log(menuHeight);
+
+const titleHeight = headerHeight - menuHeight;
+const title = document.getElementById("title");
+title.style.height = titleHeight + "px";

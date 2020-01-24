@@ -1,0 +1,133 @@
+.rs-about {
+	padding: 100px 0;
+	background-color: $very-grey;
+
+	&__info {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+
+		&-left {
+			width: 100%;
+			max-width: 450px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&-right {
+			width: 100%;
+			max-width: 500px;
+		}
+
+		&-photo {
+			@include padding-hack(385px, cover);
+			max-width: 385px;
+			width: 100%;
+			position: relative;
+			z-index: 5;
+			margin-bottom: 35px;
+
+			& > img {
+				z-index: 4;
+			}
+
+			&::before {
+				position: absolute;
+				content: "";
+				@include gradient;
+				z-index: 0;
+				width: 100%;
+				max-width: 385px;
+				height: 385px;
+				top: 0;
+				transform: translate(30px, -30px);
+				right: 0;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 1;
+				width: 100%;
+				max-width: 371px;
+				height: 371px;
+				background: $very-grey;
+				top: 0;
+				transform: translate(23px, -23px);
+				right: 0;
+			}
+		}
+
+		&-title {
+			font-size: 45px;
+			@include gradient-text;
+			font-family: $open-sans;
+			text-transform: capitalize;
+			margin-bottom: 40px;
+		}
+		&-desc {
+			width: 100%;
+			color: $white;
+			font-size: 14px;
+			line-height: 1.7;
+			margin-bottom: 30px;
+			font-family: $open-sans;
+		}
+
+		&-list {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			&-item {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-bottom: 20px;
+				font-size: 18px;
+				width: 100%;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			&-title {
+				color: $hire-me;
+				font-family: $open-sans;
+				margin-right: 5px;
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+
+			&-link {
+				color: $white;
+				font-family: $open-sans;
+			}
+		}
+
+		&-button {
+			height: 50px;
+			width: 200px;
+			@include gradient;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 12px;
+			color: $white;
+			font-family: $open-sans;
+			text-transform: capitalize;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 20px 5px rgba($hire-me, .4);
+			transition: all .3s ease;
+			&:hover {
+				box-shadow: 0 0 20px 5px rgba($hire-me, .7);
+			}
+		}
+	} 
+}

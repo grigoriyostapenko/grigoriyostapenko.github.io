@@ -3,4 +3,36 @@
   width: 100%;
   padding: 40px 0;
   @include gradient;
+
+  &__title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: $white;
+
+
+    &-title {
+
+      .next-row {
+        font-style: 120px;
+        line-height: 0.8;
+      }
+
+      font-size: 84px;
+      font-family: $open-sans;
+      font-weight: 300;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+
+    }
+
+    &-subtitle {
+      font-family: $open-sans;
+      font-size: 28px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+  }
 }
