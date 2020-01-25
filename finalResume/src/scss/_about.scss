@@ -205,3 +205,43 @@
 		}
 	}
 }
+
+.rs-section {
+	background-color: $not-very-grey;
+	height: 100vh;
+	padding: 90px 0;
+
+	.container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__photo {
+		@include padding-hack(200px, cover);
+		width: 200px;
+		margin-bottom: 40px;
+
+		& > img {
+			border-radius: 50%;
+		}
+	}
+
+	&__buttons {
+		display: flex;	
+		justify-content: space-between;	
+		width: 200px;
+		margin-bottom: 40px;
+		position: absolute;
+		bottom: 0;
+
+		&-pin {
+			width: 10px;
+			height: 10px;
+			border-radius: 50px;
+			background: yellow;
+		}
+	}
+
+}
