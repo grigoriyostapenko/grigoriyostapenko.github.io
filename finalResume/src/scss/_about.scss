@@ -7,6 +7,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: stretch;
+		margin-bottom: 80px;
 
 		&-left {
 			width: 100%;
@@ -129,5 +130,78 @@
 				box-shadow: 0 0 20px 5px rgba($hire-me, .7);
 			}
 		}
-	} 
+	}
+
+	&__interests {
+		display: block;
+		width: 100%;
+
+		&-title {
+			display: block;
+			text-align: left;
+			text-transform: uppercase;
+			font-family: $open-sans;
+			font-size: 40px;
+			font-weight: 700;
+			@include gradient-text;
+			margin-bottom: 70px;
+		}
+
+		&-list {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+
+			&-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: all .3s ease;
+
+				&:hover {
+					transform: translateY(-10px);
+					& > .rs-about__interests-list-circle {
+						border: none;
+						@include gradient;
+						& > .fas {
+							color: $white;
+						}
+
+					}
+					& > .rs-about__interests-list-desc {
+						display: block;
+						color: $white;
+					}
+				}
+			}
+
+			&-circle {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid $hire-me;
+				margin-bottom: 20px;
+				transition: all .3s ease;
+
+				.fas {
+					font-size: 40px;
+					color: $hire-me;
+					transition: all .3s ease;
+				}
+			}
+
+			&-desc {
+				display: block;
+				color: transparent;
+				font-size: 20px;
+				font-family: $open-sans;
+				text-transform: capitalize;
+
+			}
+		}
+	}
 }
