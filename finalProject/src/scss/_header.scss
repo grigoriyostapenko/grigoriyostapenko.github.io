@@ -1,0 +1,11 @@
+.fp-header {
+	padding: 20px 0;
+	background: url("../img/bgheader.jpg") no-repeat;
+	background-size: cover;
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
