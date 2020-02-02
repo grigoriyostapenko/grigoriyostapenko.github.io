@@ -12,3 +12,8 @@ fetch('https://my-json-server.typicode.com/grigoriyostapenko/fake-database/menu'
   console.log('Fetch Error :-S', err);  
 });
 
+// <!-- LIST WITH EX:
+// CUSTOM SCROLL 
+// PRELOADER
+// COMMENTS IS ARTICLE
+//  -->
