@@ -85,7 +85,7 @@
 	}	
 
 	&__photo {
-		@include padding-hack(400px);
+		@include padding-hack(400px, contain);
 		width: 100%;
 		max-width: 500px;
 		position: relative;

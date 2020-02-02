@@ -20,20 +20,20 @@ a:active {
 }
 /* selected link */
 
-/* width */
-::-webkit-scrollbar {
-	width: 10px;
-	margin-right: 10px;
-}
+// /* width */
+// ::-webkit-scrollbar {
+// 	width: 10px;
+// 	margin-right: 10px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-	background: $white;
+// /* Track */
+// ::-webkit-scrollbar-track {
+// 	background: $white;
 
-}
+// }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background: rgba($desc-color, .8);
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+// 	border-radius: 10px;
+// 	background: rgba($desc-color, .8);
+// }

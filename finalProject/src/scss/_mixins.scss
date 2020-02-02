@@ -8,7 +8,7 @@
 	-webkit-text-fill-color: transparent;
 }
 
-@mixin padding-hack($padding, $object-fit: contain) {
+@mixin padding-hack($padding, $object-fit) {
     position: relative;
     padding-top: $padding;
     @content;
