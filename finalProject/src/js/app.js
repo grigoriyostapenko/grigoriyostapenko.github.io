@@ -17,3 +17,7 @@ fetch('https://my-json-server.typicode.com/grigoriyostapenko/fake-database/menu'
 // PRELOADER
 // COMMENTS IS ARTICLE
 //  -->
+
+    $('.fp-gallery').Mosaic({
+      maxRowHeight: 600
+    });

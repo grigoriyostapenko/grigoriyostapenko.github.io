@@ -1,0 +1,65 @@
+.fp-crew {
+	padding: 150px;
+	background-color: $white;
+
+	&__title {
+		display: block;
+		width: 100%;
+		font-size: 60px;
+		color: $main-color;
+		font-family: $catarman;
+		font-weight: 900;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		margin-bottom: 60px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		flex-wrap: wrap;
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__photo {
+		@include padding-hack(240px, cover);
+		width: 240px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-bottom: 30px;
+
+		& > img {
+			transition: all .3s ease;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	&__rank {
+		font-size: 14px;
+		font-weight: 300;
+		font-family: $muli;
+		margin-bottom: 20px;
+		color: $desc-color;
+		text-transform: uppercase;
+	}
+
+	&__name {
+		font-family: $catarman;
+		font-size: 24px;
+		margin: 0;
+		font-weight: 900;
+		color: $main-color;
+		text-transform: uppercase;
+	}
+
+}
