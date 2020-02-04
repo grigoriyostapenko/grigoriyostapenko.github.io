@@ -18,6 +18,18 @@ fetch('https://my-json-server.typicode.com/grigoriyostapenko/fake-database/menu'
 // COMMENTS IS ARTICLE
 //  -->
 
-    $('.fp-gallery').Mosaic({
-      maxRowHeight: 600
-    });
+$('.fp-gallery').Mosaic({
+  maxRowHeight: 600
+});
+
+$(document).ready(function(){
+  $('.fp-comments__slider').slick({
+    variableWidth: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true
+  });
+
+});

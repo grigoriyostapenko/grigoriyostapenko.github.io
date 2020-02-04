@@ -35,13 +35,6 @@
 		border-radius: 50%;
 		overflow: hidden;
 		margin-bottom: 30px;
-
-		& > img {
-			transition: all .3s ease;
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
 	}
 
 	&__rank {
