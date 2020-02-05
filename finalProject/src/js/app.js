@@ -22,14 +22,3 @@ $('.fp-gallery').Mosaic({
   maxRowHeight: 600
 });
 
-$(document).ready(function(){
-  $('.fp-comments__slider').slick({
-    variableWidth: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true
-  });
-
-});

@@ -28,9 +28,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link href="./assets/libs/jquery.mosaic.min.css" rel="stylesheet">
 	<script src="./assets/libs/jquery.mosaic.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="./assets/libs/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="./assets/libs/slick-theme.css"/>
-	<script type="text/javascript" src="./assets/libs/slick.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -213,32 +210,110 @@
 		</section>
 		<section class="fp-comments">
 			<div class="container">
-				<h2 class="fp-comments__title">
-					testimonials
-				</h2>
-				<div class="fp-comments__slider">
-					<div class="fp-comments__photo">
-						<img src="./img/c1.jpg" alt="slider item">
-					</div>
-					<div class="fp-comments__photo">
-						<img src="./img/c2.jpg" alt="slider item">
-					</div>
-					<div class="fp-comments__photo">
-						<img src="./img/c3.jpg" alt="slider item">
-					</div>
-					<div class="fp-comments__photo">
-						<img src="./img/c4.jpg" alt="slider item">
-					</div>
-					<div class="fp-comments__photo">
-						<img src="./img/c5.jpg" alt="slider item">
-					</div>
-					<div class="fp-comments__photo">
-						<img src="./img/c6.jpg" alt="slider item">
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	<script src="js/bundle.js"></script>
-</body>
-</html>
+				<div class="row">
+					<div class="col-12">
+						<h2 class="fp-comments__title">
+							testimonials
+						</h2>
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="img-wrapper">
+										<img class="d-block w-100" src="./img/c1.jpg" alt="First slide"></div>
+										<bloquote class="fp-comments__text">
+											<!-- Да , cite, class="site" как хочу так и называю классы -->
+											<cite class="fp-comments__site">
+												Umar Donald
+											</cite>
+											<p class="fp-comments__comment">
+												Thank you so much for the 3 day snowboard course which my son joined. He had a wonderful time and was very pleased with his progress. Many thanks to the great instructors.
+											</p>
+										</bloquote>
+
+									</div>
+									<div class="carousel-item">
+										<div class="img-wrapper">
+											<img class="d-block w-100" src="./img/c2.jpg" alt="First slide"></div>
+											<bloquote class="fp-comments__text">
+												<cite class="fp-comments__site">
+													John Emerson
+												</cite>
+												<p class="fp-comments__comment">
+													Michael and his team are amazing. He arranged a great instructor, Felix for our adult children, whilst Isabella took care of me, a middle aged Mum who hadn’t skied for 25 years. Isabella was patient, kind and gave really helpful tips. Thanks so much.
+												</p>
+											</bloquote>
+
+										</div>
+										<div class="carousel-item">
+											<div class="img-wrapper">
+												<img class="d-block w-100" src="./img/c3.jpg" alt="Second slide"></div>
+												<bloquote class="fp-comments__text">
+													<cite class="fp-comments__site">
+														Jarvis Fenton
+													</cite>
+													<p class="fp-comments__comment">
+														We stopped off here at the end of season after going to the peak of nordkette. Great really as we didn't realise you could hire toboggins for €5 which kept my daughter amused in the snow for hours. I'd highly recommend a stop off.
+													</p>
+												</bloquote>
+
+											</div>
+											<div class="carousel-item">
+												<div class="img-wrapper">
+													<img class="d-block w-100" src="./img/c4.jpg" alt="Third slide"></div>
+													<bloquote class="fp-comments__text">
+														<cite class="fp-comments__site">
+															Dane Avery
+														</cite>
+														<p class="fp-comments__comment">
+															I book over the phone a familiy service for the whole day. That includes your own instructor taking care of the family members. Our teacher Paul showed very good teaching skills and after a day my wife (first timer) and my daughter (7/ 2nd time on skis) were going downhill already quite confident and after another halfday we came down all three of us.
+															I can warmly recommend this school.
+														</p>
+													</bloquote>
+
+												</div>
+												<div class="carousel-item">
+													<div class="img-wrapper">
+														<img class="d-block w-100" src="./img/c5.jpg" alt="Second slide"></div>
+														<bloquote class="fp-comments__text">
+															<cite class="fp-comments__site">
+																Samia Velez
+															</cite>
+															<p class="fp-comments__comment">
+																We came to pass Christmas and do some skiing. This place did not dissapoint. The service is top notch and the instructors are really good and patient.
+															</p>
+														</bloquote>
+
+													</div>
+													<div class="carousel-item">
+														<div class="img-wrapper">
+															<img class="d-block w-100" src="./img/c6.jpg" alt="Third slide"></div>
+															<bloquote class="fp-comments__text">
+																<cite class="fp-comments__site">
+																	Haiden Carty
+																</cite>
+																<p class="fp-comments__comment">
+																	We booked a 2.5 hour session for 2 parents and 2 children. We had a very experienced ski instructor dedicated to the 4 of us. This was good as my 5 year old son was nervous of the slopes and she soon had him on the steeper slopes having a whale of a time. We met at Olympia express but had the chance of seegrubbe as well. It was 165 euros for the 2.5 hours we had. We will go back in 2 weeks.
+																</p>
+															</bloquote>
+
+														</div>
+													</div>
+													<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true">	
+														&#8249;</span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true">&#8250;</span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</main>
+							<script src="js/bundle.js"></script>
+						</body>
+						</html>
+
