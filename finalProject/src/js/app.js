@@ -22,3 +22,11 @@ $('.fp-gallery').Mosaic({
   maxRowHeight: 600
 });
 
+document.body.style.overflow = 'hidden';
+const preloaderBlock = document.querySelector(".preloader");
+function preloader() {
+  document.body.style.overflow = 'visible';
+  preloaderBlock.style.display = 'none';
+};
+
+setTimeout(preloader, 5000);

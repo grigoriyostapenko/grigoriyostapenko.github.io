@@ -29,8 +29,16 @@
 	<link href="./assets/libs/jquery.mosaic.min.css" rel="stylesheet">
 	<script src="./assets/libs/jquery.mosaic.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+	<div class="preloader">
+		<div class="loader">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+	</div>
 	<header class="fp-header">
 		<div class="container">
 			<div class="fp-header__menu">
@@ -115,7 +123,7 @@
 		</section>
 
 		<section class="fp-gallery">
-			<!-- Инлайновые стили от фреймворка, который меня задолбал уже ес честно, width, height нужны для понимания фреймворком соотношения сторон изображения -->				
+
 			<h2 class="fp-gallery__title">
 				our gallery
 			</h2>
@@ -176,7 +184,7 @@
 							We’re not saying Snow Mountain has special powers, but a lot of magical things do happen here. The slopes on Bald and Dollar mountains enjoy a nearly lift line–free existence all winter long, not to mention a nearly cloud-free one.
 						</p>
 						<p class="second">
-							To those who wish to experience the best holiday time ever, we are excited to offer unlimited fun on the slopes, homey cosiness, wonderful views and snow activities. All this selection is presented in a great variety for any taste, age and skill. We are looking forward to seeing you in Snow Mountain ski resort at new season!
+							To those who wish to experience the best holiday time ever, we are exspand to offer unlimited fun on the slopes, homey cosiness, wonderful views and snow activities. All this selection is presented in a great variety for any taste, age and skill. We are looking forward to seeing you in Snow Mountain ski resort at new season!
 						</p>
 					</div>
 					<ul class="fp-info__list">
@@ -219,101 +227,232 @@
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<div class="img-wrapper">
-										<img class="d-block w-100" src="./img/c1.jpg" alt="First slide"></div>
-										<bloquote class="fp-comments__text">
-											<!-- Да , cite, class="site" как хочу так и называю классы -->
-											<cite class="fp-comments__site">
-												Umar Donald
-											</cite>
-											<p class="fp-comments__comment">
-												Thank you so much for the 3 day snowboard course which my son joined. He had a wonderful time and was very pleased with his progress. Many thanks to the great instructors.
-											</p>
-										</bloquote>
-
+										<img class="d-block w-100" src="./img/c1.jpg" alt="First slide">
 									</div>
-									<div class="carousel-item">
-										<div class="img-wrapper">
-											<img class="d-block w-100" src="./img/c2.jpg" alt="First slide"></div>
-											<bloquote class="fp-comments__text">
-												<cite class="fp-comments__site">
-													John Emerson
-												</cite>
-												<p class="fp-comments__comment">
-													Michael and his team are amazing. He arranged a great instructor, Felix for our adult children, whilst Isabella took care of me, a middle aged Mum who hadn’t skied for 25 years. Isabella was patient, kind and gave really helpful tips. Thanks so much.
-												</p>
-											</bloquote>
-
-										</div>
-										<div class="carousel-item">
-											<div class="img-wrapper">
-												<img class="d-block w-100" src="./img/c3.jpg" alt="Second slide"></div>
-												<bloquote class="fp-comments__text">
-													<cite class="fp-comments__site">
-														Jarvis Fenton
-													</cite>
-													<p class="fp-comments__comment">
-														We stopped off here at the end of season after going to the peak of nordkette. Great really as we didn't realise you could hire toboggins for €5 which kept my daughter amused in the snow for hours. I'd highly recommend a stop off.
-													</p>
-												</bloquote>
-
-											</div>
-											<div class="carousel-item">
-												<div class="img-wrapper">
-													<img class="d-block w-100" src="./img/c4.jpg" alt="Third slide"></div>
-													<bloquote class="fp-comments__text">
-														<cite class="fp-comments__site">
-															Dane Avery
-														</cite>
-														<p class="fp-comments__comment">
-															I book over the phone a familiy service for the whole day. That includes your own instructor taking care of the family members. Our teacher Paul showed very good teaching skills and after a day my wife (first timer) and my daughter (7/ 2nd time on skis) were going downhill already quite confident and after another halfday we came down all three of us.
-															I can warmly recommend this school.
-														</p>
-													</bloquote>
-
-												</div>
-												<div class="carousel-item">
-													<div class="img-wrapper">
-														<img class="d-block w-100" src="./img/c5.jpg" alt="Second slide"></div>
-														<bloquote class="fp-comments__text">
-															<cite class="fp-comments__site">
-																Samia Velez
-															</cite>
-															<p class="fp-comments__comment">
-																We came to pass Christmas and do some skiing. This place did not dissapoint. The service is top notch and the instructors are really good and patient.
-															</p>
-														</bloquote>
-
-													</div>
-													<div class="carousel-item">
-														<div class="img-wrapper">
-															<img class="d-block w-100" src="./img/c6.jpg" alt="Third slide"></div>
-															<bloquote class="fp-comments__text">
-																<cite class="fp-comments__site">
-																	Haiden Carty
-																</cite>
-																<p class="fp-comments__comment">
-																	We booked a 2.5 hour session for 2 parents and 2 children. We had a very experienced ski instructor dedicated to the 4 of us. This was good as my 5 year old son was nervous of the slopes and she soon had him on the steeper slopes having a whale of a time. We met at Olympia express but had the chance of seegrubbe as well. It was 165 euros for the 2.5 hours we had. We will go back in 2 weeks.
-																</p>
-															</bloquote>
-
-														</div>
-													</div>
-													<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-														<span class="carousel-control-prev-icon" aria-hidden="true">	
-														&#8249;</span>
-														<span class="sr-only">Previous</span>
-													</a>
-													<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-														<span class="carousel-control-next-icon" aria-hidden="true">&#8250;</span>
-														<span class="sr-only">Next</span>
-													</a>
-												</div>
-											</div>
-										</div>
+									<div class="fp-comments__text">
+										<span class="fp-comments__site">
+											Umar Donald
+										</span>
+										<p class="fp-comments__comment">
+											Thank you so much for the 3 day snowboard course which my son joined. He had a wonderful time and was very pleased with his progress. Many thanks to the great instructors.
+										</p>
 									</div>
-								</section>
-							</main>
-							<script src="js/bundle.js"></script>
-						</body>
-						</html>
+								</div>
+								<div class="carousel-item">
+									<div class="img-wrapper">
+										<img class="d-block w-100" src="./img/c2.jpg" alt="First slide">
+									</div>
+									<div class="fp-comments__text">
+										<span class="fp-comments__site">
+											John Emerson
+										</span>
+										<p class="fp-comments__comment">
+											Michael and his team are amazing. He arranged a great instructor, Felix for our adult children, whilst Isabella took care of me, a middle aged Mum who hadn’t skied for 25 years. Isabella was patient, kind and gave really helpful tips. Thanks so much.
+										</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="img-wrapper">
+										<img class="d-block w-100" src="./img/c3.jpg" alt="Second slide">
+									</div>
+									<div class="fp-comments__text">
+										<span class="fp-comments__site">
+											Jarvis Fenton
+										</span>
+										<p class="fp-comments__comment">
+											We stopped off here at the end of season after going to the peak of nordkette. Great really as we didn't realise you could hire toboggins for €5 which kept my daughter amused in the snow for hours. I'd highly recommend a stop off.
+										</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="img-wrapper">
+										<img class="d-block w-100" src="./img/c4.jpg" alt="Third slide">
+									</div>
+									<div class="fp-comments__text">
+										<span class="fp-comments__site">
+											Dane Avery
+										</span>
+										<p class="fp-comments__comment">
+											I book over the phone a familiy service for the whole day. That includes your own instructor taking care of the family members. Our teacher Paul showed very good teaching skills and after a day my wife (first timer) and my daughter (7/ 2nd time on skis) were going downhill already quite confident and after another halfday we came down all three of us.
+											I can warmly recommend this school.
+										</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="img-wrapper">
+										<img class="d-block w-100" src="./img/c5.jpg" alt="Second slide">
+									</div>
+									<div class="fp-comments__text">
+										<span class="fp-comments__site">
+											Samia Velez
+										</span>
+										<p class="fp-comments__comment">
+											We came to pass Christmas and do some skiing. This place did not dissapoint. The service is top notch and the instructors are really good and patient.
+										</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="img-wrapper">
+										<img class="d-block w-100" src="./img/c6.jpg" alt="Third slide">
+									</div>
+									<div class="fp-comments__text">
+										<span class="fp-comments__site">
+											Haiden Carty
+										</span>
+										<p class="fp-comments__comment">
+											We booked a 2.5 hour session for 2 parents and 2 children. We had a very experienced ski instructor dedicated to the 4 of us. This was good as my 5 year old son was nervous of the slopes and she soon had him on the steeper slopes having a whale of a time. We met at Olympia express but had the chance of seegrubbe as well. It was 165 euros for the 2.5 hours we had. We will go back in 2 weeks.
+										</p>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true">	
+								&#8249;</span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true">&#8250;</span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="fp-contacts">
+			<div class="fp-contacts__data">
+				<h2 class="fp-contacts__title">contact us</h2>
+				<ul class="fp-contacts__list">
+					<li class="fp-contacts__list-item">
+						<i class="fas fa-phone-alt"></i>
+						<a href="tel:+43662123456" class="fp-contacts__list-link">+43662123456</a>
+					</li>
+					<li class="fp-contacts__list-item">
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:inbox@mountain.org" class="fp-contacts__list-link">inbox@mountain.org</a>
+					</li>
+					<li class="fp-contacts__list-item">
+						<i class="fas fa-map-marker-alt"></i>
+						insbruck ski resort, tirol, switzerland
+					</li>
+					<li class="fp-contacts__list-item">
+						<i class="fas fa-clock"></i>
+						open hours: 8:00 AM - 10:00 PM
+					</li>
+				</ul>
+				<ul class="fp-contacts__social">
+					<li class="fp-contacts__social-item">
+						<a href="#" class="fp-contacts__social-link">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="fp-contacts__social-item">
+						<a href="#" class="fp-contacts__social-link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="fp-contacts__social-item">
+						<a href="#" class="fp-contacts__social-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="map" class="map"></div>
+		</section>
+	</main>
+	<script>
+		function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+        	center: {lat: 47.6089029, lng: 8.8586484},
+        	zoom: 12,
+        	styles: [
+        	{elementType: 'geometry', stylers: [{color: '#2d2d2d'}]},
+        	{elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+        	{elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+        	{
+        		featureType: 'administrative.locality',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#ffffff'}]
+        	},
+        	{
+        		featureType: 'poi',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#ffffff'}]
+        	},
+        	{
+        		featureType: 'poi.park',
+        		elementType: 'geometry',
+        		stylers: [{color: '#263c3f'}]
+        	},
+        	{
+        		featureType: 'poi.park',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#6b9a76'}]
+        	},
+        	{
+        		featureType: 'road',
+        		elementType: 'geometry',
+        		stylers: [{color: '#212121'}]
+        	},
+        	{
+        		featureType: 'road',
+        		elementType: 'geometry.stroke',
+        		stylers: [{color: '#212121'}]
+        	},
+        	{
+        		featureType: 'road',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#9ca5b3'}]
+        	},
+        	{
+        		featureType: 'road.highway',
+        		elementType: 'geometry',
+        		stylers: [{color: '#ff690f'}]
+        	},
+        	{
+        		featureType: 'road.highway',
+        		elementType: 'geometry.stroke',
+        		stylers: [{color: '#1f2835'}]
+        	},
+        	{
+        		featureType: 'road.highway',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#f3d19c'}]
+        	},
+        	{
+        		featureType: 'transit',
+        		elementType: 'geometry',
+        		stylers: [{color: '#2f3948'}]
+        	},
+        	{
+        		featureType: 'transit.station',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#d59563'}]
+        	},
+        	{
+        		featureType: 'water',
+        		elementType: 'geometry',
+        		stylers: [{color: '#17263c'}]
+        	},
+        	{
+        		featureType: 'water',
+        		elementType: 'labels.text.fill',
+        		stylers: [{color: '#515c6d'}]
+        	},
+        	{
+        		featureType: 'water',
+        		elementType: 'labels.text.stroke',
+        		stylers: [{color: '#17263c'}]
+        	}
+        	]
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcKjdw8NgkHm-KrpJ_8TeiJaomaJ9wynQ&callback=initMap" async defer></script>
+<script src="js/bundle.js"></script>
+</body>
+
+</html>
 
