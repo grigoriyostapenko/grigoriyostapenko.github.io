@@ -2,10 +2,23 @@ fetch('https://my-json-server.typicode.com/grigoriyostapenko/fake-database/menu'
 .then(  
   function (response) { 
     response.json().then(function(data) { 
-      for (let i = 0; i < data.length; i++) {
-        $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#'+data[i]+'" class="fp-header__list-link">' + data[i] + '</a></li>');
-        $("#mySidenav").append('<a class="sidenav__link" href="#'+data[i]+'">'+data[i]+'<a>')
-      }
+      // for (let i = 0; i < data.length; i++) {
+      //   $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#'+data[i]+'" class="fp-header__list-link">' + data[i] + '</a></li>');
+      //   $("#mySidenav").append('<a class="sidenav__link" href="#'+data[i]+'">'+data[i]+'<a>')
+      // }
+
+      $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#" class="fp-header__list-link">' + data[0] + '</a></li>');
+      $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#offer" class="fp-header__list-link">' + data[1] + '</a></li>');
+      $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#gallery" class="fp-header__list-link">' + data[2] + '</a></li>');
+      $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#about" class="fp-header__list-link">' + data[3] + '</a></li>');
+      $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#testim" class="fp-header__list-link">' + data[4] + '</a></li>');
+      $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#contact" class="fp-header__list-link">' + data[5] + '</a></li>');
+      $("#mySidenav").append('<a class="sidenav__link" href="#">'+data[0]+'<a>');
+      $("#mySidenav").append('<a class="sidenav__link" href="#offer">'+data[1]+'<a>');
+      $("#mySidenav").append('<a class="sidenav__link" href="#gallery">'+data[2]+'<a>');
+      $("#mySidenav").append('<a class="sidenav__link" href="#about">'+data[3]+'<a>');
+      $("#mySidenav").append('<a class="sidenav__link" href="#testim">'+data[4]+'<a>');
+      $("#mySidenav").append('<a class="sidenav__link" href="#contact">'+data[5]+'<a>');
     });  
   }  
   )  
@@ -30,7 +43,7 @@ function preloader() {
   preloaderBlock.style.display = 'none';
 };
 
-setTimeout(preloader, 100);
+setTimeout(preloader, 3000);
 
 const closeTimes = document.querySelector(".closebtn");
 const openBars = document.querySelector(".fp-menu__bars");
@@ -56,7 +69,7 @@ function closeMenu() {
   menuClose.addEventListener('click', closeNav);
 }
 
-setTimeout(closeMenu, 5000);
+setTimeout(closeMenu, 3000);
 
 
 let lastScrollTop = 0;
@@ -101,20 +114,19 @@ $(window).scroll(function(event){
 //   });
 // });
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelector(".btnTop")
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
+anchors.addEventListener('click', (event) => {
+  event.preventDefault()
+
+  const blockID = anchors.getAttribute('href').substr(1)
+
+  document.getElementById(blockID).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
   })
-}
+});
+
 
 
 
