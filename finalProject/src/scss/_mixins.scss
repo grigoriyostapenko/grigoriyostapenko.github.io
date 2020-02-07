@@ -24,3 +24,54 @@
         object-fit: $object-fit;
     }
 }
+
+
+
+
+@mixin xxl-screen {
+    @media only screen and (max-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin xl-screen {
+    @media only screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin lg-screen {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin md-screen {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sm-screen {
+    @media only screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin xs-screen {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin xz-screen {
+    @media only screen and (max-width: 520px) {
+        @content;
+    }
+}
+
+@mixin media-hidden {
+    @media only screen and (max-width: 319px) {
+        display: none;
+    }
+}

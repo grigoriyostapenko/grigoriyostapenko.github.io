@@ -14,6 +14,11 @@
 		display: block;
 		text-align: center;
 		width: 100%;
+
+		@include md-screen {
+			margin-bottom: 35px;
+			font-size: $test-width;
+		}
 	}
 
 	&__slider {
@@ -80,10 +85,27 @@
 
 .carousel-control-prev {
 	justify-content: flex-start;
+
+	@include md-screen {
+		transform: translateX(-65px);
+	}
+
+	@include xs-screen {
+		transform: translateX(0);
+	}
 }
 
 .carousel-control-next {
-	justify-content: flex-end;
+	justify-content: flex-end;	
+
+	@include md-screen {
+		transform: translateX(65px);
+	}
+
+	@include xs-screen {
+		transform: translateX(0);
+	}
+
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -94,4 +116,5 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }

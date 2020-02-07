@@ -39,7 +39,7 @@
 			<div class="circle"></div>
 		</div>
 	</div>
-	<header class="fp-header">
+	<header class="fp-header" id="top">
 		<div class="container">
 			<div class="fp-header__menu">
 				<a href="#" class="fp-header__logo">
@@ -49,6 +49,13 @@
 				</a>
 				<ul class="fp-header__list">
 				</ul>
+				<div class="fp-menu__bars">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div id="mySidenav" class="sidenav">
+					<a href="#" class="closebtn">&times;</a>
+
+				</div>
 			</div>
 			<h4 class="fp-header__subtitle">ski & snowboard school</h4>
 			<h1 class="fp-header__title">stay & ski</h1>
@@ -58,18 +65,49 @@
 						The countdown to ski season has begun! So, it is high
 						time to improve your skills to have maximum fun this winter
 					</p>
-					<button class="fp-header__info-button"><span class="span-hover">online booking</span></button>
+					<button class="fp-header__info-button" data-toggle="modal" data-target="#exampleModal"><span class="span-hover">online booking</span></button>
 				</div>
 				<div class="fp-header__photo">
 					<img src="./img/boarder.png" alt="boarder">
 				</div>
 			</div>
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Online Booking</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1" class="modal-label">your name</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Write your name">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1" class="modal-label">your surname</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Write your surname">
+								</div>
+								<label for="start" class="data-label">Start date:</label>
+								<input type="date" id="start" name="trip-start"
+								value="2018-07-22">
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main>
+		<a href="#top" id="btnTop" class="btnTop">&#9650;</a>
 		<section class="fp-offer">
 			<div class="container">
-				<h2 class="fp-offer__title">
+				<h2 class="fp-offer__title" id="what we offer">
 					what we offer
 				</h2>
 				<p class="fp-offer__desc">
@@ -122,7 +160,7 @@
 			</div>
 		</section>
 
-		<section class="fp-gallery">
+		<section class="fp-gallery" id="gallery">
 
 			<h2 class="fp-gallery__title">
 				our gallery
@@ -173,7 +211,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="fp-info">
+		<section class="fp-info" id="about us">
 			<div class="container">
 				<div class="fp-info__block">
 					<h2 class="fp-info__title">
@@ -213,10 +251,38 @@
 							</span>
 						</li>
 					</ul>
+					<div id="carouselExampleControls" class="carousel slide fp-info__slider" data-ride="carousel" data-interval="1500">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<span class="fp-info__stats">
+									1600
+								</span>
+								<span class="fp-info__name">
+									happy clients
+								</span>
+							</div>
+							<div class="carousel-item">
+								<span class="fp-info__stats">
+									18
+								</span>
+								<span class="fp-info__name">
+									professional awards
+								</span>								
+							</div>
+							<div class="carousel-item">
+								<span class="fp-info__stats">
+									213
+								</span>
+								<span class="fp-info__name">
+									reached tops
+								</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="fp-comments">
+		<section class="fp-comments" id="testimonials">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -319,7 +385,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="fp-contacts">
+		<section class="fp-contacts" id="contact us">
 			<div class="fp-contacts__data">
 				<h2 class="fp-contacts__title">contact us</h2>
 				<ul class="fp-contacts__list">
@@ -342,17 +408,17 @@
 				</ul>
 				<ul class="fp-contacts__social">
 					<li class="fp-contacts__social-item">
-						<a href="#" class="fp-contacts__social-link">
+						<a href="#" class="fp-contacts__social-link" target="_blank">
 							<i class="fab fa-twitter"></i>
 						</a>
 					</li>
 					<li class="fp-contacts__social-item">
-						<a href="#" class="fp-contacts__social-link">
+						<a href="#" class="fp-contacts__social-link" target="_blank">
 							<i class="fab fa-facebook-f"></i>
 						</a>
 					</li>
 					<li class="fp-contacts__social-item">
-						<a href="#" class="fp-contacts__social-link">
+						<a href="#" class="fp-contacts__social-link" target="_blank">
 							<i class="fab fa-instagram"></i>
 						</a>
 					</li>

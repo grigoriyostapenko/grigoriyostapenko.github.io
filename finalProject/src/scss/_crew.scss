@@ -2,6 +2,10 @@
 	padding: 150px 0;
 	background-color: $white;
 
+	@include md-screen {
+		padding: 50px 0;
+	}
+
 	&__title {
 		display: block;
 		width: 100%;
@@ -13,6 +17,10 @@
 		text-transform: uppercase;
 		margin-bottom: 40px;
 		margin-bottom: 60px;
+
+		@include md-screen {
+			font-size: $title-width;
+		}
 	}
 
 	&__list {
@@ -26,6 +34,24 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
+			@include lg-screen {
+				&:nth-child(1),
+				&:nth-child(2) {
+					margin-bottom: 30px;
+				}
+			}
+
+			@include xz-screen {
+				margin-bottom: 40px;
+				margin-left: auto;
+				margin-right: auto;
+
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 
@@ -35,6 +61,10 @@
 		border-radius: 50%;
 		overflow: hidden;
 		margin-bottom: 30px;
+
+		@include lg-screen {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__rank {
@@ -44,6 +74,9 @@
 		margin-bottom: 20px;
 		color: $desc-color;
 		text-transform: uppercase;
+		@include lg-screen {
+			margin-bottom: 4px;
+		}
 	}
 
 	&__name {
