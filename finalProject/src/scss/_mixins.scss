@@ -72,6 +72,24 @@
 
 @mixin media-hidden {
     @media only screen and (max-width: 319px) {
-        display: none;
+        @content;
+    }
+}
+
+@mixin low-height {
+    @media only screen and (max-height: 600px) {
+        @content;
+    }
+}
+
+@mixin low-height {
+    @media only screen and (max-height: 600px) {
+        @content;
+    }
+}
+
+@mixin very-low-height {
+    @media only screen and (max-height: 430px) {
+        @content;
     }
 }
