@@ -137,7 +137,7 @@ today = dd + '-' + mm + '-' + yyyy;
 console.log(today);
 
 const dateControl = document.getElementById("start")
-dateControl.value = today;
+dateControl.placeholder = today;
 
 const windowHeight = document.documentElement.clientHeight;
 console.log(windowHeight);
