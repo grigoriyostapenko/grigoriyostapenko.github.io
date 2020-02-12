@@ -13,12 +13,12 @@ fetch('https://my-json-server.typicode.com/grigoriyostapenko/fake-database/menu'
       $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#about" class="fp-header__list-link">' + data[3] + '</a></li>');
       $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#testim" class="fp-header__list-link">' + data[4] + '</a></li>');
       $(".fp-header__list").append('<li class="fp-header__list-item"><a href="#contact" class="fp-header__list-link">' + data[5] + '</a></li>');
-      $("#mySidenav").append('<a class="sidenav__link" href="#"">'+data[0]+'<a>');
-      $("#mySidenav").append('<a class="sidenav__link" href="#offer"">'+data[1]+'<a>');
-      $("#mySidenav").append('<a class="sidenav__link" href="#gallery"">'+data[2]+'<a>');
-      $("#mySidenav").append('<a class="sidenav__link" href="#about"">'+data[3]+'<a>');
-      $("#mySidenav").append('<a class="sidenav__link" href="#testim"">'+data[4]+'<a>');
-      $("#mySidenav").append('<a class="sidenav__link" href="#contact"">'+data[5]+'<a>');
+      $(".fp-sidenav__list").append('<li class="fp-sidenav__item"><a class="fp-sidenav__link" href="#"">'+data[0]+'</a></li>');
+      $(".fp-sidenav__list").append('<li class="fp-sidenav__item"><a class="fp-sidenav__link" href="#offer"">'+data[1]+'</a></li>');
+      $(".fp-sidenav__list").append('<li class="fp-sidenav__item"><a class="fp-sidenav__link" href="#gallery"">'+data[2]+'</a></li>');
+      $(".fp-sidenav__list").append('<li class="fp-sidenav__item"><a class="fp-sidenav__link" href="#about"">'+data[3]+'</a></li>');
+      $(".fp-sidenav__list").append('<li class="fp-sidenav__item"><a class="fp-sidenav__link" href="#testim"">'+data[4]+'</a></li>');
+      $(".fp-sidenav__list").append('<li class="fp-sidenav__item"><a class="fp-sidenav__link" href="#contact"">'+data[5]+'</a></li>');
     });  
   }  
   )  

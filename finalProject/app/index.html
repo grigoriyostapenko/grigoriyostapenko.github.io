@@ -29,7 +29,6 @@
 	<link href="./assets/libs/jquery.mosaic.min.css" rel="stylesheet">
 	<script src="./assets/libs/jquery.mosaic.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 	<div class="preloader">
@@ -54,7 +53,9 @@
 				</div>
 				<div id="mySidenav" class="sidenav">
 					<a href="#" class="closebtn">&times;</a>
+					<ul class="fp-sidenav__list">
 
+					</ul>
 				</div>
 			</div>
 			<h4 class="fp-header__subtitle">ski & snowboard school</h4>
@@ -91,8 +92,7 @@
 									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Write your surname">
 								</div>
 								<label for="start" class="data-label">Start date:</label>
-								<input type="date" id="start" name="trip-start"
-								value="2018-07-22">
+								<input type="text" name="trip-start" id="datepick" placeholder="Choose date"  class="form-control">
 							</form>
 						</div>
 						<div class="modal-footer">

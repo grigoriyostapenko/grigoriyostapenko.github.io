@@ -1,4 +1,4 @@
-const menuClose = document.querySelectorAll(".sidenav__link");
+const menuClose = document.querySelectorAll(".fp-sidenav__link");
 
 for (let k = 0 ; k < menuClose.length; k++) {
 	menuClose[k].addEventListener('click', closeSideMenu); 
