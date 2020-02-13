@@ -34,8 +34,9 @@
     }
 }
 
+
 @mixin xl-screen {
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1370px) {
         @content;
     }
 }
@@ -76,14 +77,9 @@
     }
 }
 
-@mixin low-height {
-    @media only screen and (max-height: 600px) {
-        @content;
-    }
-}
 
 @mixin low-height {
-    @media only screen and (max-height: 600px) {
+    @media only screen and (max-height: 630px) {
         @content;
     }
 }
