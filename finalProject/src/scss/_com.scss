@@ -90,24 +90,19 @@
 .carousel-control-prev {
 	justify-content: flex-start;
 
-	@include md-screen {
-		transform: translateX(-65px);
-	}
 
-	@include xs-screen {
-		transform: translateX(0);
+
+	@include md-screen {
+		display: none;
 	}
 }
 
 .carousel-control-next {
 	justify-content: flex-end;	
 
-	@include md-screen {
-		transform: translateX(65px);
-	}
 
-	@include xs-screen {
-		transform: translateX(0);
+	@include md-screen {
+		display: none;
 	}
 
 }

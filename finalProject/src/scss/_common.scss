@@ -31,6 +31,31 @@ body {
 			height: 100vh;
 		}
 	}
+
+	@include height-hidden {
+		.preloader {
+			display: none;
+		}
+		
+		header {
+			display: none;
+		}
+		main {
+			display: none;
+		}
+		footer {
+			display: none;
+		}
+
+		&::after {
+			content: "Your device is very small";
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+	}
 }
 
 ul {list-style: none;
@@ -47,6 +72,12 @@ a:hover,  /* mouse over link */
 a:active {
 	text-decoration: none;
 }
+
+main {
+	scroll-behavior: smooth;
+}
+
+
 /* selected link */
 
 // /* width */

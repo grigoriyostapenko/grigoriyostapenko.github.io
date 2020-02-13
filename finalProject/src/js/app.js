@@ -1,3 +1,5 @@
+
+
 fetch('https://my-json-server.typicode.com/grigoriyostapenko/fake-database/menu')  
 .then(  
   function (response) { 

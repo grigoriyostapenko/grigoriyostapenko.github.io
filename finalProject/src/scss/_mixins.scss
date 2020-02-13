@@ -41,6 +41,12 @@
     }
 }
 
+@mixin crew {
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
 @mixin lg-screen {
     @media only screen and (max-width: 992px) {
         @content;
@@ -73,6 +79,12 @@
 
 @mixin media-hidden {
     @media only screen and (max-width: 319px) {
+        @content;
+    }
+}
+
+@mixin height-hidden {
+    @media only screen and (max-height: 319px) {
         @content;
     }
 }

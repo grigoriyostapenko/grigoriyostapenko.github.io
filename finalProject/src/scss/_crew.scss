@@ -42,6 +42,12 @@
 				}
 			}
 
+			@include crew {
+				&:last-child {
+					display: none;
+				}
+			}
+
 			@include xz-screen {
 				margin-bottom: 40px;
 				margin-left: auto;

@@ -338,8 +338,11 @@
 .fp-menu__bars {
 	display: none;
 	@include xl-screen {
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		color: $orange;
+		font-size: 45px;
 	}
 
 }
