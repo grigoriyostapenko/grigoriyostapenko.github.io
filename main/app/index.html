@@ -23,14 +23,16 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="./assets/libs/animate.css">
 	<script src="./assets/libs/wow.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/c55362b8b5.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="./assets/libs/glide.core.min.css">
+	<link rel="stylesheet" href="./assets/libs/glide.theme.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<script>
 		new WOW().init();
 	</script>
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -192,14 +194,62 @@
 		</section>
 		<section class="sh-best">
 			<div class="container">
-				<h2 class="sh-best__title">
-					
+				<h2 class="sh-best__title wow fadeInUp" data-wow-duration="1.5s">
+					Для вашего удобства
 				</h2>
-				
+
+				<div class="glide wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+							<li class="glide__slide">
+								<div class="slide-icon">
+									<i class="fas fa-user-clock"></i>
+								</div>
+								<h5 class="sh-best__subt">
+									Заточим инструмент при вас
+								</h5>
+								<p class="sh-best__text">Если у вас небольшое количество инструментов, мастер заточит их при вас, с учетом Ваших пожеланий. Вы их сразу заберете.</p>
+							</li>
+							<li class="glide__slide">
+								<div class="slide-icon">
+									<i class="fas fa-award"></i>
+								</div>
+								<h5 class="sh-best__subt">Гарантия</h5>
+								<p class="sh-best__text">После того, как вы заточили инструмент, у вас есть 3 дня на то, чтобы проверить его и сообщить нам о каких-либо замечаниях или недочетах. Если обнаружите недочет, мы переточим все бесплатно.</p>
+							</li>
+							<li class="glide__slide">
+								<div class="slide-icon">
+									<i class="fas fa-truck"></i>
+								</div>
+								<h5 class="sh-best__subt">Выезд курьера</h5>
+								<p class="sh-best__text">Если Вы заняты и не можете привезти для заточки инструмент, или не успеваете забрать его - мы обеспечим выезд курьера-продавца в удобное для Вас место.</p>
+							</li>
+							<li class="glide__slide">
+								<a href="#" class="sh-best__link"><div class="slide-icon">
+									<i class="fas fa-money-bill-wave-alt"></i>
+								</div>
+								<h5 class="sh-best__subt">Доступные цены</h5>
+								<p class="sh-best__text">Мы предоставляем услуги заточки по доступным ценам. Также действуют постоянные акции и скидки на заточку. Нажмите, чтобы посмотреть прайс-лист</p>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</section>
-	</main>
-	
-	<script src="js/bundle.js"></script>
+		</div>
+	</section>
+</main>
+<script>
+	new Glide('.glide', {
+		type: 'carousel',
+		startAt: 0,
+		autoplay: 4000,
+		hoverpause: false,
+		perView: 3
+	}).mount()
+
+
+</script>
+</script>
+<script src="js/bundle.js"></script>
 </body>
 </html>
