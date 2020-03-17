@@ -23,7 +23,6 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="./assets/libs/animate.css">
 	<script src="./assets/libs/wow.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/c55362b8b5.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./assets/libs/glide.core.min.css">
@@ -32,7 +31,10 @@
 	<script>
 		new WOW().init();
 	</script>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="./assets/libs/slick.css">
+	<link rel="stylesheet" href="./assets/libs/slick-theme.css">
+	<script src="./assets/libs/slick.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -47,8 +49,8 @@
 								что мы точим
 							</a>
 						</li>
-						<li class="sh-header__menu-item">
-							<a href="price.html" class="sh-header__menu-link">
+						<li class="sh-header__menu-item" id="menu">
+							<a href="#top" class="sh-header__menu-link">
 								прайс-лист
 							</a>
 						</li>
@@ -82,7 +84,230 @@
 
 			</div>
 		</nav>
-
 	</header>
+	<main>
+		<section class="sh-price__header" id="top">
+			<h1 class="sh-price__header-title wow fadeInDown">
+				Прайс-лист
+			</h1>
+		</section>
+		<section class="sh-price__section sh-price__knives">
+			<div class="sh-price__knives-left">
+				<h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">Ножи</h3>
+			</div>
+			<div class="sh-price__knives-right">
+				<ul class="sh-price__list sh-price__list-knives wow fadeInRight" data-wow-duration="1s">
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Кухонный нож до 15см</h6>
+						<span class="sh-price__list-price">200 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Кухонный нож более 15см</h6>
+						<span class="sh-price__list-price">250 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Кухонный нож-топор</h6>
+						<span class="sh-price__list-price">300 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Охотничий нож</h6>
+						<span class="sh-price__list-price">от 550 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Складной нож</h6>
+						<span class="sh-price__list-price">200 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Ножи ледоруба</h6>
+						<span class="sh-price__list-price">от 300 &#x20bd;</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="sh-price__section sh-price__scissors">
+			<div class="sh-price__scissors-left">
+				<div class="slider wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+					<div>
+						<ul class="sh-price__list sh-price__list-scissors">
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Щипчики кутикульные</h6>
+								<span class="sh-price__list-price">300 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Кусачки кутикульные "Бишкек" с длиной лезвия  9 мм и выше</h6>
+								<span class="sh-price__list-price">350 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Кусачки ногтевые</h6>
+								<span class="sh-price__list-price">350 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Кусачки "Паруса"</h6>
+								<span class="sh-price__list-price">400 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Ножницы кутикульные</h6>
+								<span class="sh-price__list-price">350 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Ножницы ногтевые</h6>
+								<span class="sh-price__list-price">300 &#x20bd;</span>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="sh-price__list sh-price__list-scissors">
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Пинцет</h6>
+								<span class="sh-price__list-price">200 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Пинцет для наращивания</h6>
+								<span class="sh-price__list-price">350 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Книпсер</h6>
+								<span class="sh-price__list-price">300 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Замена пружинки</h6>
+								<span class="sh-price__list-price">150 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Чистка (полировка)</h6>
+								<span class="sh-price__list-price">100 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Пушер (менять форму-дополнительная стоимость, оговаривается цена)</h6>
+								<span class="sh-price__list-price">100 &#x20bd;</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sh-price__scissors-right">
+				<h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".7s">Маникюрный инструмент</h3>
+			</div>
+		</section>
+		<section class="sh-price__section sh-price__barber">
+			<div class="sh-price__barber-left">
+				<h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Парикмахерский инструмент</h3>
+			</div>
+			<div class="sh-price__barber-right">
+				<ul class="sh-price__list sh-price__list-barber wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Ножницы парикмахерские прямые</h6>
+						<span class="sh-price__list-price">500 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Ножницы парикмахерские филировочные</h6>
+						<span class="sh-price__list-price">500 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Ножницы парикмахерские (сласинг)</h6>
+						<span class="sh-price__list-price">500 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Ножи для машинок</h6>
+						<span class="sh-price__list-price">650 &#x20bd;</span>
+					</li>
+					<li class="sh-price__list-item">
+						<h6 class="sh-price__list-name">Горячие ножницы</h6>
+						<span class="sh-price__list-price">700 &#x20bd;</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+			<section class="sh-price__section sh-price__scissors">
+			<div class="sh-price__scissors-left">
+				<div class="slider wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+					<div>
+						<ul class="sh-price__list sh-price__list-scissors">
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Ножницы</h6>
+								<span class="sh-price__list-price">200 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Секатор </h6>
+								<span class="sh-price__list-price">от 200 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Ножи для газонокосилок</h6>
+								<span class="sh-price__list-price">150 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Коса</h6>
+								<span class="sh-price__list-price">от 200 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Канцелярские ножницы</h6>
+								<span class="sh-price__list-price">от 100 &#x20bd;</span>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="sh-price__list sh-price__list-scissors">
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Сабля, меч более 100 см</h6>
+								<span class="sh-price__list-price">от 1000 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Сабля, меч менее 100 см</h6>
+								<span class="sh-price__list-price">от 500 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Сучкорезы большие</h6>
+								<span class="sh-price__list-price">от 350 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Сучкорезы малые</h6>
+								<span class="sh-price__list-price">от 250 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Садовые ножницы большие</h6>
+								<span class="sh-price__list-price">400 &#x20bd;</span>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="sh-price__list sh-price__list-scissors">
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Медицинский инструмент</h6>
+								<span class="sh-price__list-price">Договорная</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Стамеска</h6>
+								<span class="sh-price__list-price">200 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Цепь для электро и бензопил</h6>
+								<span class="sh-price__list-price">250 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Ножницы портновские</h6>
+								<span class="sh-price__list-price">200 &#x20bd;</span>
+							</li>
+							<li class="sh-price__list-item">
+								<h6 class="sh-price__list-name">Ножницы "ЗигЗаг"</h6>
+								<span class="sh-price__list-price">250 &#x20bd;</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+
+			</div>
+			<div class="sh-price__scissors-right">
+				<h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Маникюрный инструмент</h3>
+			</div>
+		</section>
+	</main>
+	<script>
+		$('.slider').slick({
+			infinite: true,
+			dots: true
+		});
+	</script>
+	<script src="js/bundle.js"></script>
 </body>
 </html>
