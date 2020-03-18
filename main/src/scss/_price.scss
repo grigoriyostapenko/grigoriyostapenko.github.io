@@ -114,7 +114,8 @@
 	&-right {
 		height: 100%;
 		width: 50%;
-		background: url("../img/nails.jpg") no-repeat;
+		background-image: url("../img/garden.jpg");
+		background-repeat: no-repeat;
 		background-size: cover;
 		background-color: $violet;
 		background-blend-mode: multiply;

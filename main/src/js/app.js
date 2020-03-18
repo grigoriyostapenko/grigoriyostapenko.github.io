@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#menu").on("click","a", function (event) {
+	$(".scrollToAnchor").on("click","a", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -14,3 +14,11 @@ $(document).ready(function(){
 	});
 });
 
+const getHeightFirst = $('#firstTextfield').css('height');
+const getHeightSecond = $('#secondTextfield').css('height');
+
+if(getHeightFirst >= getHeightSecond) {
+	$(".learn-info__list-text").css({"height":getHeightFirst});
+} else {
+	$(".learn-info__list-text").css({"height":getHeightSecond});
+}
