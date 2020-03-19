@@ -22,3 +22,6 @@ if(getHeightFirst >= getHeightSecond) {
 } else {
 	$(".learn-info__list-text").css({"height":getHeightSecond});
 }
+
+const getWidth = $(".sh-header").width();
+$("#map").width(getWidth);

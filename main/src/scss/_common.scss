@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	$base-size: 16px;
 	font-size: $base-size;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 
 .container {
