@@ -68,5 +68,10 @@
 	&__link {
 		color: $main;
 		justify-content: flex-start;
+		transition: all .3s ease;
+
+		&:hover {
+			transform: translateY(-2px);
+		}
 	}
 }

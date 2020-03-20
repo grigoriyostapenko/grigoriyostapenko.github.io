@@ -37,7 +37,31 @@
 	<script src="./assets/libs/slick.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body">
+	<div class="modal_info">
+		<h3 class="modal__title">
+			Закажите курьера прямо сейчас!
+		</h3>
+		<ul class="modal__phones">
+			<li class="modal__item">
+				<a href="tel:+79998697033" class="modal__link">
+					+7 (999) - 869 - 70 - 33
+				</a>
+			</li>
+			<li class="modal__item">
+				<a href="tel:+79775572940" class="modal__link">
+					+7 (977) - 557 - 29 - 40
+				</a>
+			</li>
+			<li class="modal__item">
+				<a href="+79960511317" class="modal__link">
+					+7 (996) - 051 - 13 - 13
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="modal_overlay">
+	</div>
 	<header class="sh-header">
 		<nav>
 			<div class="container">
@@ -56,8 +80,8 @@
 								прайс-лист
 							</a>
 						</li>
-						<li class="sh-header__menu-item">
-							<a href="#" class="sh-header__menu-link">
+						<li class="sh-header__menu-item btn_container">
+							<a href="#" class="sh-header__menu-link open_button">
 								заказать курьера
 							</a>
 						</li>
@@ -292,17 +316,43 @@
 					</div>
 				</div>
 			</div>
-		<div class="sh-price__other-right">
-			<h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Разное</h3>
+			<div class="sh-price__other-right">
+				<h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Разное</h3>
+			</div>
+		</section>
+	</main>
+	<footer class="sh-footer">
+		<div class="container">
+			<div class="sh-footer__block">
+				<h3 class="sh-footer__title">
+					Студия заточки &laquo;Самура&raquo;
+				</h3>
+				<ul class="sh-footer__social">
+					<li class="sh-footer__social-item">
+						<a href="https://www.facebook.com/profile.php?id=100005599008915" class="sh-footer__social-link" target="_blank">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
+					<li class="sh-footer__social-item">
+						<a href="https://www.instagram.com/samura_k.ru/?hl=ru" class="sh-footer__social-link" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="sh-footer__social-item">
+						<a href="viber://add?number=79960511317" class="sh-footer__social-link" target="_blank">
+							<i class="fab fa-viber"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</section>
-</main>
-<script>
-	$('.slider').slick({
-		infinite: true,
-		dots: true
-	});
-</script>
-<script src="js/bundle.js"></script>
+	</footer>
+	<script>
+		$('.slider').slick({
+			infinite: true,
+			dots: true
+		});
+	</script>
+	<script src="js/bundle.js"></script>
 </body>
 </html>

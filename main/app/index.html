@@ -23,6 +23,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="./assets/libs/animate.css">
 	<script src="./assets/libs/wow.min.js"></script>
+	<script src="./assets/libs/device.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/c55362b8b5.js" crossorigin="anonymous"></script>
@@ -38,8 +39,8 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<div class="modal wow fadeInUp" data-wow-duration="1.5s">
+<body id="body">
+	<div class="modal_info">
 		<h3 class="modal__title">
 			Закажите курьера прямо сейчас!
 		</h3>
@@ -61,6 +62,8 @@
 			</li>
 		</ul>
 	</div>
+	<div class="modal_overlay">
+	</div>
 	<header class="sh-header">
 		<nav>
 			<div class="container">
@@ -81,8 +84,8 @@
 								прайс-лист
 							</a>
 						</li>
-						<li class="sh-header__menu-item">
-							<a href="#" class="sh-header__menu-link">
+						<li class="sh-header__menu-item btn_container">
+							<a href="#" class="sh-header__menu-link open_button">
 								заказать курьера
 							</a>
 						</li>
@@ -336,6 +339,32 @@
 		</div>
 	</section>
 </main>
+<footer class="sh-footer">
+	<div class="container">
+		<div class="sh-footer__block">
+			<h3 class="sh-footer__title">
+				Студия заточки &laquo;Самура&raquo;
+			</h3>
+			<ul class="sh-footer__social">
+				<li class="sh-footer__social-item">
+					<a href="https://www.facebook.com/profile.php?id=100005599008915" class="sh-footer__social-link" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li class="sh-footer__social-item">
+					<a href="https://www.instagram.com/samura_k.ru/?hl=ru" class="sh-footer__social-link" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="sh-footer__social-item">
+					<a href="viber://add?number=79960511317" class="sh-footer__social-link" target="_blank">
+						<i class="fab fa-viber"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
 <script>
 	new Glide('.glide', {
 		type: 'carousel',
