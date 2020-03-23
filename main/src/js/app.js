@@ -11,6 +11,7 @@ $(document).ready(function(){
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top - 115}, 1500);
+		
 	});
 });
 
@@ -24,8 +25,7 @@ if(getHeightFirst >= getHeightSecond) {
 }
 
 const getWidth = $(".sh-header").width();
-$("#map").width(getWidth);
-
+document.getElementById("map").style.width = getWidth + "px";
 
 (function(){
 	var $content = $('.modal_info').detach();
@@ -89,3 +89,6 @@ var modal = (function(){
 		}
 	};
 }());
+
+// open mobile menu
+$(".glide__slide--active").css({"margin": "0"});

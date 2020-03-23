@@ -11,6 +11,8 @@
 		color: $main;
 		font-size: 70px;
 		margin-bottom: 50px;
+
+		@include title-size;
 	}
 
 	.slide-icon {
@@ -78,5 +80,27 @@
 		transform: translateY(-10px);
 		box-shadow: 4px 4px 8px 2px rgba($main, .4);
 	}
+
+	@include md-screen {
+		transform: scale(.8);
+		opacity: .8;
+		transition: all .4s ease;
+		border: none;
+	}
 }
+
+.glide__slide--active {
+	@include md-screen {
+		transform: scale(1);
+		opacity: 1;
+		padding: 15px 0;
+		transition: all .4s ease;
+
+		&:hover {
+			transform: translateY(-10px);
+			box-shadow: 4px 4px 8px 2px rgba($main, .4);
+		}
+	}
+}
+
 

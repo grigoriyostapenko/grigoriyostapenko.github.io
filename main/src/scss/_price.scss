@@ -8,6 +8,10 @@
 		color: black;
 		width: 100%;
 		text-align: center;
+
+		@include title-size{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -17,6 +21,10 @@
 	justify-content: center;
 	align-items: center;
 	height: calc(640px / 1.5);
+
+	@include xl-screen{
+		flex-direction: column;
+	}
 }
 
 .slider, .draggable, .slick-track{
@@ -26,6 +34,9 @@
 .sh-price__knives {
 	padding: 0;
 	margin: 0;
+	@include xl-screen {
+		position: relative;
+	}
 
 	&-left {
 		height: 100%;
@@ -40,6 +51,15 @@
 		color: $white;
 		font-family: $cuprum;
 		font-size: 250px;
+
+		@include title-size{
+			margin-bottom: 0;
+		}
+
+		@include xl-screen {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	&-right {
@@ -47,13 +67,21 @@
 		width: 50%;	
 		background-color: #fff;
 		padding: 30px 50px;
+
+		@include xl-screen {
+			width: 100%;
+			padding: 10px;
+			height: 360px;
+		}
 	}
 }
 
 .sh-price__barber {
 	padding: 0;
 	margin: 0;
-
+	@include xl-screen {
+		position: relative;
+	}
 	&-left {
 		height: 100%;
 		width: 50%;
@@ -68,6 +96,15 @@
 		font-family: $cuprum;
 		font-size: 105px;
 		text-align: center;
+
+		@include title-size{
+			margin-bottom: 0;
+		}
+
+		@include xl-screen {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	&-right {
@@ -75,15 +112,32 @@
 		width: 50%;	
 		background-color: #fff;
 		padding: 30px 50px;
+
+		@include xl-screen {
+			width: 100%;
+			padding: 10px;
+			height: 360px;
+		}
 	}
 }
 
 .sh-price__scissors {
+	
+	@include xl-screen {
+		position: relative;
+		flex-direction: column-reverse;
+	}
 	&-left {
 		height: 100%;
 		width: 50%;	
 		background-color: #fff;
 		padding: 30px 50px;
+
+		@include xl-screen {
+			width: 100%;
+			padding: 10px;
+			height: 360px;
+		}
 	}
 
 	&-right {
@@ -100,15 +154,36 @@
 		font-family: $cuprum;
 		font-size: 125px;
 		text-align: center;
+
+		@include title-size{
+			margin-bottom: 0;
+		}
+
+		@include xl-screen {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
 .sh-price__other {
+	
+
+	@include xl-screen {
+		position: relative;
+		flex-direction: column-reverse;
+	}
 	&-left {
 		height: 100%;
 		width: 50%;	
 		background-color: #fff;
 		padding: 30px 50px;
+
+		@include xl-screen {
+			width: 100%;
+			padding: 10px;
+			height: 360px;	
+		}
 	}
 
 	&-right {
@@ -125,6 +200,15 @@
 		color: $white;
 		font-family: $cuprum;
 		font-size: 250px;
+
+		@include title-size{
+			margin-bottom: 0;
+		}
+
+		@include xl-screen {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
@@ -142,11 +226,19 @@
 		align-items: center;
 		font-size: 26px;
 		color: $main;
+
+		@include md-screen {
+			font-size: 18px;
+		}
 	}
 
 	&-name {
 		font-family: $mons;
 		font-weight: 600;
+
+		@include md-screen {
+			max-width: 280px;
+		}
 	}
 
 	&-price {

@@ -12,18 +12,32 @@
 	background-blend-mode: multiply;
 	background-attachment: fixed;
 
+	@include lg-screen {
+		height: auto;
+		padding-top: 115px;
+		padding-bottom: 20px;
+	}
+
 	&__title {
 		font-size: 150px;
 		color: $white;
 		font-family: $roboto;
 		font-weight: 700;
 		margin-bottom: 50px;
+
+		@include xl-screen {
+			font-size: calc(100vw / 8);
+		}
 	}
 
 	&__subtitle {
 		font-size: 30px;
 		color: rgba($white, .6);
 		font-family: $echo;
+
+		@include lg-screen {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -39,11 +53,20 @@
 		text-align: center;
 		width: 100%;
 		margin-bottom: 60px;
+
+		@include md-screen {
+			font-size: 24px;
+		}
 	}
 
 	&__info {
 		width: 100%;
 		display: block;
+
+		@include lg-screen {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 
 	&__text {
@@ -81,6 +104,12 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+
+		@include md-screen {
+			flex-direction: column;
+			align-items: center;
+			padding-left: 10px;
+		}
 	}
 
 	&__item {
@@ -90,6 +119,10 @@
 		width: 50%;
 		margin-bottom: 30px;
 		padding-right: 15px;
+
+		@include md-screen {
+			width: 100%;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -137,6 +170,11 @@
 		flex-wrap: wrap;
 		position: relative;
 
+		@include lg-screen {
+			flex-direction: column;
+			align-items: center;
+		}
+
 		&::after {
 			position: absolute;
 			content: "";
@@ -144,6 +182,10 @@
 			left: 50%;
 			transform: translateX(-50%);
 			height: 100%;
+
+			@include lg-screen {
+				content: none;
+			}
 		}
 
 		&-title { 
@@ -169,6 +211,14 @@
 		width: 100%;
 		max-width: 450px;
 		text-align: center;
+
+		@include lg-screen {
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 
 		.fas {
 			font-size: 75px;

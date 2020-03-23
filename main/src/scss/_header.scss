@@ -9,6 +9,10 @@
 	position: relative;
 	z-index: 1;
 
+	@include md-screen {
+		height: auto;
+		padding-top: 110px;
+	}
 
 	&__block {
 		width: 100%;
@@ -19,6 +23,10 @@
 		flex-direction: column;
 		backdrop-filter: blur(10px);
 		position: relative;
+
+		@include md-screen {
+			padding: 20px 0 80px 0;
+		}
 	}
 	
 	&__info {
@@ -36,6 +44,10 @@
 		margin-bottom: 30px;
 		text-transform: uppercase;
 		text-align: center;
+
+		@include xl-screen {
+			font-size: calc(100vw / 14);
+		}
 	}
 
 	&__text {
@@ -47,6 +59,13 @@
 		width: 100%;
 		max-width: 1240px;
 		text-align: center;
+
+		@include lg-screen {
+			font-size: 18px;
+			width: 80%;
+			margin: 0 auto;
+		}
+
 
 		& > span {
 			font-family: $mons;
@@ -77,6 +96,10 @@
 			width: 400px;
 			clip-path: polygon(5% 25%, 95% 25%, 100% 75%, 0 75%);
 			z-index: 4;
+
+			@include xl-screen {
+				content: none;
+			}
 		}
 	}
 
@@ -93,6 +116,10 @@
 		color: $white;
 		font-family: $roboto;
 		text-transform: uppercase;
+
+		@include xl-screen {
+			display: none;
+		}
 	}
 
 	&__link {
@@ -103,6 +130,13 @@
 		right: 25%;
 		bottom: 0;
 		z-index: 6;
+
+		@include xl-screen {
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 30px;
+			position: relative;
+		}
 	}
 
 }

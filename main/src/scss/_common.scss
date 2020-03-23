@@ -20,6 +20,10 @@ body {
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+
+	@include md-screen {
+		padding: 0;
+	}
 }
 
 ul {list-style: none;
@@ -36,3 +40,9 @@ a:hover,  /* mouse over link */
 a:active {
 	text-decoration: none;
 }
+
+// main {
+// 	@include md-screen {
+// 		transform: translateY(114px);
+// 	}
+// }

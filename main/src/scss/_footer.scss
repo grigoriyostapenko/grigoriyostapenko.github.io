@@ -2,17 +2,27 @@
 	padding: 20px 0;
 	background: $main;
 	color: $white;	
+	position: relative;
+	bottom: 0;
 
 	&__block {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include md-screen {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
 	}
 
 	&__title {
 		font-size: 36px;
 		font-family: $echo;
 		font-weight: 400;
+
+		@include md-screen {
+			font-size: 16px;
+		}
 	}
 
 	&__social {
@@ -26,6 +36,11 @@
 			color: $white;
 			font-size: 25px;
 			transition: all .3s ease;
+
+			@include md-screen {
+				font-size: 16px;
+			}
+
 			&:hover {
 				transform: translateY(-5px);
 			}

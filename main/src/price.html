@@ -23,52 +23,72 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="./assets/libs/animate.css">
 	<script src="./assets/libs/wow.min.js"></script>
+	<script src="./assets/libs/device.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/c55362b8b5.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./assets/libs/glide.core.min.css">
 	<link rel="stylesheet" href="./assets/libs/glide.theme.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-	<script>
-		new WOW().init();
-	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<link rel="stylesheet" href="./assets/libs/slick.css">
 	<link rel="stylesheet" href="./assets/libs/slick-theme.css">
 	<script src="./assets/libs/slick.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="body">
-	<div class="modal_info">
-		<h3 class="modal__title">
-			Закажите курьера прямо сейчас!
-		</h3>
-		<ul class="modal__phones">
-			<li class="modal__item">
-				<a href="tel:+79998697033" class="modal__link">
-					+7 (999) - 869 - 70 - 33
-				</a>
-			</li>
-			<li class="modal__item">
-				<a href="tel:+79775572940" class="modal__link">
-					+7 (977) - 557 - 29 - 40
-				</a>
-			</li>
-			<li class="modal__item">
-				<a href="+79960511317" class="modal__link">
-					+7 (996) - 051 - 13 - 13
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="modal_overlay">
-	</div>
 	<header class="sh-header">
 		<nav>
 			<div class="container">
 				<div class="sh-header__block">
-					<a href="index.html">
-						<img src="./img/logo.svg" alt="logo" class="sh-header__logo">
+					<div>
+						<a href="index.html#top">
+							<img src="./img/logo.svg" alt="logo" class="sh-header__logo">
+						</a>
+					</div>					
+					<a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+						<span class="menu-item"></span>
+						<span class="menu-item"></span>
+						<span class="menu-item"></span>
 					</a>
+					<ul class="mobile-header-nav">
+						<li>
+							<a href="index.html#all">
+								Что мы точим
+							</a>
+						</li>
+						<li class="scrollToAnchor">
+							<a href="#top">
+								Прайс-лист
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Заказать курьера
+							</a>
+						</li>
+						<li>
+							<a href="learn.html">
+								Обучение заточке
+							</a>
+						</li>
+						<li>
+							<a href="index.html#sale">
+								Акции
+							</a>
+						</li>
+						<li>
+							<a href="#contacts">
+								Контакты
+							</a>
+						</li>
+					</ul>
 					<ul class="sh-header__menu">
 						<li class="sh-header__menu-item">
 							<a href="index.html#all" class="sh-header__menu-link">
@@ -80,8 +100,8 @@
 								прайс-лист
 							</a>
 						</li>
-						<li class="sh-header__menu-item btn_container">
-							<a href="#" class="sh-header__menu-link open_button">
+						<li class="sh-header__menu-item">
+							<a href="index.html" class="sh-header__menu-link">
 								заказать курьера
 							</a>
 						</li>
@@ -102,7 +122,6 @@
 						</li>
 					</ul>
 				</div>
-
 			</div>
 		</nav>
 	</header>
@@ -351,6 +370,16 @@
 		$('.slider').slick({
 			infinite: true,
 			dots: true
+		});
+	</script>
+	<script>
+		$('.js-toggle-menu').click(function(e){
+			e.preventDefault();
+			$('.mobile-header-nav').slideToggle();
+			$(this).toggleClass('open');
+			$(".scrollToAnchor").on("click","a", function (event) {
+				$('.mobile-header-nav').slideToggle();
+			});
 		});
 	</script>
 	<script src="js/bundle.js"></script>
