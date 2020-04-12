@@ -52,6 +52,10 @@
 		font-family: $cuprum;
 		font-size: 250px;
 
+		@include low-screen {
+			font-size: 100px;
+		}
+
 		@include title-size{
 			margin-bottom: 0;
 		}
@@ -97,8 +101,17 @@
 		font-size: 105px;
 		text-align: center;
 
+		@include low-screen {
+			font-size: 65px;
+		}
+
 		@include title-size{
 			margin-bottom: 0;
+		}
+
+		@include xl-screen {
+			margin-bottom: 10px;
+			font-size: calc(100vw / 18);
 		}
 
 		@include xl-screen {
@@ -155,8 +168,17 @@
 		font-size: 125px;
 		text-align: center;
 
+		@include low-screen {
+			font-size: 65px;
+		}
+
 		@include title-size{
 			margin-bottom: 0;
+		}
+
+		@include xl-screen {
+			margin-bottom: 10px;
+			font-size: calc(100vw / 18);
 		}
 
 		@include xl-screen {
@@ -201,8 +223,17 @@
 		font-family: $cuprum;
 		font-size: 250px;
 
+		@include low-screen {
+			font-size: 100px;
+		}
+
 		@include title-size{
 			margin-bottom: 0;
+		}
+
+		@include xl-screen {
+			margin-bottom: 10px;
+			font-size: calc(100vw / 18);
 		}
 
 		@include xl-screen {
@@ -227,9 +258,14 @@
 		font-size: 26px;
 		color: $main;
 
+		@include low-screen {
+			font-size: 22px;
+		}
+
 		@include md-screen {
 			font-size: 18px;
 		}
+
 	}
 
 	&-name {

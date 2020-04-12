@@ -50,7 +50,7 @@
 		font-family: $roboto;
 		font-size: 25px;
 		font-weight: 700;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
 	&__text {
@@ -58,6 +58,11 @@
 		font-size: 18px;
 		line-height: 1.2;
 		color: $main;
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__item {

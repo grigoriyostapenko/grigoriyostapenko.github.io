@@ -42,6 +42,12 @@
 	}
 }
 
+@mixin low-screen {
+	@media only screen and (max-height: 800px) {
+		@content;
+	}
+}
+
 @mixin title-size {
 
 	@include xl-screen {

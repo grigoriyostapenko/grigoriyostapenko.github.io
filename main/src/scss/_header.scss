@@ -4,7 +4,7 @@
 	width: 100%;
 	background: url("../img/bg.jpg") no-repeat;
 	background-size: cover;
-	background-color: lighten($main, 15%);
+	background-color: lighten($main, 25%);
 	background-blend-mode: multiply;
 	position: relative;
 	z-index: 1;
@@ -21,7 +21,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		backdrop-filter: blur(10px);
+		backdrop-filter: blur(6px);
 		position: relative;
 
 		@include md-screen {

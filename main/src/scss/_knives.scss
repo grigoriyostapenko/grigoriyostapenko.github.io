@@ -7,6 +7,11 @@
 		padding: 20px 5px;
 	}
 
+	@include low-screen {
+		text-align: center; 
+		padding: 20px 5px;
+	}
+
 	&__block {
 		width: 100%;
 		height: calc(100vh - 100px);
@@ -17,6 +22,10 @@
 		@include xl-screen {
 			height: auto;
 		}
+
+		@include low-screen {
+			height: auto;
+		}
 	}
 
 	&__knives {
@@ -24,6 +33,10 @@
 		position: relative;
 
 		@include xl-screen {
+			display: none;
+		}
+
+		@include low-screen {
 			display: none;
 		}
 	}
@@ -43,6 +56,12 @@
 		height: 100%;
 
 		@include xl-screen {
+			padding: 0;
+			align-items: center;
+			width: 100%;
+		}
+
+		@include low-screen {
 			padding: 0;
 			align-items: center;
 			width: 100%;
@@ -70,6 +89,10 @@
 		max-width: 750px;
 
 		@include xl-screen {
+			text-align: center; 
+		}
+
+		@include low-screen {
 			text-align: center; 
 		}
 
