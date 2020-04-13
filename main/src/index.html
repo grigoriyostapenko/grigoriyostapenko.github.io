@@ -39,30 +39,6 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="body">
-	<div class="modal_info">
-		<h3 class="modal__title">
-			Закажите курьера прямо сейчас!
-		</h3>
-		<ul class="modal__phones">
-			<li class="modal__item">
-				<a href="tel:+79998697033" class="modal__link">
-					+7 (999) - 869 - 70 - 33
-				</a>
-			</li>
-			<li class="modal__item">
-				<a href="tel:+79775572940" class="modal__link">
-					+7 (977) - 557 - 29 - 40
-				</a>
-			</li>
-			<li class="modal__item">
-				<a href="+79960511317" class="modal__link">
-					+7 (996) - 051 - 13 - 17
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="modal_overlay">
-	</div>
 	<header class="sh-header">
 		<nav>
 			<div class="container">
@@ -89,7 +65,7 @@
 							</a>
 						</li>
 						<li class="btn_container">
-							<a href="#" class="open_button">
+							<a href="courier.html">
 								Заказать курьера
 							</a>
 						</li>
@@ -115,8 +91,8 @@
 								прайс-лист
 							</a>
 						</li>
-						<li class="sh-header__menu-item btn_container">
-							<a href="#" class="sh-header__menu-link open_button">
+						<li class="sh-header__menu-item">
+							<a href="courier.html" class="sh-header__menu-link">
 								заказать курьера
 							</a>
 						</li>
@@ -421,10 +397,6 @@
 		e.preventDefault();
 		$('.mobile-header-nav').slideToggle();
 		$(this).toggleClass('open');
-
-		$(".scrollToAnchor").on("click","a", function (event) {
-			$('.mobile-header-nav').slideToggle();
-		});
 	});
 
 
@@ -450,6 +422,10 @@
 		<img src="https://mc.yandex.ru/watch/61734601" style="position:absolute; left:-9999px;" alt="" />
 	</div>
 </noscript> 
+<script>
+	const getWidth = $(".sh-offer").width();
+	document.getElementById("map").style.width = getWidth + "px";
+</script>
 <!-- /Yandex.Metrika counter -->
 <script src="js/bundle.js"></script>
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
