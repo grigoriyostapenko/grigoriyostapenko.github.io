@@ -2,7 +2,7 @@ const generateButton = document.querySelector(".button");
 generateButton.addEventListener('click', (event) => {
 	event.preventDefault();
 	const lengthNumber = document.querySelector(".chislo").value;
-	const letters = "qazwsxedcrfvt1gbyhnujmioklQPWOEIRUTY48AL7SK5DJFH36G2ZXCV9BNM";
+	const letters = "qazw9sx7e8dcrf8vt1gbyhnu4jm8i9okl541QPWOEIR2UTY48AL7SK5D6JFH43664G2ZXCV9BNM";
 	const lettersMassive = letters.split('');	
 	let finalPassword = "";
 
