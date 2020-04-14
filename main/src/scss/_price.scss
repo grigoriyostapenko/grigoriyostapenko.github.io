@@ -50,7 +50,7 @@
 		align-items: center;
 		color: $white;
 		font-family: $cuprum;
-		font-size: 250px;
+		font-size: 150px;
 
 		@include low-screen {
 			font-size: 100px;
@@ -98,7 +98,7 @@
 		align-items: center;
 		color: $white;
 		font-family: $cuprum;
-		font-size: 105px;
+		font-size: 80px;
 		text-align: center;
 
 		@include low-screen {
@@ -165,7 +165,7 @@
 		align-items: center;
 		color: $white;
 		font-family: $cuprum;
-		font-size: 125px;
+		font-size: 80px;
 		text-align: center;
 
 		@include low-screen {
@@ -221,7 +221,7 @@
 		align-items: center;
 		color: $white;
 		font-family: $cuprum;
-		font-size: 250px;
+		font-size: 150px;
 
 		@include low-screen {
 			font-size: 100px;
@@ -255,12 +255,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		font-size: 26px;
+		font-size: 20px;
 		color: $main;
-
-		@include low-screen {
-			font-size: 22px;
-		}
 
 		@include md-screen {
 			font-size: 18px;
