@@ -1,0 +1,112 @@
+.sh-gallery {
+	padding: 30px 0;
+
+	&__title {
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $roboto;
+		font-weight: 700;
+		color: $main;
+		font-size: 70px;
+		margin-bottom: 30px;
+
+		@include xl-screen {
+			font-size: calc(100vw / 14);
+		}
+
+		@include sm-screen {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 100%;
+		max-width: 320px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&:nth-child(1), 
+		&:nth-child(2), 
+		&:nth-child(4),
+		&:nth-child(5) {
+			margin-right: 30px;
+		}
+
+		&:nth-child(n-3) {
+			margin-bottom: 30px;
+		}
+
+		@include photo-screen {
+			&:nth-child(4) {
+				margin-bottom: 30px;
+			}
+
+			&:nth-child(2n - 1) {
+				margin-right: 30px;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+
+		@include cn-screen {
+			margin-right: 0;
+			margin-bottom: 30px;
+			height: auto;
+
+			&:nth-child(2n - 1) {
+				margin-right: 0;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__name {
+		font-size: 20px;
+		color: $main;
+		font-family: $mons;
+		margin-bottom: 0;
+		text-align: center;
+	}
+}
+
+
+.img-wrapper {
+	@include padding-hack(280px) {
+		width: 100%;
+
+		& > img {
+			transition: all .3s ease;
+
+			&:first-child {
+				transform: scale(1.01);
+			}
+		}
+	}
+	margin-bottom: 20px;
+	overflow: hidden;
+
+	&:hover {
+		& > img {
+			transform: scale(1.1);
+		}
+	}
+}
