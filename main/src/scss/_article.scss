@@ -1,5 +1,5 @@
 .art-header {
-	padding: 35px 0;
+	padding: 35px 15px;
 	border-bottom: 3px solid grey;
 	&__link {
 		width: 100%;
@@ -22,6 +22,11 @@
 	padding: 20px 0;
 	text-align: left;
 	width: 100%;
+
+	@include title-size;
+	@include md-screen {
+		text-align: center;
+	}
 }
 
 .art-subtitle {
@@ -30,6 +35,10 @@
 	font-size: 30px;
 	padding: 10px 0 10px 25px;
 	width: auto;
+
+	@include md-screen {
+		text-align: center;
+	}
 }
 
 .art-smalltitle {
@@ -48,6 +57,26 @@
 	width: 100%;
 	line-height: 1.4;
 	text-indent: 15px;
+	@include sm-screen {
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.art-imp {
+	font-family: $mons;
+	color: $main;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 8px 0;
+	width: 100%;
+	line-height: 1.4;
+	text-align: center;
+	@include sm-screen {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
 
 .art-list {
@@ -58,6 +87,10 @@
 }
 
 .art-item {
+	&:first-letter {
+		text-transform: uppercase;
+	}
+
 	font-family: $roboto;
 	font-size: 20px;
 	color: rgba($main, .9);
@@ -75,4 +108,53 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.art-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 15px 0;
+}
+
+.art-image {
+	width: calc(100% - 10px);
+	max-width: 400px;
+	margin-bottom: 10px;
+}
+
+.img-text {
+	font-size: 18px;
+	font-family: $mons;
+	color: $main;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.img3 {
+	width: calc(100% - 10px);
+	max-width: 300px;
+	margin-bottom: 0;
+}
+
+.art-block-3 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	@include md-screen {
+		justify-content: center;
+	}
+}
+
+.art-author {
+	width: 100%;
+	text-align: right;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: $roboto;
+	padding: 10px 0;
 }
