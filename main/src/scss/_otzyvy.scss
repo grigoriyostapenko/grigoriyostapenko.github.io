@@ -20,36 +20,50 @@
 			margin-bottom: 10px;
 		}
 	}
+}
 
-	&__list {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+.otzyvy {
+	&-img {
+		height: 300px;
+		margin: 0 auto;
 	}
 
-	&__item {
-		width: 100%;
-		max-width: 320px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.slick-slide {
+		transform: scale(0.9);
+		opacity: .8;
 		transition: all .3s ease;
+	}
 
-		&:hover {
-			transform: translateY(-10px);
-		}
+	.slick-current {
+		transform: scale(1);
+		opacity: 1;
+		transition: all .3s ease;
+	}
 
-		@include lg-screen {
-			&:nth-child(n-1) {
-				margin-bottom: 20px;
-			}
-		}
+	.slick-arrow {
+		display: block !important;
+		opacity: 1;
+		color: black;
+		z-index: 5156;
+	}
 
-		.testim-wrapper {
-			@include padding-hack(405px) {
-				width: 229px;
-			}
+	.slick-prev {
+		&::before {
+			font-family: "FontAwesome";
+			content: "\f060";
+			color: $main;
+			font-size: 40px;
 		}
 	}
+
+	.slick-next {
+		&::before {
+			font-family: "FontAwesome";
+			content: "\f061";
+			color: $main;
+			font-size: 40px;
+		}
+	}
+
+
 }

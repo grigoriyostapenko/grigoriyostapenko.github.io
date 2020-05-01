@@ -36,6 +36,9 @@
 	<script>
 		new WOW().init();
 	</script>
+	<link rel="stylesheet" href="./assets/libs/slick.css">
+	<link rel="stylesheet" href="./assets/libs/slick-theme.css">
+	<script src="./assets/libs/slick.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="body">
@@ -389,23 +392,50 @@
 			<h2 class="sh-testim__title">
 				Отзывы клиентов
 			</h2>
-			<ul class="sh-testim__list">
-				<li class="sh-testim__item wow fadeInRight" data-wow-duration="1.5s">
-					<div class="testim-wrapper">
-						<img src="./img/otzyv1.jpeg" alt="отзывы о нас от наших клиентов">
-					</div>
-				</li>
-				<li class="sh-testim__item wow fadeInRight" data-wow-duration="1.2s" data-wow-delay="0.3s"> 
-					<div class="testim-wrapper">
-						<img src="./img/otzyv2.jpeg" alt="отзывы о нас от наших клиентов">
-					</div>
-				</li>
-				<li class="sh-testim__item wow fadeInRight" data-wow-duration=".9s" data-wow-delay=".6s">
-					<div class="testim-wrapper">
-						<img src="./img/otzyv3.jpeg" alt="отзывы о нас от наших клиентов">
-					</div>
-				</li>
-			</ul>
+			<div class="otzyvy">
+				<div>
+					<img src="./img/otzyv1.jpeg" alt="otzyv1" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv2.jpeg" alt="otzyv2" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv3.jpeg" alt="otzyv3" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv4.jpeg" alt="otzyv4" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv5.jpeg" alt="otzyv5" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv6.jpeg" alt="otzyv6" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv7.jpeg" alt="otzyv7" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv8.jpeg" alt="otzyv8" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv14.jpeg" alt="otzyv9" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv10.jpeg" alt="otzyv10" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv11.jpeg" alt="otzyv10" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv12.jpeg" alt="otzyv10" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv13.jpeg" alt="otzyv10" class="otzyvy-img">
+				</div>
+				<div>
+					<img src="./img/otzyv9.jpeg" alt="otzyv10" class="otzyvy-img">
+				</div>
+			</div>
 		</div> 
 	</section>
 
@@ -464,32 +494,32 @@
 	</section>
 </main>
 <footer class="sh-footer">
-		<div class="container">
-			<div class="sh-footer__block">
-				<h3 class="sh-footer__title">
-					Студия заточки &laquo;Самура&raquo;
-				</h3>
-				<ul class="sh-footer__social">
-					<li class="sh-footer__social-item">
-						<a href="whatsapp://send?phone=+79998697033" class="sh-footer__social-link" target="_blank">
-							<i class="fab fa-whatsapp"></i>
-						</a>
-					</li>
-					<li class="sh-footer__social-item">
-						<a href="viber://add?number=79960511317" class="sh-footer__social-link" target="_blank">
-							<i class="fab fa-viber"></i>
-						</a>
-					</li>
-					<li class="sh-footer__social-item">
-						<a href="https://www.instagram.com/samura_k.ru/?hl=ru" class="sh-footer__social-link" target="_blank">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
+	<div class="container">
+		<div class="sh-footer__block">
+			<h3 class="sh-footer__title">
+				Студия заточки &laquo;Самура&raquo;
+			</h3>
+			<ul class="sh-footer__social">
+				<li class="sh-footer__social-item">
+					<a href="whatsapp://send?phone=+79998697033" class="sh-footer__social-link" target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+				</li>
+				<li class="sh-footer__social-item">
+					<a href="viber://add?number=79960511317" class="sh-footer__social-link" target="_blank">
+						<i class="fab fa-viber"></i>
+					</a>
+				</li>
+				<li class="sh-footer__social-item">
+					<a href="https://www.instagram.com/samura_k.ru/?hl=ru" class="sh-footer__social-link" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+			</ul>
 		</div>
-	</footer>
-	<script src="//perezvonok.ru/s.php?u=6056&s=6847" charset="UTF-8"></script><link href="https://perezvonok.ru/css/main.css" rel="stylesheet">
+	</div>
+</footer>
+<script src="//perezvonok.ru/s.php?u=6056&s=6847" charset="UTF-8"></script><link href="https://perezvonok.ru/css/main.css" rel="stylesheet">
 <script>
 	new Glide('.glide', {
 		type: 'carousel',
@@ -505,6 +535,35 @@
 
 	}).mount()
 
+</script>
+
+<script>
+	$('.otzyvy').slick({
+		centerMode: true,
+		centerPadding: '60px',
+		slidesToShow: 3,
+		arrows: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: true,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 1
+			}
+		}
+		]
+	});
 </script>
 
 <script>
